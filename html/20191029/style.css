@@ -1,0 +1,25 @@
+@charset "UTF-8"; 
+
+		body, html{
+			background-color: skyblue;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		h3{
+			color : gold;
+			padding-left: 10px;
+		}
+		hr{
+			/*border-width: 5px; border-style: solid; border-color: pink;*/
+			border: 5px solid pink;
+			margin: 0;
+			padding: 0;
+			
+		}
+		p{padding-left: 10px;	}
+		span{
+			font-size: 3em;
+			font-weight: bold;
+			color: blue;
+		}
