@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		.div{
+			background-color: skyblue;
+			border: 1px solid black;
+			box-sizing: border-box;	
+			float: left;
+		}
+	 	.after:after{
+		content: "홍성민";
+		clear: both;
+		display: block;
+	} 
+	</style>
+</head>
+<body>
+	<div class="after">
+	<div class="div">box</div>
+	<div class="div">box</div>
+	<div class="div">box</div>
+	</div>
+
+	<div class="div">box</div>
+</body>
+</html>

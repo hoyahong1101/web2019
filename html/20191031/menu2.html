@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float menu</title>
+	<link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+	<style>
+		
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div.container{
+			background-color: #ff1f45;
+		}
+		div.wrap{
+			width: 1200px;
+			height: 50px;
+			margin:0 auto;
+			position: relative;
+			/*background-color: blue;*/
+		}
+		div.wrap >nav{
+			position: absolute;
+			right: 0;
+		}
+
+		div>nav>ul{
+			
+			list-style: none;
+
+		}
+		div.wrap >nav>ul:after{
+			display: block;
+			clear: both;
+			content: "";
+		}
+
+		div.wrap > nav > ul > li {
+			float:left;
+			width: 80px;
+			font-weight: 500;
+			/*background-color: skyblue;*/
+			text-align: center;
+			line-height: 50px;
+			cursor: pointer;
+			color: white;
+			text-transform: uppercase;
+			font-size: 12px;
+			font-family: 'Sunflower', sans-serif
+		}
+		div.wrap > nav> ul > li:hover{
+			background-color: #cf1f45;
+
+		}
+
+
+		div.con_wrap{
+			background-color: black;
+
+		}
+		div.wrapper>h1{
+			color : white;
+			text-transform: uppercase;
+			float: left;
+
+		}
+		div.wrapper{
+			width: 1200px;
+			height: 50px;
+			margin: 0 auto;
+		
+		}
+		a{
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+		a:link,a:visited{
+			color : white;
+		}
+		div.wrapper > nav{
+			float: right;
+			
+		}
+		div.wrapper > nav> ul{
+			list-style-type: none;	
+
+		}
+		div.wrapper > nav> ul:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		div.wrapper> nav> ul > li{
+			float: left;
+			width: 100px;
+			background-color: gray;
+
+		}
+		div.wrapper> nav> ul > li > a {
+			display: block;
+			text-align: center;
+			line-height: 50px;
+
+		}
+		div.wrapper> nav> ul > li > a:hover{
+			background-color: gold;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="wrap">
+		<nav>
+			<ul>
+				<li>로그인</li>
+				<li>이용권</li>
+				<li>편성표</li>
+				<li>이벤트</li>
+				<li>다운로드</li>
+				<li>티빙키즈</li>
+			</ul>
+		</nav>
+		</div>
+	</div>
+
+
+	<div class="con_wrap">
+		<div class="wrapper">
+			<h1>tving</h1>
+			<!-- ul>li*5>a[#]>{menu$} -->
+	
+				<nav>
+				<ul>
+					<li><a href="#">live</a></li>
+					<li><a href="#">vod</a></li>
+					<li><a href="#">movie</a></li>
+					<li><a href="#">clip</a></li>
+					<li><a href="#">mall</a></li>
+				</ul>
+			</nav>
+		
+		</div>
+	</div>
+</body>
+</html>
