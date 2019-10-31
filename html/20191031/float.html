@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+/* 		h1{
+	float: left;
+	background-color: pink;
+}
+.spongebob{
+	float: left;
+}
+.spongebob1{
+	float: right;
+}
+p{
+	width: 200px;
+	float: right;
+	background-color: pink;
+} */
+	li{
+		list-style: none;
+	}
+	ul{
+		background-color: pink;
+		width: 600px;
+
+	}
+	
+	ul > li {
+		float: left;
+		width: 100px;
+		height: 100px;
+		background-color: lightblue;
+		border: 1px solid black;
+		box-sizing: border-box;
+	}
+	</style>
+		<style>
+		.wrap{
+			width: 600px;
+			/* height: 400px; */
+			background-color: gold;
+		}
+	 	.clearfix:after{
+		content: "";
+		display: block;
+		clear: both;
+	
+	} 
+		.wrap>.box{
+			width: 300px;
+			height: 300px;
+			background-color: blue;
+			float: left;
+			box-sizing: border-box;
+			border: 1px solid black;
+			
+		}
+
+	</style>
+</head>
+<body>
+<!-- 	<h1>Lorem.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, enim.</p> -->
+<!-- 	<img src="../images/spongebob.jpg" alt="" width="200px" height="200px" class="spongebob">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum libero minima reprehenderit, cumque eum, error minus excepturi voluptatem consequatur, culpa quas iste nobis recusandae, fuga consectetur cupiditate necessitatibus a magni.</p>
+	<img src="../images/spongebob.jpg" alt="" width="200px" height="200px" class="spongebob1"> -->
+
+
+	<ul class="clearfix">
+		<li>test1</li>
+		<li>test2</li>
+		<li>test3</li>
+		<li>test4</li>
+		<li>test5</li>
+	</ul>						
+
+
+
+	<div class="wrap clearfix">
+		<div class="box">box</div>
+		<div class="box">box</div>	
+	</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit perferendis amet eaque qui animi omnis porro consequatur quisquam. Optio.</p>
+
+	
+	<style>
+		div.boxafter{
+			background-color: gray;
+		}
+		div.boxafter:before{
+			content: "홍성민";
+		}
+		div.boxafter:after{
+			content: "안녕하세요";
+		}
+	</style>
+	<div class="boxafter">
+		<h1>Lorem.</h1>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+</body>
+</html>

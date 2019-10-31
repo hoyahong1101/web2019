@@ -1,7 +1,7 @@
 @charset "UTF-8"; 
 
 		body, html{
-			background-color: skyblue;
+			background-color: skyblue; /*sitecolor*/
 			width: 100%;
 			margin: 0;
 			padding: 0;
