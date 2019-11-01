@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a:link, a:visited{
+			color: black;
+		}
+		ul.navigation{list-style-type: none;	width: 1200px; height: 50px; background-color: pink; margin: 0 auto; border-radius: 15px;}
+		ul.navigation:after{content: ""; display: block; clear: both; }
+		ul.navigation>li{float: left; width: 240px; box-sizing: border-box;}
+		ul.navigation>li>a{text-decoration: none; text-align: center; display: block; text-transform: uppercase; line-height: 50px; font-size: 50px; font-family: fantasy;}
+		ul.navigation>li>a:hover{color: white; background-color: #9c225d; font-style: bold;  border-radius: 15px;}
+
+		ul.navigation>li.line{
+			border-left: 3px solid white;
+		}
+		
+	</style>
+</head>
+<body>
+	<ul class="navigation">
+		<li><a href="#">menu1</a></li>
+		<li class="line"><a href="#">menu2</a></li>
+		<li class="line"><a href="#">menu3</a></li>
+		<li class="line"><a href="#">menu4</a></li>
+		<li class="line"><a href="#">menu5</a></li>
+	</ul>
+
+
+	
+</body>
+</html>

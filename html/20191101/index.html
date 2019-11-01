@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout 1st</title>
+	<style>
+		/*css reset*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:link,a:visited{color: #000;}
+		ul.navFirst{
+			width: 800px;
+			height: 50px;
+			background-color: rgb(255,223,0);
+			margin: 0 auto;
+			border-radius: 10px;
+		}
+		ul.navFirst:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		ul.navFirst>li{
+			list-style-type: none;
+			float: left;
+			width: 160px;
+			color: white;
+			text-align: center;	
+			font-family: fantasy;
+			text-transform: uppercase;
+			line-height: 50px;
+			box-sizing: border-box;
+
+			
+		}
+
+		ul.navFirst>li:hover{
+			font-size: 30px;
+			font-weight: bold;
+			cursor: pointer;
+			background-color: rgb(200,223,0);
+
+		}
+
+		ul.navFirst>li.line{
+			border-left: 3px dotted white ;
+		
+			}
+
+
+/* 		nav.navWrap{
+	margin: 0 auto;
+	width: 1200px;
+	height: 50px;
+}
+
+nav.navWrap>ul>li{
+	list-style-type: none;
+	float: left;
+	width: 200px;
+	text-align: center;
+	text-transform: uppercase;
+} */
+
+
+
+/* a tag */
+		ul.navSecond{width: 800px; height: 50px;margin: 0 auto; background-color: skyblue;}
+		ul.navSecond:after{content:""; display: block;	clear: both;}
+		ul.navSecond>li{list-style-type: none; float: left;  width: 160px;}
+		ul.navSecond>li>a{text-transform: uppercase;  display: block; text-align: center; line-height: 50px;}
+		ul.navSecond>li>a:hover{	font-size: 30px;
+			font-weight: bold;
+			background-color: rgb(200,223,0);}
+
+	</style>
+</head>
+<body>
+<!-- 	<nav class="navWrap"> -->
+		<ul class="navFirst">
+			<li>menu1</li>
+			<li class="line">menu2</li>
+			<li class="line">menu3</li>
+			<li class="line">menu4</li>
+			<li class="line">menu5</li>
+		</ul>
+
+
+<!-- 	</nav> -->
+
+
+
+
+	<!-- ul.navSecond>li*5>a[#]>{menu$} -->
+	<ul class="navSecond">
+		<li><a href="#">menu1</a></li>
+		<li><a href="#">menu2</a></li>
+		<li><a href="#">menu3</a></li>
+		<li><a href="#">menu4</a></li>
+		<li><a href="#">menu5</a></li>
+	</ul>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
