@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<script>
+    $(document).ready(function(){
+     
+      $(".slider").bxSlider({
+      	auto:true,
+    	});
+   
+    });
+ 
+
+
+ 	 </script>
+
+	<style>
+		*{text-transform: uppercase; background-color: ;}
+		header#hdwrap{width: 1200px; height: 50px; margin: 0 auto; background-color: 	yellow; border-radius: 33px;}
+		header#hdwrap:after{content: ""; clear: both; display: block; }
+		header#hdwrap>h1{width: 100px; float: left; line-height: 50px; text-align: center; background-color: orangered; border: 0px solid gold; box-sizing: border-box; border-radius: 33px; color: white;}
+		nav.navWrap{width: 800px; float: right;}
+		nav.navWrap>ul:after{content: ""; clear: both; display: block; }
+		
+		nav.navWrap>ul>li{float: left; width: 160px;}
+		nav.navWrap>ul>li>a{display: block; line-height: 50px; border-left:  0px solid black; box-sizing: border-box; text-align: center; font-family: fantasy; font-size: 30px;}
+		nav.navWrap>ul>li:first-child>a{border-top-left-radius:33px; border-bottom-left-radius:33px; border: 0px; }
+		nav.navWrap>ul>li>a:hover{background-color: gold; font-weight: bold; color: white;}
+		nav.navWrap>ul>li:last-child:hover>a{border-top-right-radius:33px; border-bottom-right-radius:33px;}
+		div.visual{/* width: 1200px; margin: 0 auto; */}
+
+		div.visual>div.bx-wrapper {
+		    -moz-box-shadow: none;
+			-webkit-box-shadow: none;
+		    box-shadow: none; 
+		    border: none; 
+		    margin-bottom: 0px;
+			}
+			.bx-wrapper .bx-pager{
+				bottom: 30px;
+			}
+
+		section{width: 1200px; height: 800px; background-color: gray; margin: 0 auto;}
+		footer{width: 1200px; height: 120px; background-color: #ddd; margin: 0 auto;}
+		img{width: 100%;}
+
+/*		div.bx-wrapper{background-color: skyblue; width: 1200px;}*/
+	</style>
+
+</head>
+<body>
+	<header id="hdwrap">
+		<h1>logo</h1>
+		<nav class="navWrap">
+			<ul>
+				<li style="background-color: orange; border-top-left-radius:33px; border-bottom-left-radius:33px;"><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li style="background-color: orange;"><a href="#">menu3</a></li>
+				<li ><a href="#">menu4</a></li>
+				<li style="background-color: orange; border-top-right-radius:33px; border-bottom-right-radius:33px;"><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="visual">
+		<div class="slider">
+		    <div><img src="../images/pc01.jpg" alt=""></div>
+		    <div><img src="../images/pc02.jpg" alt=""></div>
+		    <div><img src="../images/pc03.jpg" alt=""></div>
+		 </div>
+	</div>
+	<section class="sectionWrap"></section>
+	<footer class="footerWrap">	</footer>
+</body>
+</html>

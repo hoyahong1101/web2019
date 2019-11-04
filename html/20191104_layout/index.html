@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		header#hd{margin: 0 auto; width: 1200px; height: 80px; background: gold; position: relative;}
+		header>h1.logo{width: 100px; margin: 0 auto; background: pink; text-align: center; line-height: 50px;}
+		header>nav.nav{width: 1200px; background-color: gray; position: absolute; bottom: 0;}
+		header>nav.nav>ul{list-style: none;}
+		header>nav.nav>ul:after{clear: both; content: ""; display: block;}
+		header>nav.nav>ul>li{float: left; width: 240px; line-height: 30px;}
+		header>nav.nav>ul>li>a{display: block; text-align: center;}
+		div.center{
+			background-color: skyblue;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+	<header id="hd">
+		<h1 class="logo">logo</h1>
+		<nav class="nav">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="center">div</div>	
+</body>
+</html>
