@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>LAYOUT</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../bxslider/css/jquery.bxslider.css">
+	<script src="../bxslider/js/jquery-3.1.1.min.js"></script>
+	<script src="../bxslider/js/jquery.bxslider.js"></script>
+	<style>
+		*{text-transform: uppercase;}
+		header#hdWrap{width: 1000px; height: 100px; _background-color: gold; margin: 0 auto; position: relative;}
+		
+		header#hdWrap>h1{width: 120px; line-height: 100px;  text-align: center; background-color: gray;}
+		header#hdWrap>nav.navWrap1{position: absolute; width: 400px; top:0; right: 0; background-color: pink;}
+		header#hdWrap>nav.navWrap1>ul:after{clear: both; display: block; content: "";}
+		header#hdWrap>nav.navWrap1>ul>li{width: 100px;  float: left;border-right: 1px solid black; box-sizing: border-box;}
+		header#hdWrap>nav.navWrap1>ul>li:last-child{border-right: none;}
+		header#hdWrap>nav.navWrap1>ul>li>a{display: block; line-height: 40px; text-align: center;}
+		header#hdWrap>nav.navWrap1>ul>li>a:hover{background-color: pink; color: white; font-family: fantasy;}
+
+		header#hdWrap>nav.navWrap2{position: absolute; width: 800px; bottom: 15px; right: 0;  font-size: 30px; background-color: skyblue;}
+		header#hdWrap>nav.navWrap2>ul:after{clear: both; display: block; content: "";}
+		header#hdWrap>nav.navWrap2>ul>li{width: 160px;  float: left; border-right: 1px solid black; box-sizing: border-box;}
+		header#hdWrap>nav.navWrap2>ul>li:last-child{border-right: none;}
+		header#hdWrap>nav.navWrap2>ul>li>a{display: block; line-height: 40px; text-align: center; color: white;}
+		header#hdWrap>nav.navWrap2>ul>li>a:hover{background-color: pink; color: white; font-family: fantasy;}
+		.visual{margin: 0 auto; width: 1200px;}
+	</style>
+	<script>
+		$(document).ready(function(){$('.bxslider').bxSlider();});
+	</script>
+</head>
+<body>
+	<header id="hdWrap">
+		<h1>LOGO</h1>
+		<nav class="navWrap1">
+			<ul>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">menu</a></li>
+			</ul>
+		</nav>
+		<nav class="navWrap2">
+			<ul>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">menu</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="visual">
+		<ul class="bxslider">
+			<li><img src="../images/pc01.jpg" alt=""></li>
+			<li><img src="../images/pc02.jpg" alt=""></li>
+			<li><img src="../images/pc03.jpg" alt=""></li>
+		</ul>
+	</div>
+	<style>
+		.box{
+			width: 100px;height: 100px;
+			border-style: solid;
+			border-width: 1px;
+			border-color: 1px;
+		}
+	</style>
+	<div class="box"></div>
+	
+</body>
+</html>

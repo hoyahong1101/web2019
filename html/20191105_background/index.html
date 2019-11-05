@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>background</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body{background-image: url(../images/pc01.jpg); background-repeat: no-repeat;  /*repeat-x | repeat-y*/  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;}
+		.logo{width: 120px;	height: 30px; background-image: url(../images/naver.png); background-repeat: no-repeat;}
+		.logo > h1{font-size: 1em; height: 30px; background-image: url(../images/naver.png); background-repeat: no-repeat;}
+		.logo > h1 > a {display: block; line-height: 30px; text-align: center; text-indent: -9999px;}
+		.button{width: 56px; height: 20px; background-image: url(../images/naver.png); background-position: -127px -4px; text-indent:-9999px;}
+		.button:hover{background-position: -127px -27px;}
+		.button1{width: 40px; height: 20px; background-image: url(../images/naver.png); background-position: -185px -4px; text-indent:-9999px;}
+		.button1:hover{ background-position: -185px  -50px;}
+		.bgtest{width: 200px; height: 200px; background: #ccc url(../images/apple.png) no-repeat center}
+		/*background-image: url(../images/apple.png); background-repeat: no-repeat; background-position: 50%; background-color: #ccc; background-size: cover;*/
+	</style>
+</head>
+<body>
+	<div class="logo">
+		<h1><a href="https://www.naver.com/">NAVER</a></h1>
+	</div>
+	<div class="button">
+		지식백과
+	</div>
+	<div class="button1">
+		지식iN
+	</div>
+	<div class="bgtest"></div>
+	<!-- 140px 50px -->
+
+	<style>
+		.menu>li:nth-child(odd){background-color: #ccc;}
+		.menu>li:nth-child(even){background-color: #a0a;}
+	</style>
+	<ul class="menu">
+		<li>menu</li>
+		<li>menu</li>
+		<li>menu</li>
+		<li>menu</li>
+		<li>menu</li>
+	</ul>
+
+</body>
+</html>

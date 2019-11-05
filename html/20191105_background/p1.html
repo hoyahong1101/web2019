@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../bxslider/css/jquery.bxslider.css">
+	<script src="../bxslider/js/jquery-3.1.1.min.js"></script>
+	<script src="../bxslider/js/jquery.bxslider.js"></script>
+	<style>
+		*{text-transform: uppercase;}
+		header#hdWrap{width: 1200px; height: 50px; background-color: gold; margin: 0 auto}
+		header#hdWrap:after{content: ""; display: block; clear: both;}
+		header#hdWrap>h1{float: left; width: 100px; text-align: center;}
+		header#hdWrap>nav.navWrap{float: right; width: 800px;}
+		header#hdWrap>nav.navWrap>ul:after{content: ""; display: block; clear: both;}
+		header#hdWrap>nav.navWrap>ul>li{float: left; width: 160px; line-height: 50px; border-left: 1px solid black; box-sizing: border-box;}
+		header#hdWrap>nav.navWrap>ul>li:last-child{border-right: 1px solid black;}
+		header#hdWrap>nav.navWrap>ul>li>a{display: block; text-align: center;}
+		header#hdWrap>nav.navWrap>ul>li>a:hover{color: white; background-color: orangered; font-family: fantasy; font-size: 25px; font-weight: bold;}
+		img{width: 100%;}
+
+		.bx-wrapper {
+	    -moz-box-shadow: none;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    border: none;
+	    background: #fff;
+	    margin-bottom: 0;
+		}
+		.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	    position: absolute;
+	    bottom: 30px;
+	    width: 100%;
+		}
+
+	</style>
+	<script>
+			$(document).ready(function(){$(".bxslider").bxSlider({auto:true});});
+	</script>
+</head>
+<body>
+	<header id="hdWrap">
+		<h1>logo</h1>
+	<nav class="navWrap">
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+		</ul>
+	</nav>
+	</header>
+	<div class="visual">
+		<ul class="bxslider">
+			<li><img src="../images/pc01.jpg" alt=""></li>
+			<li><img src="../images/pc02.jpg" alt=""></li>
+			<li><img src="../images/pc03.jpg" alt=""></li>
+		</ul>
+	</div>
+	
+</body>
+</html>

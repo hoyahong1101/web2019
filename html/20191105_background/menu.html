@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>menuimage</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		header#hdWrap{width: 1200px; /*height: 50px;*/  background-color: skyblue; margin: 0 auto;}
+		header#hdWrap:after{content: ""; display: block; clear: both;}
+		header#hdWrap>h1{float: left;}
+		header#hdWrap>nav.navWrap{width: 980px; float: right;}
+		header#hdWrap>nav.navWrap>ul:after{content: ""; display: block; clear: both;}
+		header#hdWrap>nav.navWrap>ul>li{float: left; width: 140px;  background-image: url(../images/sprites.png); transition: 0.5s;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(1){background-position: 0px 0;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(1):hover{background-position: 0px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(2){background-position: -140px 0;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(2):hover{background-position: -140px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(3){background-position: -280px 0;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(3):hover{background-position: -280px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(4){background-position: -420px 0;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(4):hover{background-position: -420px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(5){background-position: -560px 0;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(5):hover{background-position: -560px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(6){background-position: -700px 0;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(6):hover{background-position: -700px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(7){background-position: -840px 0;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(7):hover{background-position: -840px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(1).active{background-position: 0px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(2).active{background-position: -140px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(3).active{background-position: -280px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(4).active{background-position: -420px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(5).active{background-position: -560px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(6).active{background-position: -700px -50px;}
+		header#hdWrap>nav.navWrap>ul>li:nth-child(7).active{background-position: -840px -50px;}
+		header#hdWrap>nav.navWrap>ul>li>a{display: block; height: 50px; text-indent: -9999em;}
+
+		.nav ul:after{content: ""; display: block; clear: both;}
+		.nav ul li{float: left; width: 140px; height: 50px; background-image: url(../images/sprites.png);}
+	</style>
+</head>
+<body>
+	<header id="hdWrap">
+		<h1>logo</h1>
+	<nav class="navWrap">
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+			<li class="active"><a href="#">menu6</a></li>
+			<li><a href="#">menu7</a></li>
+		</ul>
+	</nav>
+	</header>
+	
+</body>
+</html>
