@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>html</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../bxslider/css/jquery.bxslider.css">
+	<script src="../bxslider/js/jquery-3.1.1.min.js"></script>
+	<script src="../bxslider/js/jquery.bxslider.js"></script>
+	<style>
+		*{text-transform: uppercase;}
+		header#hd{
+			width: 1000px; height: 100px; background-color: gold; margin: 0 auto;
+			position: relative;
+			border-radius: 50px;
+			overflow: hidden;
+		}
+		header#hd>h1{width: 150px; line-height: 100px; text-align: center; background-color: yellow;}
+		header#hd>nav.navWrap1{width: 400px; position: absolute; top: 0; right: 0; background-color: pink;}
+		header#hd>nav.navWrap1>ul:after{content: ""; clear: both; display: block;}
+		header#hd>nav.navWrap1>ul>li{float: left; width: 100px; }
+		header#hd>nav.navWrap1>ul>li{border-right: 1px solid black; box-sizing: border-box;}
+		header#hd>nav.navWrap1>ul>li:last-child{border-right: none;}
+		header#hd>nav.navWrap1>ul>li>a{display: block; line-height: 20px; text-align: center;}
+		header#hd>nav.navWrap1>ul>li>a:hover{background-color: gray; color: white;}
+		
+	
+		header#hd>nav.navWrap2{width: 800px; position: absolute; bottom: 0; right: 0; background-color: skyblue;}
+		header#hd>nav.navWrap2>ul:after{content: ""; clear: both; display: block;}
+		header#hd>nav.navWrap2>ul>li{float: left; width: 160px; }
+		header#hd>nav.navWrap2>ul>li{border-right: 1px solid black; box-sizing: border-box;}
+		header#hd>nav.navWrap2>ul>li:last-child{border-right: none;}
+		header#hd>nav.navWrap2>ul>li>a{display: block; line-height: 80px; text-align: center;}
+		header#hd>nav.navWrap2>ul>li>a:hover{background-color: gray; color: white;}
+
+		img{width: 100%;}
+
+		.bx-wrapper {
+		    -moz-box-shadow: none;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		    border: none;
+		    background: #fff;
+		}
+		.circle{background-color: yellow; width: 100px; height: 100px; border-radius: 33px;}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){$('.bxslider').bxSlider({auto:true});});
+
+	</script>
+
+</head>
+<body>
+	<header id="hd">
+		<h1>logo</h1>
+		<nav class="navWrap1">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+			</ul>
+		</nav>
+		<nav class="navWrap2">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="visual">
+		<div class="bxslider">
+			<img src="../images/pc01.jpg" alt="">
+			<img src="../images/pc02.jpg" alt="">
+			<img src="../images/pc03.jpg" alt="">
+		</div>
+	</div>
+	
+
+
+	<div class="circle"></div>
+
+</body>
+</html>

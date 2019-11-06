@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Hi media</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="bxslider/css/jquery.bxslider.css">
+	<script src="bxslider/js/jquery-3.1.1.min.js"></script>
+	<script src="bxslider/js/jquery.bxslider.js"></script>
+	<style>
+
+
+		header#hd>div#nav1{width: 1200px;  margin: 0 auto;}
+		header#hd>div#nav2{background-color: skyblue;}
+		header#hd>div#nav1>nav.tnb{float: right; width: 280px;}
+		header#hd>div#nav1>nav.tnb>ul:after{display: block; clear: both; content: "";}
+		header#hd>div#nav1>nav.tnb>ul>li{float: left;     margin-left: 20px; line-height: 30px;}
+		header#hd>div#nav1>nav.tnb>ul>li>a{display: block; text-align: center;}
+		hr{clear: both; display: block; content: ""}
+		header#hd>h1{text-align: center; margin: 50px;}
+		header#hd>div#nav2>nav.gnb{ width: 1200px; margin: 0 auto;}
+		header#hd>div#nav2>nav.gnb>ul>li:first-child{border-left: 1px solid white;}
+		header#hd>div#nav2>nav.gnb>ul:after{display: block; clear: both; content: "";}
+		header#hd>div#nav2>nav.gnb>ul>li{float: left; width: 200px; border-right: 1px solid white;}
+
+		header#hd>div#nav2>nav.gnb>ul>li>a{display: block; text-align: center; line-height: 50px;}
+		.bx-wrapper
+		{
+		    -moz-box-shadow: none;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		    border: none;
+		    background: #fff;
+		}
+
+
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){$('.bxslider').bxSlider({auto:true, pager:false});});
+
+	</script>
+
+</head>
+<body>
+	<div id="header">
+		<header id="hd">
+			<div id="nav1">
+				<nav class="tnb">
+					<ul>
+						<li><a href="#">login</a></li>
+						<li><a href="#">Join</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">Enlgish</a></li>
+					</ul>
+				</nav>
+			</div>
+			<hr>
+			<h1>하이미디어</h1>
+			<div id="nav2">
+				<nav class="gnb">
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">제품소개</a></li>
+						<li><a href="#">사업영역</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">사회공헌</a></li>
+						<li><a href="#">인재채용</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	</div>
+	<div class="visual">
+		<div class="bxslider">
+			<img src="images/visual_bg.jpg" alt="">
+	
+		</div>
+	</div>
+
+	<style>
+		div#wrap{background-color: gray;}
+		div#wrap>div#content{width: 1200px; margin: 0 auto;}
+		div#wrap>div#content>ul:after{display: block; clear: both; content: "";}
+		div#wrap>div#content>ul>li{float: left;}
+		div#wrap>div#content>ul>li>img{width: 240px;}
+		div#wrap>div#content>ul>li:nth-child(1){background-color: #88AAFF;}
+		div#wrap>div#content>ul>li:nth-child(2){background-color: #1100BB;}
+		div#wrap>div#content>ul>li:nth-child(3){background-color: #2277AA;}
+		div#wrap>div#content>ul>li:nth-child(4){background-color: #4422EE;}
+		div#wrap>div#content>ul>li:nth-child(5){background-color: #7788EE;}
+	</style>
+	<div id="wrap">
+		<div id="content">
+			<ul>
+				<li><img src="images/icon01.png" alt=""><div class="title">사회공헌</div><div class="writing">소외된이웃과함께합니다.</div></li>
+				<li><img src="images/icon02.png" alt=""><div class="title">사회공헌</div><div class="writing">소외된이웃과함께합니다.</div></li>
+				<li><img src="images/icon03.png" alt=""><div class="title">사회공헌</div><div class="writing">소외된이웃과함께합니다.</div></li>
+				<li><img src="images/icon04.png" alt=""><div class="title">사회공헌</div><div class="writing">소외된이웃과함께합니다.</div></li>
+				<li><img src="images/icon05.png" alt=""><div class="title">사회공헌</div><div class="writing">소외된이웃과함께합니다.</div></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
