@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>oveflow</title>
+	<style>
+		.box1{
+			width: 200px; height: 300px;
+			background-color: #ff0;
+			overflow: hidden; /* visible hidden scroll auto initial inherit */
+		}
+		.box2{
+			width: 500px; height: 500px;
+			background-color: #00f;
+			position: relative;
+	 		overflow: hidden; 
+		}
+			.box3{
+			width: 300px; height: 300px;
+			position: absolute;
+			right: -50px;
+		}
+		.box2:hover .box3{/*right: 30px; top: 30px;*/ display: none;}
+	
+		p{margin: 0;}
+	</style>
+</head>
+<body>
+	<div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus natus facere recusandae, laudantium totam officiis cum, possimus sint vero blanditiis labore odit doloribus eligendi in tempora magni eaque. Asperiores soluta quia excepturi deserunt odit saepe repellat, ab unde recusandae. Eligendi mollitia dolorum ipsum modi in accusamus quod necessitatibus animi maiores culpa iusto optio, minus a facilis libero laboriosam, fuga dicta quas. Et, dolores? Quas minus nemo inventore ab eaque eligendi fugit culpa illo sunt consectetur. Error consequatur, odit, praesentium quibusdam adipisci tenetur vel, doloribus nam rem, modi possimus distinctio aliquam mollitia commodi dolores unde sapiente dolore voluptatem architecto eius veniam?</div>
+	
+
+
+	<div class="box2">
+		<div class="box3"><img src="../images/testimg.jpg" alt=""></div>
+	</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eius voluptas fugit eligendi, possimus in eos aliquid, ullam, harum, ex adipisci voluptates doloremque dolorem impedit! Veritatis inventore cupiditate dolorum nihil harum quaerat nulla dolorem ducimus explicabo alias quam, soluta voluptas accusantium facere asperiores, dolore omnis ut praesentium. Animi dolorum cum quos culpa voluptas est molestias eum obcaecati natus voluptatem! In voluptas, omnis deserunt voluptatibus explicabo fugiat necessitatibus minus laudantium, odit, assumenda quasi veniam labore nihil nostrum corporis optio maxime itaque alias adipisci ipsum facilis. Quis.</p>
+</body>
+</html>
