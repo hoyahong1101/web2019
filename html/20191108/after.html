@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body{
+		padding-top: 10px;
+		}
+		div{width: 1200px; margin: 0 auto; 
+			background-color: pink;}
+		ul:after{
+			content: "";
+			display: block;
+			clear: both;
+
+		}
+		li{
+			float: left; width: 200px; text-align: center;
+			position: relative;
+		/*	border-right: 1px solid black;
+			box-sizing: border-box;	*/
+
+		}
+	/*	li:last-child{
+			border: none;
+		}*/
+	li:after{
+			content: "홍성민";
+			display: block;
+			position: absolute;
+			width: 1px;
+			height: 10px;
+			top: 3px;
+			background-color: gold;
+
+			
+		}
+	</style>
+</head>
+<body>
+<div>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+	</ul>
+</div>
+	
+</body>
+</html>

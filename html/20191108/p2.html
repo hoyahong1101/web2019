@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>pratice</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body{
+			margin: 10px;
+		}
+		.header{
+			margin: 0 auto;
+			background-color: red;
+			width: 100%;;
+			height: 150px;
+			margin-bottom: 10px;
+		}
+		.container{
+			margin: 0 auto;
+			background-color: blue;
+			width: 100%;
+			height: 700px;
+			margin-bottom: 10px;
+			/*1float: left;*/
+			/*2position: relative;*/
+		}
+		.container .sidemenu{
+			background-color: green;
+			width: 200px;
+			height: 200px;
+			margin: 10px;
+			/*1float: left;*/
+			/*2position: absolute;*/
+		}
+		.container .content{
+			/*1float: right;*/
+			margin: 10px;
+			background-color: purple;
+			width: 800px;
+			height: 400px;
+			position: relative;
+			left: 200px;
+		}
+		.footer{
+			margin: 0 auto;
+			background-color: yellow;
+			height: 150px;
+			/*1clear: both;		*/
+		}
+	</style>
+</head>
+<body>
+	<header class="header"></header>
+	<div class="container">
+		<div class="sidemenu"></div>
+		<div class="content"></div>
+	</div>
+	<footer class="footer"></footer>
+</body>
+</html>
