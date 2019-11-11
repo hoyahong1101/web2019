@@ -1,0 +1,43 @@
+@charset "utf-8";
+/*header*/
+header#main_header{}
+#main_header div.util_menu{background-color: #0044af;}
+#main_header div.util_menu div.util_wrap{width: 1200px; margin: 0 auto;}
+
+#main_header div.util_menu div.util_wrap ul#tnb1 {width: 300px; float: left;}
+#main_header div.util_menu div.util_wrap ul#tnb1 li{
+	float: left;
+	width: 100px;
+
+	border-right: 1px solid #0044af;
+
+}
+#main_header div.util_menu div.util_wrap ul#tnb1 li:last-child{
+	border: none;
+}
+#main_header div.util_menu div.util_wrap ul#tnb1 li a{
+	display: block;
+	line-height: 35px;
+	color: white;
+	text-align: center;
+	background-color: #00163b;
+}
+#main_header div.util_menu div.util_wrap ul#tnb1 li a.active{
+		background-color: white;
+		color: #0044af;
+}
+
+#main_header div.util_menu div.util_wrap ul#tnb2{ _width: 400px; float: right;}
+#main_header div.util_menu div.util_wrap ul#tnb2 li{
+	float: left;
+	color: white;
+	text-align: center;
+}
+#main_header div.util_menu div.util_wrap ul#tnb2 li:first-child{width:150px;line-height:35px;}
+#main_header div.util_menu div.util_wrap ul#tnb2 li a{display: block;line-height:35px;padding:0 15px;}
+#main_header div.util_menu div.util_wrap ul#tnb2 li div.fontsize{position: relative;}
+#main_header div.util_menu div.util_wrap ul#tnb2 li div.fontsize div.font_size{position: relative;}
+#main_header div.util_menu div.util_wrap ul#tnb2 li div.box1,
+#main_header div.util_menu div.util_wrap ul#tnb2 li div.box2{width: 16px; height: 16px; background-color: white; color:#aaa; position: absolute;top:10px;line-height:16px;font-size:10px;cursor:pointer}
+#main_header div.util_menu div.util_wrap ul#tnb2 li div.box1{right:18px;}
+#main_header div.util_menu div.util_wrap ul#tnb2 li div.box2{right:0;}

@@ -1,0 +1,181 @@
+@charset "utf-8";
+header#main_header{}
+
+header#main_header>div.main_util{
+	border-bottom: 1px solid #dddd;
+
+}
+
+header#main_header>div.main_util>div.util_menu{
+	width: 980px; margin: 0 auto;
+}
+
+header#main_header>div.main_util>div.util_menu>ul.util_wrap{
+	float: right;
+}
+header#main_header>div.main_util>div.util_menu>ul.util_wrap>li{
+	float: left; 
+	position: relative;
+	text-align: center;
+
+}
+header#main_header>div.main_util>div.util_menu>ul.util_wrap>li:first-child:after{
+	content: none;
+	display: none;
+}
+header#main_header>div.main_util>div.util_menu>ul.util_wrap>li:after{
+	position: absolute;
+	content: "";
+	display: block;
+	width: 1px;
+	height: 15px;
+	background-color: #ddd;
+	top: 10px;
+
+}
+header#main_header>div.main_util>div.util_menu>ul.util_wrap>li>a{
+	display: block;
+	padding: 0 15px;
+	line-height: 35px;
+
+}
+
+
+header#main_header>h1{ width: 200px; margin: 15px auto;
+	text-align: center; }
+
+header#main_header>nav.main_menu{ background-color: #1d5da4; }
+header#main_header>nav.main_menu>ul.main_wrap{
+	width: 980px;
+	margin: 0 auto;
+}
+header#main_header>nav.main_menu>ul.main_wrap>li{
+	float: left;
+	width: 163.3333px;
+	border-left: 1px solid #ccc;
+	
+}
+header#main_header>nav.main_menu>ul.main_wrap>li:last-child{
+	border-right: 1px solid #ccc;
+}
+
+header#main_header>nav.main_menu>ul.main_wrap>li>a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+}
+header#main_header>nav.main_menu>ul.main_wrap>li>a:hover{
+	background-color: skyblue;
+	padding: 15px 0;
+}
+
+
+/*visual Wrap*/
+div.visual_wrap{
+	background: #203969 url("../images/visual_bg.jpg") no-repeat center;
+
+}
+
+div.visual_wrap .visual{
+	width: 980px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+}
+div.visual_wrap .visual img{
+	position: absolute;
+	display: block;
+}
+div.visual_wrap .visual img.img01{right: 0; bottom: 10px;}
+div.visual_wrap .visual img.img02{left: 0; top: 120px;}
+
+/*icon*/
+div.icon_wrap{background-color: #ddd; margin-bottom: 20px;}
+.icon_wrap ul{width: 980px; margin: 0 auto;}
+.icon_wrap ul li{float: left; width: 196px;}
+.icon_wrap ul li:nth-child(1){background-color: #7c99b9;}
+.icon_wrap ul li:nth-child(2){background-color: #4f74a1;}
+.icon_wrap ul li:nth-child(3){background-color: #4b8ce0;}
+.icon_wrap ul li:nth-child(4){background-color: #3db5f2;}
+.icon_wrap ul li:nth-child(5){background-color: #95c8ff;}
+
+.icon_wrap ul li img{
+	margin: 20px auto;
+	display: block;
+}
+.icon_wrap ul li div.icon_body{text-align: center; padding-bottom: 20px; color: white;}
+
+/*section*/
+section.section_wrap{
+	width: 980px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.section_wrap ul li{
+	float: left;
+	width: 310px;
+	margin-right: 25px;
+}
+.section_wrap ul li:last-child{
+	margin-right: 0px;
+}
+.section_wrap ul li img{
+	display: block;
+}
+
+.section_wrap ul li div.card div.card_body{
+	border: 1px solid #ddd;
+	border-top: none;
+	padding: 15px;
+
+}
+
+/*section1*/
+section.section_wrap1{
+	width: 980px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.section_wrap1 ul li{
+	float: left;
+	width: 310px;
+	margin-right: 25px;
+	
+}
+.section_wrap1 ul li:last-child{
+	margin-right: 0px;
+}
+.section_wrap1 ul li div.imgbg{position: relative; border: 1px solid #ddd;
+	overflow: hidden;}
+.section_wrap1 ul li div.imgbg img{position: absolute; right: -25px;
+    top: 20px; display: block;}
+
+.section_wrap1 ul li div.imgbg div.imgbg_body{
+
+	position: relative;
+	width: 200px;
+	padding: 15px;
+	z-index: 1;
+
+}
+footer #main_footer{}
+#main_footer div.tf{
+	background-color: #4d4d4d;
+}
+#main_footer div.tf ul{width: 980px; margin: 0 auto;}
+#main_footer div.tf ul li {float: left; position: relative;}
+#main_footer div.tf ul li:after{position: absolute; content: ""; display: block; width: 1px; height: 15px; background-color: #ddd; top: 10px;}
+#main_footer div.tf ul li:first-child:after{display: none; content: none;}
+#main_footer div.tf ul li a {display: block; padding: 0 15px; line-height: 35px; color: white;}
+#main_footer div.tf ul li:first-child a{padding-left: 0;}
+
+#main_footer div.bf{
+	background-color: #5e5e5e;
+}
+
+#main_footer div.bf div.footer_wrap{width: 980px; margin:0 auto; color: white;}
+#main_footer div.bf div.footer_wrap h3,#main_footer div.bf div.footer_wrap div{float: left;}
+#main_footer div.bf div.footer_wrap h3{line-height: 100px; margin-right: 50px;}
+
+
