@@ -9,11 +9,10 @@
 	<?
 	$name = $_GET["myname"];
 	$email = $_GET["email"];
-	
 	?>	
 
-	이름 : <?echo $name?>
-	email : <?echo $email?>
+	이름 : <?echo $name;?>
+	email : <?echo $email;?>
 	
 </body>
 </html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>bxslider</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+
+	<script type="text/javascript">
+		 $(document).ready(function(){
+			var myslider = $(".slider").bxSlider(
+				{	
+					auto:true,
+					pagerCustom:".bx_pager"
+				});
+
+		});
+
+
+		
+	</script>
+	<style>
+		.wrapper{
+			width: 1260px; margin: 0 auto;
+			position: relative;
+		}
+		.bx-wrapper {
+			    -moz-box-shadow: none;
+			    -webkit-box-shadow: none;
+			    box-shadow: none;
+			    border: none;
+			    background: none;
+			    margin-bottom: 0px;
+			}
+		.slider_pager{
+			width: 100%;
+			margin: 0 auto;
+			position: absolute;
+		
+			bottom: 20px;
+		}
+		.bx_pager{
+
+
+		}
+		.bx_pager:after{
+			clear: both;
+			display: block;
+			content: "";
+		}
+		.bx_pager a{
+			display: block;
+			float: left;
+			width: 25%;
+			line-height: 40px;
+			text-align: center;
+			background: skyblue;
+			color: white;
+			font-size: 2em;
+			font-family: fantasy;
+			transition: 0.8s;
+		}
+		.bx_pager a:hover{
+			background-color: pink;
+			font-weight: bold;
+			
+
+		}
+		.bx_pager a:focus{
+			background-color: pink;
+			font-weight: bold;
+			
+
+		}
+		.bx_pager a.active{
+			background-color: pink;
+		}
+
+
+		.sliderWrap li .txt_wrap{
+			position: absolute;
+			top: 100px;
+			right: 80px;
+			color: white;
+		}
+		.bx-wrapper .bx-prev {
+		    left: 10px;
+		    background: url(images/btn_pre.png) no-repeat 0 -32px;
+		}
+		.sliderWrap li .txt_wrap h2{font-size:2.3em; margin-bottom: 15px; text-align: center;}
+		.sliderWrap li .txt_wrap h2:after{width: 400px; height: 2px; background-color: #ddd; content: "";  display: block; margin: 15px auto 0 auto;}
+		.sliderWrap li .txt_wrap p {margin-bottom: 15px;}
+		.sliderWrap li .txt_wrap .btn{ width: 200px; border: 1px solid #fff; border-radius: 20px; line-height: 40px; text-align: center; transition: 1s; background-color: rgba(255,255,255,0.3); font-weight: bold;}
+		.sliderWrap li .txt_wrap .btn:hover{background-color:rgba(255,255,255,1); color: gold; cursor: pointer;  font-size: 2em; transform:rotate(360deg);}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="sliderWrap">
+			<ul class="slider">
+				<li class="slider_view1">
+					<img src="images/main_slider01.jpg" alt="slider1">
+					<div class="txt_wrap">
+						<h2>사랑과 행복을 나누는 마음1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eum.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+				<li class="slider_view2">
+					<img src="images/main_slider01.jpg" alt="slider2">
+				
+					<div class="txt_wrap">
+						<h2>사랑과 행복을 나누는 마음2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eum.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+				<li class="slider_view3">
+					<img src="images/main_slider01.jpg" alt="slider3">
+				
+					<div class="txt_wrap">
+						<h2>사랑과 행복을 나누는 마음3</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eum.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+				<li class="slider_view4">
+					<img src="images/main_slider01.jpg" alt="slider4">
+
+					<div class="txt_wrap">
+						<h2>사랑과 행복을 나누는 마음4</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eum.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="slider_pager">
+			<div class="bx_pager">
+				<a href="#" data-slide-index="0">1</a>
+				<a href="#" data-slide-index="1">2</a>
+				<a href="#" data-slide-index="2">3</a>
+				<a href="#" data-slide-index="3">4</a>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
