@@ -12,8 +12,17 @@
 	<script>
 		$(document).ready(
 			function(){
-				$('.slider01').bxSlider({pager:false, auto:true});
-				$('.slider02').bxSlider({pager:false, auto:true});
+				var mySlider = $('.slider01').bxSlider({auto:true, controls:false});
+				$(".pre_btn").click(function(){
+				mySlider.goToPrevSlide(); 
+			} 
+				);
+			$(".next_btn").click(function(){
+				
+				mySlider.goToNextSlide();
+			});
+
+				$('.slider02').bxSlider({ /*auto:true*/ controls:false});
 			}
 			);
 	</script>
@@ -65,7 +74,7 @@
 		</div>
 	</header>
 	<section id="section">
-		<div class="body_wrap1 clearfix">
+		<div class="body_wrap1 clearfix mb40">
 			<div class="heading">
 				<p id="p1">함께 나누며 세상을 이끌어</p>
 				<p id="p2">세계로향하는 한국대학교</p>
@@ -97,25 +106,33 @@
 				</li>
 			</ul>
 		</div>
-		<div class="container_wrap">
+		<div class="container_wrap mb40">
 			<ul class="clearfix">
-				<li>
+				<li class="info_wrap">
 					<div class="slider01">
 						<div class="slide1">
 							<img src="images/main_slide_01.jpg" alt="">
 							<div class="card_body">	
-								<b>한국</b>에서<br>
-								<b>시작</b>하는<br>
-								새로운 <b>꿈</b>
+								<p>
+									<b>한국</b>에서<br>
+									<b>시작</b>하는<br>
+									새로운 <b>꿈</b>
+								</p>
 								<a href="#" class="btn">자세히보기 ▶</a>
 							</div>	
 						</div>
 						<div  class="slide2"><img src="images/main_slide_02.jpg" alt=""></div>
 						<div class="slide3"><img src="images/main_slide_03.jpg" alt=""></div>	
 					</div>
-					
+					<div class="pre_btn">
+
+						<span>PRE</span>
+					</div>
+					<div class="next_btn">
+						<span>NEXT</span>
+					</div>	
 				</li>
-				<li>
+				<li class="info_wrap">
 					<div class="banner01">
 						<p class="banner_txt">
 							<b>APP</b>으로<br>
@@ -130,21 +147,90 @@
 						<a href="#" class="btn">자세히보기 ▶</a>
 					</div>
 				</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li>
+				<li class="info_wrap">
+					<h3 class="p2515 fontW">HOT LINK</h3>
+					<ul class="clearfix">
+						<li>
+							<a href="#">
+								<img src="images/icon_01.png" alt="">
+								<p class="fontW">국제교류<br>센터</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icon_02.png" alt="">
+								<p class="fontW">원격지원<br>시스템</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icon_03.png" alt="">
+								<p class="fontW">예산/결산<br>공고</p>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="info_wrap">
+					<h3 class="p2515 fontW">공지사항</h3>
+					
+				</li>
+				<li class="info_wrap">
+					<h3 class="p2515">SNS NEWS</h3>
+					<div class="writing clearfix">
+						<img src="images/학교01.jpg" alt="">
+						<p>한국 대학교는 2017년도 신입생 입학실을 3월2일(목) 본교 종합체육관...</p>
+					</div>
+					<div class="sns clearfix">
+						<img src="images/youtube.png" alt="">
+						<img src="images/instagram.png" alt="">
+						<img src="images/twitter.png" alt="">
+						<img src="images/facebook.png" alt="">
+
+					</div>
+				</li>
+				<li class="info_wrap">
+					<div>캠퍼스투어</div>
+				</li>
+				<li class="info_wrap"></li>
+				<li class="info_wrap">
 					<div class="slider02">
-						<div><img src="images/banner_slide01.jpg" alt=""></div>
+						<div>
+							<img src="images/banner_slide01.jpg" alt="">
+							<div class="card_body">	
+								<p>
+									2017년신편입생2차모집<br>
+									<b>2017.7.1~7.10</b><br>
+									
+								</p>
+								<a href="#" class="btn">입학사전예약 ▶</a>
+							</div>
+						</div>
 						<div><img src="images/banner_slide01.jpg" alt=""></div>
 						<div><img src="images/banner_slide01.jpg" alt=""></div>		
 					</div>
 				</li>
 			</ul>
 		</div>
+
+		<div class="noti">
+			<div class="plan">
+				<h4>학사일정</h4>
+			</div>
+			<div class="discuss"></div>
+		</div>
 	</section>
+	<footer id="footer">
+		<ul class="clearfix">
+			<li><span>회사소개</span></li>
+			<li><span>한국 대학교</span></li>
+			<li><span>개인정보취급방침</span></li>
+			<li><span>이용정책</span></li>
+			<li><span>입점/제휴문의 및 광고</span></li>
+			<li><span>이메일 무단수집거부</span></li>
+		</ul>
+		<p></p>
+		<p></p>
+	</footer>
 	
 </body>
 </html>
