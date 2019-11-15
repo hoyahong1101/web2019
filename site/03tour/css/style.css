@@ -1,0 +1,49 @@
+@charset "utf-8";
+	/*common*/
+	
+	/*header*/
+#mainHeader{
+
+}
+#mainHeader .mainSearch{
+	
+	background: url(../images/airplane.png);
+	padding-top: 18px;
+	height: 90px;
+
+}
+#mainHeader .mainSearch .t_wrap{
+	width: 1000px; 
+	margin: 0 auto;
+
+
+}
+
+#mainHeader .mainSearch .t_wrap h1, #mainHeader .mainSearch .t_wrap div.searchWrap{float: left;}
+
+#mainHeader .mainSearch .t_wrap h1{width: 150px; height: 50px;}
+#mainHeader .mainSearch .t_wrap h1 img{
+ width: 50px; height: 50px; display: block; float: left; margin-right: 5px;
+	}
+#mainHeader .mainSearch .t_wrap h1 div{
+		float: left; font-size: 18px; color: white; line-height: 25px;
+	}
+#mainHeader .mainSearch .t_wrap div.searchWrap{padding-top: 10px;}
+
+#mainHeader .mainSearch .t_wrap div.searchWrap label, #mainHeader .mainSearch .t_wrap div.searchWrap input{float: left; display: block; border: none; background-color: #FFF; height: 30px;}
+#mainHeader .mainSearch .t_wrap div.searchWrap label{line-height: 30px; border-bottom-left-radius: 15px; border-top-left-radius: 15px; width: 100px; text-align: right; padding-right: 15px; font-weight: bold;}
+#mainHeader .mainSearch .t_wrap div.searchWrap input#search{ width: 250px; }
+#mainHeader .mainSearch .t_wrap div.searchWrap div{ float: left; border-bottom-right-radius: 15px; border-top-right-radius: 15px; cursor: pointer; width: 50px; height: 30px; background: url(../images/search.png) no-repeat center; -webkit-background-size: 30px 30px; background-size: 30px 30px; background-color: #fff; background-position: 10px 2px; }
+
+#mainHeader .mainSearch .t_wrap .telSNS{float: right;}
+#mainHeader .mainSearch .t_wrap .telSNS div{float: left;}
+#mainHeader .mainSearch .t_wrap .telSNS div.telNumber{color: #fff; line-height: 50px; font-weight: bold; margin-right: 10px;}
+#mainHeader .mainSearch .t_wrap .telSNS div.snsIcon img{float: right; display: block; width: 50px; height: 50px; cursor: pointer;}
+
+
+/*main nav*/
+.mainNav{border-bottom: 5px solid #0e72a6; }
+.mainNav ul.navWrap{width: 1000px; margin: 0 auto;}
+.mainNav ul.navWrap li{width: 166.67px;  float: left; border-left: 1px solid #ddd;}
+.mainNav ul.navWrap li:last-child{border-right: 1px solid #ddd;}
+.mainNav ul.navWrap li a{display: block; line-height: 60px; text-align: center; font-weight: bold;}
