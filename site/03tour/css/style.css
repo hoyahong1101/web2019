@@ -46,4 +46,5 @@
 .mainNav ul.navWrap{width: 1000px; margin: 0 auto;}
 .mainNav ul.navWrap li{width: 166.67px;  float: left; border-left: 1px solid #ddd;}
 .mainNav ul.navWrap li:last-child{border-right: 1px solid #ddd;}
-.mainNav ul.navWrap li a{display: block; line-height: 60px; text-align: center; font-weight: bold;}
+.mainNav ul.navWrap li a{display: block; line-height: 60px; text-align: center; font-weight: bold; transition: 0.3s;}
+.mainNav ul.navWrap li a:hover{background-color: skyblue; color: white;}
