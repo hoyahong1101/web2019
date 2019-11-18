@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	
 	<meta charset="UTF-8">
 	<title>여행사</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/colorbox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="js/jquery.colorbox.js"></script>
   <script>
         function openMethod(evt, cityName) {
   // Declare all variables
@@ -27,6 +33,22 @@
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+$(document).ready(function(){
+      var mySlider = $(".bxslider").bxSlider({
+        auto:true,
+        pager:false
+      });
+      $(".pre_btn").click(function(){
+        mySlider.goToPrevSlide(); 
+      } 
+        );
+      $(".next_btn").click(function(){
+        
+        mySlider.goToNextSlide();
+      });
+
+
+    });
     </script>
 </head>
 <body>
@@ -80,33 +102,90 @@
 		</div>
 	</header>
 	<section id="section">
-        <div class="firstSection">
-            <ul class="formWrap clearfix">
-                <li>
+        <div class="firstSection clearfix">
+            <ul class="formWrap">
+                <li class="mb15">
                     <!-- Tab links -->
                     <div class="tab">
                       <button class="clearfix tablinks active" id="tabF" onclick="openMethod(event, 'airport')">
-                      <img src="images/airplaneIcon.png" alt="">
+                      <i class="fas fa-plane"></i>
                       <div class="text">공항예약</div>
                     </button>
                       <button class="clearfix tablinks" onclick="openMethod(event, 'hotel')">
-                      <img src="images/hotel.png" alt="">
+                      <i class="fas fa-hotel"></i>
                       <div class="text">호텔예약</div>
                     </button>
                       <button class="clearfix tablinks" onclick="openMethod(event, 'car')">
-                      <img src="images/car.png" alt="">
+                      <i class="fas fa-car"></i>
                       <div class="text">렌트카</div>
                     </button>
-                      <button class="clearfix tablinks" onclick="openMethod(event, 'place')">
-                      <img src="images/vacation.png" alt="">
+                      <button class="clearfix tablinks" onclick="openMethod(event, 'place')" >
+                      <i class="fas fa-map-marker"></i>
                       <div class="text">휴양지</div>
                     </button>
                     </div>
 
                     <!-- Tab content -->
                     <div id="airport" class="tabcontent">
-                      <h3>London</h3>
-                      <p>London is the capital city of England.</p>
+                      <div class="tabcontentWrap">
+                        <label for="country" class="mb10">
+                          <span>가고싶은 나라를 선택하세요.</span>
+                        <select name="airport" id="country">
+                          <option value="">한국</option>
+                          <option value="">일본</option>
+                          <option value="">중국</option>
+                          <option value="">대만</option>
+                          <option value="">홍콩</option>
+                        </select>
+                        </label>
+                    
+                        <div class="date clearfix mb10">
+                          <label for="depart">
+                            <span>출발일</span>
+                          <input type="date" id="depart"></label>
+                          <label for="return">
+                            <span>도착일</span>
+                      
+                          <input type="date" id="return"></label>
+                        </div>
+                        <div class="pplNum clearfix mb10">
+                          <label for="flightClass">
+                            <span>좌석등급</span>
+                        
+                            <select name="airport" id="flightClass">
+                              <option value="">일반</option>
+                              <option value="">비즈니스</option>
+                              <option value="">일등석</option> 
+                            </select>
+                          </label>
+                          <label for="adult">
+                            <span>성인</span>
+                       
+                            <select name="airport" id="adult">
+                              <option value="">1</option>
+                              <option value="">2</option>
+                              <option value="">3</option>
+                              <option value="">4</option>
+                              <option value="">5</option>
+                            </select>
+                          </label>
+                          <label for="kid">
+                            <span>아이</span>
+
+                            <select name="airport" id="kid">
+                              <option value="">1</option>
+                              <option value="">2</option>
+                              <option value="">3</option>
+                              <option value="">4</option>
+                              <option value="">5</option>
+                            </select>
+                          </label>
+                        </div>
+                        <button id="submit">
+                          <i class="fas fa-search"></i>검색하기 
+                        </button>
+                      </div>
+                
                     </div>
 
                     <div id="hotel" class="tabcontent">
@@ -124,10 +203,11 @@
                     </div>
                 </li>
                 <li class="sizePackage">
-                  <div>프랑스</div>
+                  <div>프랑스 <span>$1,900,000~</span><button>></button></div>
                 </li>
+
                 <li class="sizePackage">
-                  <div>일본</div>
+                  <div>일본 <span>$890,000~</span><button>></button></div>
                 </li>
             </ul>
 
@@ -144,16 +224,72 @@
                 <div class="ballon"></div>
             </div>
         </div>
+        <ul class="secondSection clearfix">
+            <li>
+              <div class="banner"><h3>HILLTON HOTEL(PARIS)</h3>
+                <i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </li>
+            <li>
+              <div class="banner"><h3>관광명소</h3>
+                <i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </li> 
+            <li>
+              <h3>TOKYO</h3>
+              <div class="banner">
+                <h3>20ºC구름조금</h3>
+                습도60%바람남남동 2m/s
+               </div>
+            </li> 
+            <li>
+              <p>"해외여행은 처음이었는데,<br> 하이미디어여행 덕분에 무사히<br> 다녀올 수 있었어요."</p>
+              <p>
+                프랑스 파리 자유여행<br>
+                 <i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i style="color: gray" class="fas fa-star"></i><i style="color: gray" class="fas fa-star"></i>
+              </p>
+              <div class="banner">
+                <h3>facebook여행후기</h3>
+                (임정희)
+               </div>
+            </li> 
+            <li>
+              
+            </li> 
+            <li>
+              
+            </li> 
+            <li>
+              
+            </li> 
+            <li>
+              
+            </li> 
+
+        </ul>
     </section>
+    <footer id="foot">
+      <ul class="clearfix">
+        <li>이용약관</li>
+        <li>개인정보취급방침</li>
+        <li>사이트맵</li>
+        <li>고객센터</li>
+        <li>광고 및 제휴문의</li>
+      </ul>
+      <p>123-456서울특별시구로구구로동(주)하이미디어 사업자등록번호: 123-45-678910 대표이사: 홍길동 대표번호: 02-1234-5678</p>
+      <p>COPYRIGHT2014 HIMEDIA TOUR. ALL RESERVED</p>
+    </footer>
+
+  <div class="visual">
+    <ul class="bxslider">
+      <li><img src="images/pc01.jpg" alt=""></li>
+      <li><img src="images/pc02.jpg" alt=""></li>
+      <li><img src="images/pc02.jpg" alt=""></li>
+    </ul>
+  </div>
 </body>
 
 </html>
 
 <style>
-  
-
-
-
 
 
 
