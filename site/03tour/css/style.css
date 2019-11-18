@@ -48,3 +48,108 @@
 .mainNav ul.navWrap li:last-child{border-right: 1px solid #ddd;}
 .mainNav ul.navWrap li a{display: block; line-height: 60px; text-align: center; font-weight: bold; transition: 0.3s;}
 .mainNav ul.navWrap li a:hover{background-color: skyblue; color: white;}
+/*section*/
+section#section{background: url(../images/bgimg.jpg) no-repeat center; height: 1000px; -webkit-background-size: 100%;
+    background-size: 100%; }
+
+/*section1*/
+section#section div.firstSection{
+    width: 1000px; margin: 0 auto; padding-top: 55px; 
+}
+section#section div.firstSection ul.formWrap{
+  width: 500px; float: left; position: relative; z-index: 1;
+}
+section#section div.firstSection ul li{ float: left; margin-right: 15px; border-bottom: 1px solid black;
+}
+
+section#section div.firstSection ul li .tab {
+overflow: hidden;
+background-color: #0099cb;
+float: left;
+}
+
+
+.tab button {
+  background-color: inherit;
+  display: block;
+  width: 135px; height: 75px;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab button img{
+	display: block;  width: 30px;  float: left; margin-right: 7px; transition: 0.3s;
+}
+.tab button div.text{
+	float: left; font-size: 15px; line-height: 30px; font-weight: bold;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #fff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #fff;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  float: left;
+  width: 350px; height: 300px;
+  background-color: #fff;
+
+}
+
+#airport{
+  display: block;
+
+}
+
+.sizePackage{
+  width: 235px; height: 240px; background-color: black; position: relative;
+}
+.sizePackage div{
+  background-color: #152630;
+  position: absolute;
+  width: 100%; line-height: 50px;
+  bottom: 0;
+}
+/*first section package*/
+section#section div.firstSection ul li:nth-child(2){background: url(../images/03여행01.jpg) no-repeat center;}
+section#section div.firstSection ul li:nth-child(3){background: url(../images/03여행02.jpg) no-repeat center;}
+/*txt*/
+
+section#section div.txtWrap{
+  width: 500px;
+  height: 500px;
+  float: left;
+  position:relative; 
+
+
+}
+section#section div.txtWrap div.txt{
+    position:relative; 
+    z-index: 1;
+
+}
+section#section div.txtWrap div.txt h3{
+ font-size: 3em;
+}
+section#section div.txtWrap div.txt h3 span{
+  text-decoration: underline;
+}
+section#section div.txtWrap div.txt p{
+  font-size: 2em;
+}
+section#section div.ballon{
+    background: url(../images/02풍선.png) no-repeat;
+    position:absolute; top:0px; left:-20px;
+    width:750px; height:533px;
+   
+}

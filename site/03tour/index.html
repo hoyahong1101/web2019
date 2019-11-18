@@ -6,6 +6,28 @@
 	<title>여행사</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+  <script>
+        function openMethod(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
 </head>
 <body>
 	<header id="mainHeader">
@@ -58,15 +80,82 @@
 		</div>
 	</header>
 	<section id="section">
-        <ul>
-            <li></li>
-        </ul>
-        <div></div>
+        <div class="firstSection">
+            <ul class="formWrap clearfix">
+                <li>
+                    <!-- Tab links -->
+                    <div class="tab">
+                      <button class="clearfix tablinks active" id="tabF" onclick="openMethod(event, 'airport')">
+                      <img src="images/airplaneIcon.png" alt="">
+                      <div class="text">공항예약</div>
+                    </button>
+                      <button class="clearfix tablinks" onclick="openMethod(event, 'hotel')">
+                      <img src="images/hotel.png" alt="">
+                      <div class="text">호텔예약</div>
+                    </button>
+                      <button class="clearfix tablinks" onclick="openMethod(event, 'car')">
+                      <img src="images/car.png" alt="">
+                      <div class="text">렌트카</div>
+                    </button>
+                      <button class="clearfix tablinks" onclick="openMethod(event, 'place')">
+                      <img src="images/vacation.png" alt="">
+                      <div class="text">휴양지</div>
+                    </button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="airport" class="tabcontent">
+                      <h3>London</h3>
+                      <p>London is the capital city of England.</p>
+                    </div>
+
+                    <div id="hotel" class="tabcontent">
+                      <h3>Paris</h3>
+                      <p>Paris is the capital of France.</p>
+                    </div>
+
+                    <div id="car" class="tabcontent">
+                      <h3>Tokyo</h3>
+                      <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                    <div id="place" class="tabcontent">
+                      <h3>Tokyo</h3>
+                      <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                </li>
+                <li class="sizePackage">
+                  <div>프랑스</div>
+                </li>
+                <li class="sizePackage">
+                  <div>일본</div>
+                </li>
+            </ul>
+
+            <div class="txtWrap">
+                <div class="txt">
+                  <h3>
+                    TRAVEL <span>GO</span>
+                  </h3>
+                  <p>
+                    지금 여행을 떠나고 싶다면?<br>
+                    하이미디어와 여행을 떠나자!
+                  </p>
+                </div>
+                <div class="ballon"></div>
+            </div>
+        </div>
     </section>
 </body>
+
 </html>
 
 <style>
-    section#section{background: url(images/bgimg.jpg) no-repeat center; height: 1000px; -webkit-background-size: 100%;
-    background-size: 100%; }
+  
+
+
+
+
+
+
+
 </style>
