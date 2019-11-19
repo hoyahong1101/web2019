@@ -13,7 +13,7 @@
   <script src="js/jquery.bxslider.js"></script>
   <script src="js/jquery.colorbox.js"></script>
   <script>
-        function openMethod(evt, cityName) {
+      function openMethod(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -32,23 +32,26 @@
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
-}
+  };
+    function showTxt(x, number){
+      document.getElementById(number).style.display = "block"; 
+      x.style.display = "none";
+    };
+    function hideTxt(x, number){
+      document.getElementById(number).style.display = "none"; 
+      document.getElementById('plus').style.display = "block";
+    };
 $(document).ready(function(){
       var mySlider = $(".bxslider").bxSlider({
-        auto:true,
-        pager:false
+        auto:false,
+        pager:false, controls:true  
       });
-      $(".pre_btn").click(function(){
-        mySlider.goToPrevSlide(); 
-      } 
-        );
-      $(".next_btn").click(function(){
-        
-        mySlider.goToNextSlide();
-      });
+      
 
 
     });
+
+  
     </script>
 </head>
 <body>
@@ -81,7 +84,7 @@ $(document).ready(function(){
 		<div class="mainNav">
 			<ul class="navWrap clearfix">
 				<li>
-					<a href="#">여행도시</a>
+					<a href="#" >여행도시</a>
 				</li>
 				<li>
 					<a href="#">호텔예약</a>
@@ -98,7 +101,7 @@ $(document).ready(function(){
 				<li>
 					<a href="#">커뮤니티</a>
 				</li>
-			</ul>
+			</ul> 
 		</div>
 	</header>
 	<section id="section">
@@ -226,12 +229,28 @@ $(document).ready(function(){
         </div>
         <ul class="secondSection clearfix">
             <li>
-              <div class="banner"><h3>HILLTON HOTEL(PARIS)</h3>
-                <i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <ul class="bxslider">
+                <li><img src="images/03여행03.jpg" alt="">
+                <div class="banner"><h3>HILLTON HOTEL(PARIS)</h3>
+                <i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></li>
+                <li>
+                  <img src="images/03여행04.jpg" alt="">
+                  <div class="banner"><h3>관광명소</h3>
+                    <i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                </li>
+              </ul>
+              
             </li>
             <li>
-              <div class="banner"><h3>관광명소</h3>
-                <i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <ul class="bxslider">
+                <li><img src="images/03여행04.jpg" alt="">
+                <div class="banner"><h3>관광명소</h3>
+                <i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></li>
+                <li><img src="images/03여행03.jpg" alt=""><div class="banner"><h3>HILLTON HOTEL(PARIS)</h3>
+                <i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i style="color: gold" class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></li>
+              </ul>
+              
             </li> 
             <li>
               <h3>TOKYO</h3>
@@ -252,16 +271,57 @@ $(document).ready(function(){
                </div>
             </li> 
             <li>
-              
+              <div class="clicktxt">
+                <h3>
+                  <i class="fab fa-tripadvisor"></i> 여행정보
+                </h3>
+                <p>
+                  다양한 나라의 명소와 맛집 등 상세한 정보를 볼수 있습니다.
+                </p>
+                <div class="plusCircle" id="plus" onclick="showTxt(this, 'firstTxt')"><i class="fas fa-plus"></i></div>
+                  <div class="hiddentxt" id="firstTxt">
+                    <div class="minusCircle"  onclick="hideTxt(this, 'firstTxt')"><i class="fas fa-minus"></i></i></div>
+                    <h3>
+                      <i class="fab fa-tripadvisor"></i> 여행정보
+                    </h3>
+                    <p>
+                      다양한 나라의 명소와 맛집 등 상세한 정보를 볼수 있습니다.
+                    </p>
+                 </div>
+              </div>
             </li> 
             <li>
-              
+              <div class="clicktxt">
+                <h3>
+                  <i class="fas fa-utensils"></i> 맛집정보
+                </h3>
+                <p>
+                  다양한 나라의 명소와 맛집 등 상세한 정보를 볼수 있습니다.
+                </p>
+                <div class="plusCircle"><i class="fas fa-plus"></i></div>
+              </div>
             </li> 
             <li>
-              
+              <div class="clicktxt">
+                <h3>
+                  <i class="fas fa-home"></i> 숙박정보
+                </h3>
+                <p>
+                  다양한 나라의 명소와 맛집 등 상세한 정보를 볼수 있습니다.
+                </p>
+                <div class="plusCircle"><i class="fas fa-plus"></i></div>
+              </div>
             </li> 
             <li>
-              
+              <div class="clicktxt">
+                <h3>
+                  <i class="fas fa-thumbs-up"></i> 여행자후기
+                </h3>
+                <p>
+                  다양한 나라의 명소와 맛집 등 상세한 정보를 볼수 있습니다.
+                </p>
+                <div class="plusCircle"><i class="fas fa-plus"></i></div>
+              </div>
             </li> 
 
         </ul>
@@ -277,14 +337,6 @@ $(document).ready(function(){
       <p>123-456서울특별시구로구구로동(주)하이미디어 사업자등록번호: 123-45-678910 대표이사: 홍길동 대표번호: 02-1234-5678</p>
       <p>COPYRIGHT2014 HIMEDIA TOUR. ALL RESERVED</p>
     </footer>
-
-  <div class="visual">
-    <ul class="bxslider">
-      <li><img src="images/pc01.jpg" alt=""></li>
-      <li><img src="images/pc02.jpg" alt=""></li>
-      <li><img src="images/pc02.jpg" alt=""></li>
-    </ul>
-  </div>
 </body>
 
 </html>

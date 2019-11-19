@@ -242,18 +242,23 @@ section#section .secondSection{
     width: 235px; height: 240px; float: left;  position: relative; margin-right: 15px; margin-bottom: 15px;
 
   }
-  .secondSection>li:nth-child(1){background: url(../images/03여행03.jpg) no-repeat top;}
-  .secondSection>li:nth-child(2){background: url(../images/03여행04.jpg) no-repeat top;}
+  .secondSection>li:nth-child(1){_background: url(../images/03여행03.jpg) no-repeat top;}
+  .secondSection>li:nth-child(2){_background: url(../images/03여행04.jpg) no-repeat top;}
   .secondSection>li:nth-child(3){background: url(../images/03여행05.jpg) no-repeat top; background-color: rgba(42,40,53,1); padding-top: 15px;}
-  .secondSection>li:nth-child(4){background: url(../images/03여행06.jpg) no-repeat top;}
-  .secondSection>li:nth-child(5){background: url(../images/03여행07.jpg) no-repeat top;}
-  .secondSection>li:nth-child(6){background: url(../images/03여행08.jpg) no-repeat top;}
-  .secondSection>li:nth-child(7){background: url(../images/03여행09.jpg) no-repeat top;}
-  .secondSection>li:nth-child(8){background: url(../images/03여행10.jpg) no-repeat top;}
+  .secondSection>li:nth-child(4){background: url(../images/03여행06.jpg) no-repeat top; }
+  .secondSection>li:nth-child(5){background: url(../images/03여행07opcacity.jpg) no-repeat;}
+  .secondSection>li:nth-child(6){background: url(../images/03여행08opcacity.jpg) no-repeat ;}
+  .secondSection>li:nth-child(7){background: url(../images/03여행09opcacity.jpg) no-repeat ;}
+  .secondSection>li:nth-child(8){background: url(../images/03여행10.jpg) no-repeat; background-position: -135px 0;}
 
  .secondSection>li div.banner{
   position: absolute; bottom: 0; width: 100%;  height: 65px; text-align: center; color: white;  padding-top: 10px;
  }
+ 
+ .secondSection li ul.bxslider li{height: 240px;}
+ .secondSection li ul.bxslider li img{display: block; width: 100%;}
+
+ .bx-wrapper{border:0; }
 .secondSection>li:nth-child(1) div.banner{
   background-color: #529351; 
  }
@@ -268,11 +273,46 @@ section#section .secondSection{
   background-color: rgba(42,40,53,0.8);
  }
   .secondSection>li:nth-child(4) p:first-child{
+    font-size:0.9em; padding: 15px 0 0 15px; font-weight: bold; margin-bottom: 25px;
 
   }	
+  .secondSection>li:nth-child(4) p:nth-child(2){
+    font-size:0.8em;  padding-left: 15px; color: #43619d; font-weight: bold;
+
+  } 
   .secondSection>li:nth-child(4) div.banner{
   background-color: #43619d;
  }
+ .secondSection>li:nth-child(5), .secondSection>li:nth-child(6), .secondSection>li:nth-child(7), .secondSection>li:nth-child(8){
+    padding-top: 20px;
+
+ }
+  .secondSection>li div.clicktxt{
+    color: white; text-align: center;
+  }
+  .secondSection>li div.clicktxt h3{
+    margin-bottom: 10px;
+  }
+  .secondSection>li div.clicktxt p{
+    margin-bottom: 20px;
+  }
+  .secondSection>li div.clicktxt div.plusCircle{
+    border: 3px solid #fff; border-radius: 15px;
+    font-size: 1em; height: 30px; width: 30px; margin: 0 auto; cursor: pointer;  display: block;
+  }
+  .secondSection>li div.hiddentxt div.minusCircle{
+    border: 3px solid #fff; border-radius: 15px;
+    font-size: 1em; height: 30px; width: 30px; margin: 0 auto; cursor: pointer;  display: block;   }
+  .secondSection>li div.clicktxt div.hiddentxt{
+    position: absolute;
+    bottom: 0; display: none; margin-bottom: 10px;
+
+  }
+  .secondSection>li div.clicktxt div.hiddentxt p{
+    margin-bottom: 10px;
+  }
+
+/*footer*/
 footer#foot{
   width: 1000px; margin: 0 auto; padding-top: 15px;
 }
