@@ -60,7 +60,8 @@
 .mainNav ul.navWrap li a{display: block; line-height: 60px; text-align: center; font-weight: bold; transition: 0.3s;}
 .mainNav ul.navWrap li a:hover{background-color: skyblue; color: white;}
 /*section*/
-section#section{background: url(../images/bgimg.jpg) no-repeat;}
+section#section{background: url(../images/bgimg.jpg) no-repeat; -ms-background-position-y: bottom;
+background-position-y: bottom;}
 
 /*section1*/
 section#section div.firstSection{

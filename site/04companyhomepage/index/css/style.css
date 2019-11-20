@@ -1,0 +1,35 @@
+@charset "utf-8";
+.hdWrap{width: 100%; position: fixed; top: 0; z-index: 99;}
+.hdWrap .menuWrap{width: 1260px; margin: 0 auto; padding: 17.5px 0; }
+
+.hdWrap .menuWrap h1{width: 194px; float: left;}
+.hdWrap .menuWrap h1 a{display: block;}
+.hdWrap .menuWrap h1 a img{display: block; width: 194px; height: 65px;}
+
+.hdWrap .menuWrap div.navWrap{width: 850px; float: right; _position: relative; height: 100px;} 
+.hdWrap .menuWrap nav.tnbWrap{position: relative; }
+.hdWrap .menuWrap nav.tnbWrap ul{position: absolute; right: 40px;}
+.hdWrap .menuWrap nav.tnbWrap div.snsWrap{float: right;}
+.hdWrap .menuWrap nav.tnbWrap div.snsWrap a{display: block; float: left;} 
+.hdWrap .menuWrap nav.tnbWrap div.snsWrap a i{    }
+.hdWrap .menuWrap nav.tnbWrap ul li{float: left; position: relative;}
+.hdWrap .menuWrap nav.tnbWrap ul li:after{content: ""; display: block; width: 1px; height: 15px; background-color: #ddd; position: absolute; top: 0;}
+.hdWrap .menuWrap nav.tnbWrap ul li:first-child:after{display: none; content: none;}
+.hdWrap .menuWrap nav.tnbWrap ul li a {line-height: 15px; display: block; padding: 0 10px;}
+
+
+.hdWrap .menuWrap nav.gnbWrap{position: relative;}
+.hdWrap .menuWrap nav.gnbWrap ul{float: left;}
+.hdWrap .menuWrap nav.gnbWrap div.language{float: left; width: 100px; cursor: pointer;}
+
+
+.hdWrap .menuWrap nav.gnbWrap ul li{float: left; width: 107.14px; position: relative;}
+.hdWrap .menuWrap nav.gnbWrap ul li a{display: block; line-height: 50px; font-size: 1.2em; text-align: center;  position: relative;}
+
+
+.hdWrap .menuWrap nav.gnbWrap ul li a:after{content: ""; display: block; position: absolute; width:  107.14px; height: 5px; background-color: skyblue;  left: 0; border-radius: 2.5px; transform: scale(0,0); transition: 0.3s;}
+.hdWrap .menuWrap nav.gnbWrap ul li a:hover:after{transform: scale(1,1);}
+
+.hdWrap .menuWrap nav.gnbWrap div.language div{width: 50px; line-height: 50px; float: left; border: 1px solid #b8307c; text-align: center; color: #fff}
+.hdWrap .menuWrap nav.gnbWrap div.language div.active{background-color: #b8307c;}
+

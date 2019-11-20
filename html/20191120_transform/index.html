@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Transform</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body{background-image: url(../images/bg_grid.gif);}
+		div{width: 200px; height: 100px; background-color: yellow;}
+		/*div.box2{transform: translate(100px, 50px) scale(1,1) rotate(0); transition: 0.3s;}*/
+		/*div.box2:hover{transform: translate(150px, 100px) scale(1.2,1.2) rotate(30deg);}*/
+
+		.boxWrap{width: 200px; height: 200px; background-color: #0f0; position: relative; left: 200px; top: 200px; _overflow: hidden;}
+		.boxWrap .box{ _transform-origin: right top ; width: 200px; height: 200px; transition: 0.5s;}
+		.boxWrap:hover .box{transform: rotate(-30deg); }
+		
+		
+		.boxWrap .box1{  width: 200px; height: 200px; transition: 0.4s; background-color: orange; position: absolute; top: 0;}
+		.boxWrap:hover .box1{transform: rotate(-20deg);  }
+
+		.boxWrap .box2{  width: 200px; height: 200px; transition: 0.3s; background-color: skyblue; position: absolute; top: 0;}
+		.boxWrap:hover .box2{transform: rotate(-10deg);  }
+
+		.boxWrap .box3{  width: 200px; height: 200px; transition: 0.2s; background-color: pink; position: absolute; top: 0;}
+		.boxWrap:hover .box3{transform: rotate(0deg);  }
+
+		.boxWrap .box4{  width: 200px; height: 200px; transition: 0.1s; background-color: orangered ;position: absolute; top: 0;}
+		.boxWrap:hover .box4{transform: rotate(10deg);  }
+
+
+		p{width: 100px; height: 50px; background-color: pink; text-align: center; line-height: 50px; margin: 0 auto; text-transform: capitalize; font-weight: bold; position: relative;}
+		p:after{content: ""; display: block; position: absolute; width: 80px; height: 5px; background-color: skyblue; left: 10px; bottom: 10px; border-radius: 2.5px; transform: scale(0,0); transition: 0.3s;}
+		p:hover:after{transform: scale(1,1);}
+	</style>
+</head>
+<body>
+	<div class="box1">박스1</div>
+	<div class="box2">박스2</div>
+
+
+	<div class="boxWrap">
+		<div class="box">테스트</div>
+		<div class="box1">테스트</div>
+		<div class="box2">테스트</div>
+		<div class="box3">테스트</div>
+		<div class="box4">테스트</div>
+	</div>
+
+
+	<p>text</p>
+
+	
+	
+</body>
+</html>
