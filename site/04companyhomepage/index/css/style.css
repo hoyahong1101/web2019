@@ -36,8 +36,8 @@
 
 
 /*slider*/
-header.hd div.visual{height: 556.88px;}
-header.hd div.visualWrap{ position: relative; top: 135px;}
+header.hd div.visual{position: relative; height: 556.88px;}
+header.hd div.visualWrap{ position: absolute; top: 135px;}
 .bx-wrapper {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
@@ -124,8 +124,9 @@ header.hd div.visualWrap{ position: relative; top: 135px;}
 	}	
 .container2 div.story{width: 1260px; margin: 0 auto;}
 
-.container3{background-color: #0e347e; height: 500px; }
-.container4 ul {width: 1260px; margin: 0 auto; position: relative; top: -310px;}
+.container3{background-color: #0e347e; height: 500px;}
+.container4{position: relative; height: 945px; margin-bottom: 80px;}
+.container4 ul {width: 1260px; position: absolute; left:50%; top:-315px;  margin-left: -630px;}
 .container4 ul li{float: left; width: 25%;  height: 315px; background-color: #fff;}
 .container4 ul li:nth-child(1){background-color: #f1ae1d;}		
 .container4 ul li:nth-child(2){background-color:#93a03d; }		
@@ -151,3 +152,6 @@ header.hd div.visualWrap{ position: relative; top: 135px;}
 .container4 ul li:nth-child(10){background-color: #ffe600;}
 .container4 ul li:nth-child(11){background-color: #0e347e;}
 .container4 ul li:nth-child(12){width: 50%; background-color: #6b4d30;}
+
+.section1{background: url(../images/main_sec2.jpg) no-repeat center; background-color: rgba(14, 52, 126, 0.3);  height: 730px;}
+0e347e
