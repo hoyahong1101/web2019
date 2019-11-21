@@ -14,7 +14,20 @@
 	<script src="js/jquery.colorbox.js"></script>
 	<script>
 		$(document).ready(function(){
-      var mySlider = $(".bxslider").bxSlider({ });});
+      		var mySlider = $(".bxslider").bxSlider({
+      			controls:false 
+      			});
+      			$(".pre_btn").click(function(){
+					mySlider.goToPrevSlide(); 
+					});
+				$(".next_btn").click(function(){
+					mySlider.goToNextSlide();
+					});
+      		});
+
+		
+
+	
 
 	</script>
 	</head>
@@ -53,17 +66,66 @@
 				</div>
 			</div>
 		</div>
-		<div class="visualWrap">
-			<ul class="bxslider">
-				<li>
-					<img src="images/main_과일티.jpg" alt="">
-				</li>
-				<li>
-					<img src="images/main_초코.jpg" alt="">
-				</li>
-				<li>
-					<img src="images/main_큰마들렌.jpg" alt="">
-				</li>
+		<div class="visual">
+			<div class="visualWrap">
+				<ul class="bxslider">
+					<li>
+						<img src="images/main_과일티.jpg" alt="">
+					</li>
+					<li>
+						<img src="images/main_초코.jpg" alt="">
+					</li>
+					<li>
+						<img src="images/main_큰마들렌.jpg" alt="">
+					</li>
+				</ul>
+				<div class="pre_btn">
+					<img src="images/btn_prev.png" alt="">
+				</div>
+				<div class="next_btn">
+					<img src="images/btn_next.png" alt="">
+				</div>	
+			</div>
+		</div>
+		<div class="container1">
+			<div class="txt clearfix">
+				<p>The Finest Quality Coffee Plants</p>
+				<div class="txtWrap">
+					<h2>
+						<i class="fas fa-mug-hot"></i>
+						빽다방이야기 PAIK'S COFFEE STORY
+					</h2>
+				</div>
+				<p>균형잡힌 바디감으로 긴여운을 남기는 빽다방 커피를 만나보세요.</p>	
+			</div>
+		</div>
+		<div class="container2">
+		    <div class="story">
+		    	<h1>Since 2006</h1>
+		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam voluptate quos vel libero et accusamus a nobis ipsam animi labore sit perferendis tempore vitae neque nesciunt cum minus natus, tenetur laudantium corporis beatae velit quis! Cupiditate enim exercitationem eveniet dicta veniam reprehenderit iure quidem et assumenda laboriosam, accusamus fuga dolor dolorem perspiciatis sed, dolorum quod alias deserunt ipsa delectus earum adipisci magnam pariatur? Dolor quae magnam, officia perferendis vero. Accusamus hic totam doloremque ut ipsa magnam amet inventore maiores beatae sapiente iste nostrum mollitia veritatis consequatur ullam aliquam quisquam ad repudiandae saepe, illum quaerat officiis iure? Nihil maxime, nobis.</p>
+		    </div>
+		</div>
+		<div class="container3">
+		    <div class="story">
+		    	<h1>WE MAKE AWESOME COFFEE</h1>
+		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam voluptate quos vel libero et accusamus a nobis ipsam animi labore sit perferendis tempore vitae neque nesciunt cum minus natus, tenetur laudantium corporis beatae velit quis! Cupiditate enim exercitationem eveniet dicta veniam reprehenderit iure quidem et assumenda laboriosam, accusamus fuga dolor dolorem perspiciatis sed, dolorum quod alias deserunt ipsa delectus earum adipisci magnam pariatur? Dolor quae magnam, officia perferendis vero. Accusamus hic totam doloremque ut ipsa magnam amet inventore maiores beatae sapiente iste nostrum mollitia veritatis consequatur ullam aliquam quisquam ad repudiandae saepe, illum quaerat officiis iure? Nihil maxime, nobis.</p>
+		    </div>
+		</div>
+			<div class="container4">
+				<ul class="clearfix">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
 			</div>
 		</div>
 	</header>
