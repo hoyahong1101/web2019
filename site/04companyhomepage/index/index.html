@@ -23,6 +23,17 @@
 				$(".next_btn").click(function(){
 					mySlider.goToNextSlide();
 					});
+			var mySlider2 = $(".expression").bxSlider({
+      			controls:false, pager:false, auto: false
+      			});
+				$(".pre_btn2").click(function(){
+					mySlider2.goToPrevSlide(); 
+					});
+				$(".next_btn2").click(function(){
+					mySlider2.goToNextSlide();
+					});
+
+
       		});
 
 		
@@ -33,36 +44,38 @@
 	</head>
 <body>
 	<header class="hd">
-		<div class="hdWrap">
-			<div class="menuWrap clearfix">
-				<h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
-				<div class="navWrap">
-					<nav class="tnbWrap clearfix">
-						<ul>
-							<li><a href="#">더본코리아</a></li>
-							<li><a href="#">더본쿠폰</a></li>
-							<li><a href="#">매장찾기</a></li>
-						</ul>
-						<div class="snsWrap">
-							<a href="#"><i class="fab fa-facebook"></i></a>
-							<a href="#"><i class="fab fa-instagram"></i></a>		
-						</div>
-					</nav>
-					<nav class="gnbWrap clearfix">
-						<ul>
-							<li><a href="#">빽다방</a></li>
-							<li><a href="#">메뉴</a></li>
-							<li><a href="#">소식</a></li>
-							<li><a href="#">커뮤니티</a></li>
-							<li><a href="#">매장안내</a></li>
-							<li><a href="#">창업안내</a></li>
-							<li><a href="#">고객의소리</a></li>
-						</ul>
-						<div class="language">
-							<div class="korean active">KOR</div>
-							<div class="english">EN</div>
-						</div>
-					</nav>
+		<div class="hdMenu">
+			<div class="hdWrap">
+				<div class="menuWrap clearfix">
+					<h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
+					<div class="navWrap">
+						<nav class="tnbWrap clearfix">
+							<ul>
+								<li><a href="#">더본코리아</a></li>
+								<li><a href="#">더본쿠폰</a></li>
+								<li><a href="#">매장찾기</a></li>
+							</ul>
+							<div class="snsWrap">
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>		
+							</div>
+						</nav>
+						<nav class="gnbWrap clearfix">
+							<ul>
+								<li><a href="#">빽다방</a></li>
+								<li><a href="#">메뉴</a></li>
+								<li><a href="#">소식</a></li>
+								<li><a href="#">커뮤니티</a></li>
+								<li><a href="#">매장안내</a></li>
+								<li><a href="#">창업안내</a></li>
+								<li><a href="#">고객의소리</a></li>
+							</ul>
+							<div class="language">
+								<div class="korean active">KOR</div>
+								<div class="english">EN</div>
+							</div>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -87,39 +100,139 @@
 				</div>	
 			</div>
 		</div>
-		<div class="container1">
-			<div class="txt clearfix">
-				<p>The Finest Quality Coffee Plants</p>
-				<div class="txtWrap">
-					<h2>
-						<i class="fas fa-mug-hot"></i>
-						빽다방이야기 PAIK'S COFFEE STORY
-					</h2>
+		<div class="container1 clearfix">
+			<div class="bodyWrap clearfix">
+				<div class="txt ">
+					<p>The Finest Quality Coffee Plants</p>
+					<div class="txtWrap">
+						<h2>
+							<i class="fas fa-mug-hot"></i>
+							빽다방이야기 PAIK'S COFFEE STORY
+						</h2>
+					</div>
+					<p>균형잡힌 바디감으로 긴여운을 남기는 빽다방 커피를 만나보세요.</p>	
 				</div>
-				<p>균형잡힌 바디감으로 긴여운을 남기는 빽다방 커피를 만나보세요.</p>	
+				<img src="images/circleIcon.png" alt="">
 			</div>
 		</div>
 		<div class="container2">
-		    <div class="story">
-		    	<h1>Since 2006</h1>
-		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam voluptate quos vel libero et accusamus a nobis ipsam animi labore sit perferendis tempore vitae neque nesciunt cum minus natus, tenetur laudantium corporis beatae velit quis! Cupiditate enim exercitationem eveniet dicta veniam reprehenderit iure quidem et assumenda laboriosam, accusamus fuga dolor dolorem perspiciatis sed, dolorum quod alias deserunt ipsa delectus earum adipisci magnam pariatur? Dolor quae magnam, officia perferendis vero. Accusamus hic totam doloremque ut ipsa magnam amet inventore maiores beatae sapiente iste nostrum mollitia veritatis consequatur ullam aliquam quisquam ad repudiandae saepe, illum quaerat officiis iure? Nihil maxime, nobis.</p>
+		    <div class="storyWrap clearfix">
+		    	<div class="storyTxt">
+		    		<h2>SINCE 2006</h2>
+		    		<div class="storyBody clearfix">
+		    			<p>2006년 논현동 먹자골목의 작은 카페로 시작한 빽다방은 15cm 대용량 커피에 합리적인 가격, 놀라운 퀄리티를 자랑합니다. 빽다방은 거리 곳곳마다 자리하여 앗!아메리카노, 불량쥬스, 옥스크림 등 위트 있는 메뉴와 파랑의 노랑의 선명한 대비로 뀨며진 귀여운 외관으로 사람들의 시선을 사로잡습니다. 부담없이 편안하게 그리고 맛있게, 만나면 기분이 좋아지는 친구 같은 커피 전문점, 빽다방입니다.</p>
+		    		</div>
+		    	</div>
+		    	<div class="storyImage">
+	    			<div class="Wrapper">
+	    				<img src="images/paickCafe.jpg" alt="">
+	    				<div><i class="fas fa-circle"></i> 빽다방 논현동 1호점</div>
+	    			</div>
+	    			<div class="Wrapper">
+	    				<img src="images/paickPic.jpg" alt="images/paickPic.jpg">
+	    				<div><i class="fas fa-circle"></i> 더본코리아 대표 백종원</div>
+	    			</div>
+		    	</div>
 		    </div>
 		</div>
 		<div class="container3">
-		    <div class="story">
-		    	<h1>WE MAKE AWESOME COFFEE</h1>
-		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam voluptate quos vel libero et accusamus a nobis ipsam animi labore sit perferendis tempore vitae neque nesciunt cum minus natus, tenetur laudantium corporis beatae velit quis! Cupiditate enim exercitationem eveniet dicta veniam reprehenderit iure quidem et assumenda laboriosam, accusamus fuga dolor dolorem perspiciatis sed, dolorum quod alias deserunt ipsa delectus earum adipisci magnam pariatur? Dolor quae magnam, officia perferendis vero. Accusamus hic totam doloremque ut ipsa magnam amet inventore maiores beatae sapiente iste nostrum mollitia veritatis consequatur ullam aliquam quisquam ad repudiandae saepe, illum quaerat officiis iure? Nihil maxime, nobis.</p>
+		    <div class="expressionWrap">
+		    	<ul class="expression">
+		    		<li>
+		    			<h2>COFFEE</h2>
+		    			<div class="coffeeList clearfix">
+		    				<div class="coffeeDiv">
+		    					<img src="images/03_앗메리카노_HOT.jpg" alt="">
+		    					<div>앗!아메리카노(HOT)</div>
+		    				</div>
+		    				<div class="coffeeDiv">
+		    					<img src="images/04_앗메리카노_ICED.jpg" alt="">
+		    					<div>앗!아메리카노(ICED)</div>
+		    				</div>
+		    				<div class="coffeeDiv">
+		    					<img src="images/05_원조커피_HOT.jpg" alt="">
+		    					<div>원조커피(HOT)</div>
+		    				</div>
+		    				<div class="coffeeDiv">
+		    					<img src="images/06_원조커피_ICED.jpg" alt="">
+		    					<div>원조커피(ICED)</div>
+		    				</div>
+		    			</div>
+		    		</li>
+		    		<li>
+		    			<h2>ICECREAM</h2>
+		    			<div class="coffeeList clearfix">
+		    				<div class="coffeeDiv">
+		    					<img src="images/노말한소프트.jpg" alt="">
+		    					<div>노말한소프트</div>
+		    				</div>
+		    				<div class="coffeeDiv">
+		    					<img src="images/옥수크림.jpg" alt="">
+		    					<div>옥수크림</div>
+		    				</div>
+		    				<div class="coffeeDiv">
+		    					<img src="images/호두크런치.jpg" alt="">
+		    					<div>호두크런치</div>
+		    				</div>
+		    				<div class="coffeeDiv">
+		    					<img src="images/뺵엔나.jpg" alt="">
+		    					<div>뺵엔나</div>
+		    				</div>
+		    			</div>
+		    		</li>
+		    		<li>
+		    			<h2>BREAD</h2>
+		    			<div class="coffeeList clearfix">
+		    				<div class="coffeeDiv">
+		    					<img src="images/사라다빵.jpg" alt="">
+		    					<div>사라다빵</div>
+		    				</div>
+		    				<div class="coffeeDiv">
+		    					<img src="images/소세지빵.jpg" alt="">
+		    					<div>소세지빵</div>
+		    				</div>
+		    				<div class="coffeeDiv">
+		    					<img src="images/크리미슈.jpg" alt="">
+		    					<div>크리미슈</div>
+		    				</div>
+		    				<div class="coffeeDiv">
+		    					<img src="images/크리미단팥빵.jpg" alt="">
+		    					<div>크리미단팥빵</div>
+		    				</div>
+		    			</div>
+		    		</li>
+		    	</ul>
+		    	<div class="pre_btn2">
+					<img src="images/btn_prev.png" alt="">
+				</div>
+				<div class="next_btn2">
+					<img src="images/btn_next.png" alt="">
+				</div>
 		    </div>
 		</div>
 		<div class="container4">
 			<ul class="clearfix">
+				<li>
+					<i class="fas fa-coffee"></i>
+					<div>Coffee</div>
+				</li>
+				<li><i class="far fa-play-circle"></i></li>
 				<li></li>
 				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li>
+					<i class="fas fa-bread-slice"></i>
+					<div>Dessert</div>
+				</li>
+				<li>
+					<i class="fas fa-store"></i>
+					<div>Cafe</div>
+				</li>
+				<li>
+					<div class="txtWrap">
+						<h3>창업안내</h3>
+						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
+					</div>
+				</li>
 				<li></li>
 				<li></li>
 				<li></li>
@@ -131,7 +244,45 @@
 	<section class="section1">
 		
 	</section>
+	<section class="section2">
+		<ul class="clearfix">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</section>
+		<section class="section3">
+		<ul class="clearfix">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</section>
+	<footer class="footer">
+		<div class="footerWrap clearfix">
+			<h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
+			<ul>
+				<li>lorem</li>
+				<li>lorem</li>
+				<li>lorem</li>
+				<li>lorem</li>
+				<li>lorem</li>
+				<li>lorem</li>
+			</ul>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur at delectus, sed aliquid ipsam, quod maiores magni ex cum fugit perspiciatis facilis numquam velit explicabo, accusantium voluptates. Dolore, tenetur, quas.</p>
+			<div></div>
 
-	
+
+		</div>
+	</footer>
+
 </body>
 </html>
