@@ -28,11 +28,11 @@
 .hdWrap .menuWrap nav.gnbWrap ul li a{display: block; line-height: 50px; font-size: 1.2em; text-align: center;  position: relative;}
 
 
-.hdWrap .menuWrap nav.gnbWrap ul li a:after{content: ""; display: block; position: absolute; width:  107.14px; height: 5px; background-color: skyblue;  left: 0; border-radius: 2.5px; transform: scale(0,0); transition: 0.3s;}
-.hdWrap .menuWrap nav.gnbWrap ul li a:hover:after{transform: scale(1,1);}
+.hdWrap .menuWrap nav.gnbWrap ul li a:after{content: ""; display: block; position: absolute; width:  80px; height: 5px; left: 50%; background-color: #ffe600; border-radius: 2.5px; transform: translateX(-50%) scale(0,0); transition: 0.3s;}
+.hdWrap .menuWrap nav.gnbWrap ul li a:hover:after{transform: translateX(-50%) scale(1,1);}
 
-.hdWrap .menuWrap nav.gnbWrap div.language div{width: 50px; line-height: 50px; float: left; border: 1px solid rgb(14,52,126); text-align: center; color: #fff}
-.hdWrap .menuWrap nav.gnbWrap div.language div.active{background-color: rgb(14,52,126);}
+.hdWrap .menuWrap nav.gnbWrap div.language div{width: 50px; line-height: 50px; float: left; border: 1px solid rgb(14,52,126); text-align: center; color: #ffe600; }
+.hdWrap .menuWrap nav.gnbWrap div.language div.active{background-color: rgb(14,52,126); font-weight: bold;}
 
 
 
@@ -127,35 +127,63 @@ header.hd div.visualWrap{ position: relative;}
 	}	
 .container2 div.storyWrap{width: 1260px; margin: 0 auto;}
 .container2 div.storyWrap .storyTxt h2{color:#0e347e;  font-size: 3.125rem; margin-bottom: 15px;}
+.container2 div.storyWrap .storyTxt p{font-size: 22px}
 .container2 div.storyWrap .storyTxt, .container2 div.storyWrap .storyImage{float: left; width: 630px;}   
 .container2 div.storyWrap .storyTxt{padding-right: 50px;}
 .container2 div.storyWrap .storyImage {padding-top: 10px;}
-.container2 div.storyWrap .storyImage div.Wrapper{ float: left; margin-right: 10px; text-align: center;}
+.container2 div.storyWrap .storyImage div.Wrapper{float: left; margin-right: 11px; text-align: center; border: 3px solid #0e347e;}
 .container2 div.storyWrap .storyImage div.Wrapper:last-child{margin-right: 0;}
-.container2 div.storyWrap .storyImage div.Wrapper img{height: 165px; display: block; margin-bottom: 5px;}
+.container2 div.storyWrap .storyImage div.Wrapper img{height: 240px; display: block; margin-bottom: 5px;}
+.container2 div.storyWrap .storyImage div.Wrapper div{line-height: 23px;}
 .container2 div.storyWrap .storyImage div.Wrapper div i{color:#0e347e; }
 
 /*.container2 div.storyWrap div.storyBody div{padding-left: 15px;}
 .container2 div.storyWrap div.storyBody div img{height:  150px; display: block; float: left;}*/
 
 
-.container3{background-color: #0e347e; height: 900px; padding-top: 70px;}
-.container3 div.expressionWrap{width: 1260px; margin: 0 auto;}
+.container3{background-color: #0e347e; height: 900px; padding-top: 70px; position: relative;}
+.container3 div.expressionWrap{width: 1260px; margin: 0 auto; }
 .container3 ul.expression{width: 1260px; margin: 0 auto;}
 .container3 ul.expression h2{color:#fff;  font-size: 3.125rem; margin-bottom: 30px; text-align: center;}
 .container3 div.expressionWrap ul li div.coffeeList div.coffeeDiv{display: block; float: left; margin-right: 95px; text-align: center; background-color: #fff; border: 5px solid #ddd; font-weight: bold; padding-bottom: 20px;}
 .container3 div.expressionWrap ul li div.coffeeList div.coffeeDiv:last-child{margin-right: 0;}
 .container3 div.expressionWrap ul li div.coffeeList div.coffeeDiv img{display: block; height: 280px;}
+.pre_btn2, .next_btn2{
+	width: 50px; height: 100px;
+	position: absolute;
+	top: 35%;
+	margin-top: -50px;
+	background-color: rgba(100,100,100,0.1);
+	
+}
+.pre_btn2{
+	left: 0;
+}
+.next_btn2{
+	right: 0;
+}
+.pre_btn2 img, .next_btn2 img{
+	display: block;
+	cursor: pointer;
+}
 .container4{position: relative; height: 945px; margin-bottom: 80px;}
-.container4 ul {width: 1260px; position: absolute; left:50%; top:-315px;  margin-left: -630px;}
-.container4 ul li{float: left; width: 25%;  height: 315px; background-color: #fff;}
-.container4 ul li:nth-child(1){background-color: #f1ae1d; text-align: center;  padding-top: 90px; color: #6b4d30; cursor: pointer; }
-.container4 ul li:nth-child(1) i{font-size: 4em;}	
-.container4 ul li:nth-child(1) div{font-size: 3em; font-weight: bold; font-family: fantasy;}	
+.container4>ul {width: 1260px; position: absolute; left:50%; top:-315px;  margin-left: -630px;}
+.container4 ul>li{float: left; width: 25%;  height: 315px; background-color: #fff;}
+.container4 ul>li:nth-child(1){text-align: center;  color: #6b4d30; cursor: pointer; height: 315px; position: relative;}
+.container4 ul>li:nth-child(1) .card {background-color: #f1ae1d; width: 100%; height: 100%;  padding-top: 90px; transition: 0.3s; position: absolute; top: 0; z-index: 1; /* transform-origin: top left; */}
+.container4 ul>li:nth-child(1):hover .card{transform: scale(0,0) rotate(180deg);}
+.container4 ul>li:nth-child(1) .card i{font-size: 4em;}	
+.container4 ul>li:nth-child(1) .card div{font-size: 3em; font-weight: bold; font-family: fantasy;}
+.container4 ul>li:nth-child(1) .cardImg {width: 100%; height: 100%; transition:0.6s; position: absolute; top: 0; transform: scale(0,0); /* transform-origin: bottom right; */ background-color: rgba(255,255,255,0.1);}
+.container4 ul>li:nth-child(1):hover .cardImg{transform: scale(1,1) ;}
+.container4 ul li.cardWrap .cardImg img{height: 280px;}
+.container4 ul li.cardWrap .cardImg h3{position: absolute; width: 100%; bottom: 26px; font-size: 2em; color: #000;}
+.container4 ul li.cardWrap .cardImg p{position: absolute; width: 100%; bottom: 5px; font-weight: bold; font-size: 1em; color: #000;}
 .container4 ul li:nth-child(2){background: url(../images/li_큰마들렛.jpg) no-repeat center;  text-align: center; color: #aaa; padding-top: 101.5px;	cursor: pointer;}	
 .container4 ul li:nth-child(2) i{font-size: 7em;}	
-.container4 ul li:nth-child(3){position: relative;}
-.container4 ul li:nth-child(3):after{
+.container4 ul li:nth-child(3){position: relative; width: 50%;}
+.container4 ul li:nth-child(3) ul.notice{float: left; width: 50%; height: 100%; position: relative;}
+.container4 ul li:nth-child(3) ul.notice:after{
     content: "";
     position: absolute;
     left: 100%;
@@ -166,21 +194,32 @@ header.hd div.visualWrap{ position: relative;}
     border-bottom: 20px solid transparent;
     border-left: 20px solid #fff;
     clear: both;}
+.container4 ul li:nth-child(3) ul.notice li{width: 100%; padding: 30px;}
+.container4 ul li:nth-child(3) ul.notice li h2{font-size: 1em}
 
-.container4 ul li:nth-child(4){background-color: #b47c55; background: url(../images/paickdabang.jpg) no-repeat center;}
-.container4 ul li:nth-child(5){background-color: #0e347e; text-align: center;  padding-top: 90px; color: #fff; cursor: pointer;}
-.container4 ul li:nth-child(5) i{font-size: 4em;}
-.container4 ul li:nth-child(5) div{font-size: 3em; font-weight: bold; font-family: fantasy;}	
-.container4 ul li:nth-child(6){background-color: #ffe600; text-align: center;  padding-top: 90px; color: #fff; cursor: pointer;}
-.container4 ul li:nth-child(6) i{font-size: 4em;}
-.container4 ul li:nth-child(6) div{font-size: 3em; font-weight: bold; font-family: fantasy;}	
-.container4 ul li:nth-child(7){width: 50%; background: url(../images/bg-franc.jpg) no-repeat center; padding: 30px 0 0 30px;}
-.container4 ul li:nth-child(7) div.txtWrap h3{  font-size: 2.75rem;   font-weight: 300;}
-.container4 ul li:nth-child(8){height: 630px; background-color:#93a03d; background: url(../images/longliimg.jpg) no-repeat center; }
-.container4 ul li:nth-child(9){width: 50%; background: url(../images/espresso.jpg) no-repeat center; 	}
-.container4 ul li:nth-child(10){background-color: #ffe600;}
-.container4 ul li:nth-child(11){background-color: #0e347e;}
-.container4 ul li:nth-child(12){width: 50%; background-color: #6b4d30; background: url(../images/sub_header_bg05.jpg) no-repeat center;}
+
+.container4 ul li:nth-child(3) div.second{background-color: #b47c55; height: 100%; width: 50%; background: url(../images/paickdabang.jpg) no-repeat center; float: left;}
+.container4 ul li:nth-child(4){ text-align: center;  padding-top: 90px; color: #fff; cursor: pointer; position: relative;}
+.container4 ul li:nth-child(4) .card {background-color: #0e347e; width: 100%; height: 100%;  padding-top: 90px; transition: 0.3s; position: absolute; top: 0; z-index: 1; }
+.container4 ul li:nth-child(4):hover .card{transform: rotate(180deg) scale(0,0);}
+.container4 ul li:nth-child(4) .card i{font-size: 4em;}
+.container4 ul li:nth-child(4) .card div{font-size: 3em; font-weight: bold; font-family: fantasy;}	
+.container4 ul li:nth-child(4) .cardImg {width: 100%; height: 100%; transition:0.6s; position: absolute; top: 0; transform: scale(0,0);  background-color: #fff;}
+.container4 ul li:nth-child(4):hover .cardImg{transform: scale(1,1);}
+.container4 ul li:nth-child(5){ text-align: center;  padding-top: 90px; color: #fff; cursor: pointer; position: relative;}
+.container4 ul li:nth-child(5) .card { background-color: #ffe600; width: 100%; height: 100%;  padding-top: 90px; transition: 0.3s; position: absolute; top: 0; z-index: 1; /* transform-origin: top left; */}
+.container4 ul li:nth-child(5):hover .card{transform: scale(0,0) rotate(180deg); }
+.container4 ul li:nth-child(5) .card i{font-size: 4em;}	
+.container4 ul li:nth-child(5) .card div{font-size: 3em; font-weight: bold; font-family: fantasy;}
+.container4 ul li:nth-child(5) .cardImg {width: 100%; height: 100%; transition:0.6s; position: absolute; top: 0; transform: scale(0,0); /* transform-origin: bottom right; */ background-color: #fff;}
+.container4 ul li:nth-child(5):hover .cardImg{transform: scale(1,1) ;}	
+.container4 ul li:nth-child(6){width: 50%; background: url(../images/bg-franc.jpg) no-repeat center; padding: 30px 0 0 30px;}
+.container4 ul li:nth-child(6) div.txtWrap h3{  font-size: 2.75rem;   font-weight: 300;}
+.container4 ul li:nth-child(7){height: 630px; background-color:#93a03d; background: url(../images/longliimg.jpg) no-repeat center; }
+.container4 ul li:nth-child(8){width: 50%; background: url(../images/espresso.jpg) no-repeat center; 	}
+.container4 ul li:nth-child(9){background-color: #ffe600;}
+.container4 ul li:nth-child(10){background-color: #0e347e;}
+.container4 ul li:nth-child(11){width: 50%; background-color: #6b4d30; background: url(../images/sub_header_bg05.jpg) no-repeat center;}
 
 .section1{background: url(../images/bg-about.jpg) no-repeat center; background-color: rgba(14, 52, 126, 0.3);  height: 730px;}
 
