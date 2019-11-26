@@ -6,8 +6,8 @@
 	<title>빽다방</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/colorbox.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
@@ -32,13 +32,56 @@
 				$(".next_btn2").click(function(){
 					mySlider2.goToNextSlide();
 					});
+			var mySlider3 = $(".noticeWrap").bxSlider({
+      			controls:false, pager:false, auto: false, mode:'fade'
+      			});
+				$(".pre_btn3").click(function(){
+					mySlider3.goToPrevSlide(); 
+					});
+				$(".next_btn3").click(function(){
+					mySlider3.goToNextSlide();
+					});	
+			var mySlider4 = $(".mySlider4").bxSlider({
+  			controls:false, pager:false, auto: false, mode:'fade'
+  			});
+			$(".pre_btn4").click(function(){
+				mySlider4.goToPrevSlide(); 
+				});
+			$(".next_btn4").click(function(){
+				mySlider4.goToNextSlide();
+				});				
 
-
-      		});
-
-		
-
+     		});
 	
+
+		$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
 
 	</script>
 	</head>
@@ -223,17 +266,53 @@
 						<p>원조커피(ICED)</p>
 					</div>
 				</li>
-				<li><i class="far fa-play-circle"></i></li>
+				<li class='youtube' href="https://www.youtube.com/embed/xjUJCBGINCk">
+					<i class="far fa-play-circle"></i>
+				</li>
 				<li>
-					<ul class="notice">
-						<li>
-							<h2>19년 3분기 빽다방 “친절우수매장” <br>
-								최우수 친절매장 청주율량중앙점 점주
-							</h2>
-							<p>Interview</p>
+					<ul class="noticeWrap">
+						<li class="notice ">
+							<div class="noticein clearfix">
+								<div class="noticeTxt">
+									<h2>19년 3분기 빽다방 “친절우수매장” <br>
+										최우수 친절매장 청주율량중앙점 점주
+									</h2>
+									<p>Interview</p>
+								</div>
+								<div class="noticeImg">
+								</div>
+							</div>
+						</li>
+						<li class="notice">
+							<div class="noticein clearfix">
+								<div class="noticeTxt">
+									<h2>19년 3분기 빽다방 “친절우수매장” <br>
+										최우수 친절매장 청주율량중앙점 점주
+									</h2>
+									<p>Interview</p>
+								</div>
+								<div class="noticeImg">
+								</div>
+							</div>
+						</li>
+						<li class="notice ">
+							<div class="noticein clearfix">
+								<div class="noticeTxt">
+									<h2>19년 3분기 빽다방 “친절우수매장” <br>
+										최우수 친절매장 청주율량중앙점 점주
+									</h2>
+									<p>Interview</p>
+								</div>
+								<div class="noticeImg"></div>
+							</div>
 						</li>
 					</ul>
-					<div  class="second"></div>
+					<div class="pre_btn3">
+						<img src="images/controls.jpg" alt="">
+					</div>
+					<div class="next_btn3">
+						<img src="images/controls.jpg" alt="">
+					</div>	
 				</li>
 				<li class="cardWrap">
 					<div class="card">
@@ -263,29 +342,111 @@
 						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
 					</div>
 				</li>
-				<li></li>
-				<li></li>
-				<li></li>
 				<li>
-					<i class="fas fa-store"></i>
-					<div>Cafe</div>
+					<div class="txtWrap">
+						<h3>창업안내</h3>
+						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
+					</div>
 				</li>
-				<li></li>
+				<li>
+					<div class="txtWrap">
+						<h3>창업안내</h3>
+						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
+					</div>
+				</li>
+				<li>
+					<div class="community">
+						<h3>커피 클래스</h3>
+						<p>2019.11.04 - 2019.11.10</p>
+					</div>
+				</li>
+				<li>
+					<div class="community">
+						<h3>커피 클래스</h3>
+						<p>2019.11.04 - 2019.11.10</p>
+					</div>
+				</li>
+				<li>
+					<div class="txtWrap">
+						<h3>창업안내</h3>
+						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</header>
 	<section class="section1">
-		
+		<div class="sec1Wrap">
+			<h2>
+				<img src="images/about_tit.png" alt="">
+			</h2>
+			<ul class="clearfix">
+				<li>
+					<h2>싸다!</h2>
+					<img src="images/about1.png" alt="">
+				</li>
+				<li>
+					<h2>크다!</h2>
+					<img src="images/about2.png" alt="">
+				</li>
+				<li>
+					<h2>맛있다!</h2>
+					<img src="images/원두교체.png" alt="">
+				</li>
+			</ul>
+		</div>
 	</section>
 	<section class="section2">
 		<ul class="clearfix">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
+			<li>
+				<ul class="mySlider4">
+					<li>
+						<h2>
+							<i class="far fa-heart"></i>
+						</h2>
+						<h3>SNS</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nulla, perspiciatis minima obcaecati quo animi ipsam totam. Commodi voluptatem, quos.</p>
+					</li>
+					<li>
+						<h2>
+							<i class="far fa-heart"></i>
+						</h2>
+						<h3>FACEBOOK</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nulla, perspiciatis minima obcaecati quo animi ipsam totam. Commodi voluptatem, quos.</p>
+					</li>
+					<li>
+						<h2>
+							<i class="far fa-heart"></i>
+						</h2>
+						<h3>INSTARGRAM</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nulla, perspiciatis minima obcaecati quo animi ipsam totam. Commodi voluptatem, quos.</p>
+					</li>
+				</ul>
+				<div class="pre_btn4">
+					<img src="images/controls.jpg" alt="">
+				</div>
+				<div class="next_btn4">
+					<img src="images/controls.jpg" alt="">
+				</div>
+			</li>
+			<li>
+				<img src="images/packjongwon.jpg" alt="">
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				<img src="images/packjongwon.jpg" alt="">
+			</li>
+			<li>
+				
+			</li>
+			<li>
+				<img src="images/packjongwon.jpg" alt="">
+			</li>
+			<li>
+				
+			</li>
 		</ul>
 	</section>
 		<section class="section3">

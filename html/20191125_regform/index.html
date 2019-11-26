@@ -4,8 +4,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>회원가입</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 	<div id="wrap">
@@ -47,30 +49,53 @@
 							<label for="female" class="female sex" onclick="checked(this)">여자</label>
 							<input type="radio" value="female" id="female" name="user-s" >
 						</p>
-					
-					<label for="yy">생년월일</label><br>
-					<input type="text" name="" id="yy" placeholder="년(4자)" maxlength="4">
-					<select name="" id="mm">
-						<option value="01">1</option>
-						<option value="02">2</option>
-						<option value="03">3</option>
-						<option value="04">4</option>
-						<option value="05">5</option>
-						<option value="06">6</option>
-						<option value="07">7</option>
-						<option value="08">8</option>
-						<option value="09">9</option>
-						<option value="10">10</option>
-						<option value="11">11</option>
-						<option value="12">12</option>
-					</select>
-					<input type="text" name="" id="dd" placeholder="일" maxlength="2">
-				</fieldset>
-				<fieldset>
-					<legend>전환번호인증</legend>
-					<label for="email">본인 확인 이메일</label><br>
-				</fieldset>
-				<input type="submit" value="가입하기">
+						<p class="field birth clearfix">
+							<label for="ubirth">생일</label>
+							<input type="text" id="ubirth" class="inp-field w130" placeholder="년(4자)" maxlength="4" name="yyyy">
+							<span class="field-wall">|</span>
+							<select name="mm" class="">
+								<option value="">월</option>
+								<option value="1">1월</option>
+								<option value="2">2월</option>
+								<option value="3">3월</option>
+								<option value="4">4월</option>
+								<option value="5">5월</option>
+								<option value="6">6월</option>
+								<option value="7">7월</option>
+								<option value="8">8월</option>
+								<option value="9">9월</option>
+								<option value="10">10월</option>
+								<option value="11">11월</option>
+								<option value="12">12월</option>
+							</select>
+							<span class="field-wall">|</span>
+							<input type="text" class="inp-field w145" placeholder="일" maxlength="2" name="dd">
+						</p>
+						<p class="field">
+							<label for="uemail" class="blind">본인확인 메일</label>
+							<input type="text" id="uemail" class="inp-field w458" placeholder="본인확인 이메일(선택)" name="useremail">
+						</p>
+					</fieldset>
+					<fieldset>
+						<legend>전화번호인증</legend>
+						<p class="field confirm clearfix">
+							<label for="unum" class="blind">인증번호</label>
+							<select name="userNumber" id="unum">
+								<option value="+82">+82</option>
+							</select>
+							<span class="field-wall">|</span>
+							<input type="text" class="inp-field w205" placeholder="휴대전화번호입력">
+							<button type="button" class="btn-click" onclick="">인증</button>
+						</p>
+						<p class="field confirm clearfix">
+							<label for="uconfirm" class="blind">인증번호입력</label>
+							<input type="text" id="uconfirm"class="inp-field w330"  placeholder="인증번호" name="userconfirm">
+							<button type="button" class="btn-click" onclick="">확인</button>
+						</p>
+					</fieldset>
+				<div class="btn_area">
+					<input type="submit" value="가입하기" class="btn_submit">
+				</div>
 			</form>
 		</div>
 	</div>
@@ -79,14 +104,18 @@
 
 <script>
 	function checked(e){
+
 		var sex = document.getElementsByClassName('sex');
+
 		
 		for(var i=0; i<sex.length; i++ ){
-			sex[i].style.border = "none";
+			document.getElementsByClassName('sex')[i].style.border = "none";
+			sex[i].style.color = "#ddd";
 			sex[i].style.fontWeight = "";
 		}
-
 		e.style.border ="1px solid #2db400";
+		e.style.color = "#2db400";
 		e.style.fontWeight = "bold";
+
 	}
 </script>
