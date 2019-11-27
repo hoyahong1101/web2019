@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>MENU01</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../bxslider/css/jquery.bxslider.css">
+	<script src="../bxslider/js/jquery-3.1.1.min.js"></script>
+	<script src="../bxslider/js/jquery.bxslider.js"></script>
+
+	<style>
+		nav.menu{width: 80%; margin: 0 auto;  position: relative; overflow: hidden; height: 40px;}
+		nav.menu>ul{height: 40px;}
+		nav.menu>ul>li{width: 20%; height: 40px; float: left; background-color: gold; }
+		nav.menu>ul>li:hover{background-color: pink;}
+		nav.menu:hover{overflow: initial;}
+		nav.menu>ul>li>a{display: block; line-height: 40px; text-align: center;}
+	/*	nav.menu>ul>li ul.sub{position: absolute; left: 0; bottom: -160px; width: 100%; z-index: 99; background-color: pink;}*/
+		nav.menu>ul>li:hover ul.sub{position: absolute; left: 0; bottom: -160px; width: 100%; z-index: 99; background-color: pink;}
+		nav.menu>ul>li ul.sub li{}
+		nav.menu>ul>li ul.sub li a{text-align: center; display: block; line-height: 40px; font-size: 0.7em;}
+		ul.bxSlider li img{width: 100%;}
+
+	</style>
+	<script>
+		$(document).ready(function(){
+			$('.bxSlider').bxSlider();
+		});
+
+		
+		
+	</script>
+</head>
+<body>
+	<nav class="menu">
+		<ul class="clearfix">
+			<li>
+				<a href="#">MENU1</a>
+				<ul class="sub">
+					<li><a href="#">SUBMENU11</a></li>
+					<li><a href="#">SUBMENU12</a></li>
+					<li><a href="#">SUBMENU13</a></li>
+					<li><a href="#">SUBMENU14</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">MENU2</a>
+				<ul class="sub">
+					<li><a href="#">SUBMENU21</a></li>
+					<li><a href="#">SUBMENU22</a></li>
+					<li><a href="#">SUBMENU23</a></li>
+					<li><a href="#">SUBMENU24</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">MENU3</a>
+				<ul class="sub">
+					<li><a href="#">SUBMENU31</a></li>
+					<li><a href="#">SUBMENU32</a></li>
+					<li><a href="#">SUBMENU33</a></li>
+					<li><a href="#">SUBMENU34</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">MENU4</a>
+				<ul class="sub">
+					<li><a href="#">SUBMENU41</a></li>
+					<li><a href="#">SUBMENU42</a></li>
+					<li><a href="#">SUBMENU43</a></li>
+					<li><a href="#">SUBMENU44</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">MENU5</a>
+				<ul class="sub">
+					<li><a href="#">SUBMENU51</a></li>
+					<li><a href="#">SUBMENU52</a></li>
+					<li><a href="#">SUBMENU53</a></li>
+					<li><a href="#">SUBMENU54</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<ul class="bxSlider">
+		<li><img src="../images/pc01.jpg" alt=""></li>
+		<li><img src="../images/pc02.jpg" alt=""></li>
+		<li><img src="../images/pc03.jpg" alt=""></li>
+	</ul>
+</body>
+</html>
