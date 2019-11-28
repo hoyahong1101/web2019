@@ -8,13 +8,16 @@
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<link rel="stylesheet" href="css/colorbox.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/jquery.colorbox.js"></script>
+	<script src="js/wow.js"></script>
 	<script>
+
 		$(document).ready(function(){
       		var mySlider = $(".bxslider").bxSlider({
       			controls:false 
@@ -84,9 +87,38 @@
 					return false;
 				});
 			});
+		function openContainer(){
 
+			if(document.getElementById('container2').style.display =='none'){
+			document.getElementById('openContainer').classList.add("x");
+			document.getElementById('container2').style.display ='block';
+			document.getElementById('container2').style.maxHeight = document.getElementById('container2').scrollHeight+'px';
+			}
+			else{
+			document.getElementById('openContainer').classList.remove("x");
+			document.getElementById('container2').style.maxHeight = 0;
+			document.getElementById('container2').style.display ='none';
+			
+			}
+		}
+		new WOW().init();
 	</script>
-	</head>
+	<style>
+		.section{height: 700px; background: url(images/contentsbg01.jpg) no-repeat center fixed; background-size: cover; padding:70px 0;}
+		.section>.contents{width: 1260px; margin: 0 auto;}
+		.section>.contents>h4{text-align: center; color: #aaa;}
+		.section>.contents>h4:after{content: ""; display: block; width: 70px; height: 2px; background-color: #aaa; margin: 10px auto;}
+		.section>.contents>p{text-align: center; color: #aaa; font-size: 2em; font-weight: bold; margin-bottom: 70px;}
+		.section>.contents>ul{}
+		.section>.contents>ul>li{text-align: center; float: left;  color: #aaa; margin-right: 20px; transition: 0.2s;}
+		.section>.contents>ul>li:hover{box-shadow: 8px 8px 10px gray; transform: translate(-10px, -10px); }
+		.section>.contents>ul>li:last-child{margin-right: 0;}
+		.section>.contents>ul>li .card{ width: 300px; /*height: 380px;*/ border-radius: 5px; background-color: #fff; }
+		.section>.contents>ul>li .card img{display: block; margin: 0 auto;}
+		.section>.contents>ul>li .card-body{padding: 20px;}
+		.section>.contents>ul>li .card-body .card-title{font-size: 1.5em; font-weight: bold; margin-bottom: 10px;}
+	</style>
+</head>
 <body>
 	<header class="hd">
 		<div class="hdMenu">
@@ -145,7 +177,7 @@
 				</div>	
 			</div>
 		</div>
-		<div class="container1 clearfix">
+		<div class="container1 clearfix" id="container1">
 			<div class="bodyWrap clearfix">
 				<div class="txt ">
 					<p>The Finest Quality Coffee Plants</p>
@@ -157,10 +189,12 @@
 					</div>
 					<p>균형잡힌 바디감으로 긴여운을 남기는 빽다방 커피를 만나보세요.</p>	
 				</div>
-				<img src="images/circleIcon.png" alt="">
+				<!-- <img src="images/circleIcon.png" alt="" > -->
+				<div id="openContainer" onclick="openContainer();"><span></span></div>
 			</div>
+			
 		</div>
-		<div class="container2">
+		<div class="container2 " id="container2">
 		    <div class="storyWrap clearfix">
 		    	<div class="storyTxt">
 		    		<h2>SINCE 2006</h2>
@@ -269,7 +303,7 @@
 		</div>
 		<div class="container4">
 			<ul class="clearfix">
-				<li class="cardWrap">
+				<li class="cardWrap wow fadeInUp" data-wow-delay="0.2s">
 					<div class="card">
 						<i class="fas fa-coffee"></i>
 						<div>Coffee</div>
@@ -280,10 +314,10 @@
 						<p>원조커피(ICED)</p>
 					</div>
 				</li>
-				<li class='youtube' href="https://www.youtube.com/embed/xjUJCBGINCk">
+				<li class='youtube wow fadeInUp' data-wow-delay="0.4s" href="https://www.youtube.com/embed/xjUJCBGINCk">
 					<i class="far fa-play-circle"></i>
 				</li>
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="0.6s">
 					<ul class="noticeWrap">
 						<li class="notice ">
 							<div class="noticein clearfix">
@@ -309,7 +343,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="notice ">
+						<li class="notice  ">
 							<div class="noticein clearfix">
 								<div class="noticeTxt">
 									<h2>19년 3분기 빽다방 “친절우수매장” <br>
@@ -328,7 +362,7 @@
 						<img src="images/controls.jpg" alt="">
 					</div>	
 				</li>
-				<li class="cardWrap">
+				<li class="cardWrap wow fadeInUp" data-wow-delay="0.6s">
 					<div class="card">
 						<i class="fas fa-bread-slice"></i>
 						<div>Dessert</div>
@@ -339,7 +373,7 @@
 						<p>사라다빵</p>
 					</div>
 				</li>
-				<li class="cardWrap">
+				<li class="cardWrap wow fadeInUp" data-wow-delay="0.4s">
 					<div class="card">
 						<i class="fas fa-ice-cream"></i>
 						<div>Icecream</div>
@@ -350,37 +384,37 @@
 						<p>뺵엔나</p>
 					</div>
 				</li>
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="0.2s">
 					<div class="txtWrap">
 						<h3>창업안내</h3>
 						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
 					</div>
 				</li>
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="0.2s">
 					<div class="txtWrap">
 						<h3>창업안내</h3>
 						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
 					</div>
 				</li>
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="0.4s">
 					<div class="txtWrap">
 						<h3>창업안내</h3>
 						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
 					</div>
 				</li>
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="0.6s">
 					<div class="community">
 						<h3>커피 클래스</h3>
 						<p>2019.11.04 - 2019.11.10</p>
 					</div>
 				</li>
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="0.4s">
 					<div class="community">
 						<h3>커피 클래스</h3>
 						<p>2019.11.04 - 2019.11.10</p>
 					</div>
 				</li>
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="0.2s">
 					<div class="txtWrap">
 						<h3>창업안내</h3>
 						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
@@ -488,6 +522,50 @@
 			</li>
 		</ul>
 	</section>
+	<div class="section">
+		<div class="contents">
+			<h4>비젼</h4>
+			<p>VISION 2020</p>
+			<ul class="clearfix">
+				<li>
+					<div class="card">
+						<img src="images/about1.png" alt="cheap">
+						<div class="card-body">
+							<p class="card-title">싸다!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, a.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/about1.png" alt="cheap">
+						<div class="card-body">
+							<p class="card-title">싸다!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, a.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/about1.png" alt="cheap">
+						<div class="card-body">
+							<p class="card-title">싸다!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, a.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/about1.png" alt="cheap">
+						<div class="card-body">
+							<p class="card-title">싸다!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, a.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<footer class="footer">
 		<div class="footerWrap clearfix">
 			<h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
