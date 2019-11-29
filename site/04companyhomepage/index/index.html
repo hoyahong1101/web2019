@@ -17,7 +17,6 @@
 	<script src="js/jquery.colorbox.js"></script>
 	<script src="js/wow.js"></script>
 	<script>
-
 		$(document).ready(function(){
       		var mySlider = $(".bxslider").bxSlider({
       			controls:false 
@@ -38,7 +37,7 @@
 					mySlider2.goToNextSlide();
 					});
 			var mySlider3 = $(".noticeWrap").bxSlider({
-      			controls:false, pager:false, auto: false, mode:'fade'
+      			controls:false, pager:false, auto: false
       			});
 				$(".pre_btn3").click(function(){
 					mySlider3.goToPrevSlide(); 
@@ -47,7 +46,7 @@
 					mySlider3.goToNextSlide();
 					});	
 			var mySlider4 = $(".mySlider4").bxSlider({
-  			controls:false, pager:false, auto: false, mode:'fade'
+  			controls:false, pager:false, auto: false
   			});
 			$(".pre_btn4").click(function(){
 				mySlider4.goToPrevSlide(); 
@@ -103,21 +102,6 @@
 		}
 		new WOW().init();
 	</script>
-	<style>
-		.section{height: 700px; background: url(images/contentsbg01.jpg) no-repeat center fixed; background-size: cover; padding:70px 0;}
-		.section>.contents{width: 1260px; margin: 0 auto;}
-		.section>.contents>h4{text-align: center; color: #aaa;}
-		.section>.contents>h4:after{content: ""; display: block; width: 70px; height: 2px; background-color: #aaa; margin: 10px auto;}
-		.section>.contents>p{text-align: center; color: #aaa; font-size: 2em; font-weight: bold; margin-bottom: 70px;}
-		.section>.contents>ul{}
-		.section>.contents>ul>li{text-align: center; float: left;  color: #aaa; margin-right: 20px; transition: 0.2s;}
-		.section>.contents>ul>li:hover{box-shadow: 8px 8px 10px gray; transform: translate(-10px, -10px); }
-		.section>.contents>ul>li:last-child{margin-right: 0;}
-		.section>.contents>ul>li .card{ width: 300px; /*height: 380px;*/ border-radius: 5px; background-color: #fff; }
-		.section>.contents>ul>li .card img{display: block; margin: 0 auto;}
-		.section>.contents>ul>li .card-body{padding: 20px;}
-		.section>.contents>ul>li .card-body .card-title{font-size: 1.5em; font-weight: bold; margin-bottom: 10px;}
-	</style>
 </head>
 <body>
 	<header class="hd">
@@ -314,44 +298,48 @@
 						<p>원조커피(ICED)</p>
 					</div>
 				</li>
-				<li class='youtube wow fadeInUp' data-wow-delay="0.4s" href="https://www.youtube.com/embed/xjUJCBGINCk">
-					<i class="far fa-play-circle"></i>
+				<li class='youtube wow fadeInUp cardWrap'  data-wow-delay="0.4s" href="https://www.youtube.com/embed/xjUJCBGINCk">
+					<div class="card">
+						<i class="fab fa-youtube"></i>
+						<div>Youtube</div>
+					</div>
+					<div class="cardImg">
+						<img src="./images/youtubeBrothers.jpg" alt="">
+
+					</div>
 				</li>
 				<li class="wow fadeInUp" data-wow-delay="0.6s">
 					<ul class="noticeWrap">
 						<li class="notice ">
 							<div class="noticein clearfix">
 								<div class="noticeTxt">
-									<h2>19년 3분기 빽다방 “친절우수매장” <br>
-										최우수 친절매장 청주율량중앙점 점주
-									</h2>
-									<p>Interview</p>
+									<h2>소식</h2>
+									<h4>최우수 친절매장 청주율량중앙점 점주!</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, eligendi.</p>
 								</div>
-								<div class="noticeImg">
+								<div class="noticeImg1">
 								</div>
 							</div>
 						</li>
 						<li class="notice">
 							<div class="noticein clearfix">
 								<div class="noticeTxt">
-									<h2>19년 3분기 빽다방 “친절우수매장” <br>
-										최우수 친절매장 청주율량중앙점 점주
-									</h2>
-									<p>Interview</p>
+									<h2>소식</h2>
+									<h4>할로윈 시즌 메뉴 출시!</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, eligendi.</p>
 								</div>
-								<div class="noticeImg">
+								<div class="noticeImg2">
 								</div>
 							</div>
 						</li>
 						<li class="notice  ">
 							<div class="noticein clearfix">
 								<div class="noticeTxt">
-									<h2>19년 3분기 빽다방 “친절우수매장” <br>
-										최우수 친절매장 청주율량중앙점 점주
-									</h2>
-									<p>Interview</p>
+									<h2>소식</h2>
+									<h4>돌아온 전통음료 수정과를 만나보세요.</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, eligendi.</p>
 								</div>
-								<div class="noticeImg"></div>
+								<div class="noticeImg3"></div>
 							</div>
 						</li>
 					</ul>
@@ -386,38 +374,146 @@
 				</li>
 				<li class="wow fadeInUp" data-wow-delay="0.2s">
 					<div class="txtWrap">
-						<h3>창업안내</h3>
-						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
+						<h2>STORE</h2>
+						<p>원하시는 지역의 매장을 검색해보세요!</p>
+						<div class="clearfix">
+							<input type="text" placeholder="Find a store in your area!">
+							<div class="btn">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
 					</div>
 				</li>
 				<li class="wow fadeInUp" data-wow-delay="0.2s">
 					<div class="txtWrap">
-						<h3>창업안내</h3>
-						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
+						<h2>COFFEE CLASS</h2>
+						<p>
+							빽다방 아카데미에서 진행되는<br>
+							커피클래스에 여러분을 초대합니다.
+						</p>
+						<div>
+							11월 커피클래스<br>
+							2019.11.04 - 2019.11.10
+						</div>
 					</div>
 				</li>
 				<li class="wow fadeInUp" data-wow-delay="0.4s">
 					<div class="txtWrap">
-						<h3>창업안내</h3>
-						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
+						<h2>FRANCHISE</h2>
+						<p>빽다방 창업안내를 도와드리겠습니다.</p>
+						<div class="btnStore"></div>
 					</div>
 				</li>
 				<li class="wow fadeInUp" data-wow-delay="0.6s">
-					<div class="community">
-						<h3>커피 클래스</h3>
-						<p>2019.11.04 - 2019.11.10</p>
+					<div class="txtWrap">
+						<h2>EVENT</h2>
+						<p>다양한 이벤트를 확인하세요!</p>
+						<ul>
+							<li><i class="fas fa-circle"></i> 빽다방 드립백 세트 증정 이벤트!</li>
+							<li><i class="fas fa-circle"></i> 신메뉴 출시 이벤트! 8월2일~11일까지!</li>
+							<li><i class="fas fa-circle"></i> 신메뉴 출시 이벤트! 8월2일~11일까지!</li>
+							<li><i class="fas fa-circle"></i> 신메뉴 출시 이벤트! 8월2일~11일까지!</li>
+						</ul>
 					</div>
 				</li>
 				<li class="wow fadeInUp" data-wow-delay="0.4s">
-					<div class="community">
-						<h3>커피 클래스</h3>
-						<p>2019.11.04 - 2019.11.10</p>
+					<div class="txtWrap">
+						<h2>SUPPORTS</h2>
+						<p>빽다방 서포터즈 게시판입니다.</p>
 					</div>
 				</li>
 				<li class="wow fadeInUp" data-wow-delay="0.2s">
 					<div class="txtWrap">
-						<h3>창업안내</h3>
-						<p>다년간의 경영 노하우를 통해 함께 성장하는 빽다방입니다.</p>
+						<h2>YOUR VOICE</h2>
+						<p>항상 고객님들의 목소리에 귀 기울이겠습니다.</p>
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 134 35" style="enable-background:new 0 0 134 35;" xml:space="preserve">
+<style type="text/css">
+.st0{fill:#E41E25;}
+.st1{opacity:0.9;fill:url(#SVGID_1_);}
+.st2{opacity:0.9;fill:url(#SVGID_2_);}
+.st3{fill:#49494B;}
+.st4{fill:#9C9EA0;}
+</style>
+<g>
+<path class="st0" d="M30.3,19.8c0.5,0.8,0.2,1.7-0.3,2.5c-0.1,0.2-0.3,0.4-0.4,0.6c-0.4,0.5-1,0.9-1.5,1.2l-0.1,0l-7.7,4.5v-9.5
+	v-1.9V4.4l-3.1-4.2v16.3v1.9v16.3l13.6-8.5C33.1,24.6,33.6,21.4,30.3,19.8z"></path>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="20.2112" y1="19.7972" x2="29.7507" y2="19.7972">
+	<stop offset="0.2796" style="stop-color:#E41E25"></stop>
+	<stop offset="1" style="stop-color:#AA0D13"></stop>
+</linearGradient>
+<path class="st1" d="M29.7,20.6c-0.1-0.7-0.9-1.2-2.3-1.6c-0.1,0-4-1-7.2-1.8v1.9c3.3,0.9,6.9,2,7.2,2.1c0.6,0.2,1.2,0.6,1.5,1.1
+	C29.5,21.8,29.8,21.1,29.7,20.6z"></path>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="13.0743" y1="14.895" x2="3.5357" y2="14.895">
+	<stop offset="0.2796" style="stop-color:#E41E25"></stop>
+	<stop offset="1" style="stop-color:#AA0D13"></stop>
+</linearGradient>
+<path class="st2" d="M3.5,14.1c0.1,0.7,0.9,1.2,2.3,1.6c0.1,0,4,1,7.2,1.8v-1.9c-3.3-0.9-6.9-2-7.2-2.1c-0.6-0.2-1.2-0.6-1.5-1.1
+	C3.8,12.9,3.5,13.6,3.5,14.1z"></path>
+<path class="st0" d="M3,14.9c-0.5-0.8-0.2-1.7,0.3-2.5c0.1-0.2,0.3-0.4,0.4-0.6c0.4-0.5,1-0.9,1.5-1.2l0.1,0l7.7-4.5v9.5v1.9v12.9
+	l3.1,4.2V18.3v-1.9V0.1L2.7,8.6C0.1,10.1-0.3,13.3,3,14.9z"></path>
+<g>
+	<path class="st3" d="M36.3,8.9h4.2v9l0,0v1.2c0,0.7,0.5,1.2,1.2,1.2l0,0l0,0h1.2v-1.9V8.9h4.2V6.7H36.3V8.9z"></path>
+	<path class="st3" d="M58.4,6.7V12h-5.8V6.7h-2.4v12.4c0,0.7,0.5,1.2,1.2,1.2h1.2v-1c0-0.1,0-0.1,0-0.2v-4.4c0-0.1,0-0.1,0-0.2
+		v-0.3h5.8v6h2.4l0-13.6H58.4z"></path>
+	<path class="st3" d="M86.7,13c0.4-0.2,0.8-0.6,1.2-1.2c0.4-0.6,0.5-1.3,0.4-2.1c-0.1-0.8-0.5-1.5-1.3-2.1
+		c-0.7-0.6-1.7-0.9-2.9-0.9h-5.8v12.4c0,0.7,0.5,1.2,1.2,1.2c0.1,0,0.1,0,0.2,0h4.5c1.3,0,2.5-0.3,3.3-1c0.9-0.7,1.4-1.6,1.4-2.6
+		c0.1-1-0.2-1.8-0.7-2.4C87.7,13.6,87.2,13.2,86.7,13z M80.6,8.9h3.2c0.6,0,1.1,0.1,1.5,0.4c0.4,0.3,0.5,0.7,0.5,1.1
+		c0,0.5-0.2,0.9-0.5,1.2c-0.4,0.3-0.9,0.4-1.5,0.4h-3.1V8.9z M85.8,17.5c-0.4,0.4-1,0.6-1.9,0.6h-3.3v-3.4c0-0.1,0-0.1,0-0.2v-0.2
+		H84c0.8,0,1.4,0.2,1.8,0.6c0.4,0.4,0.5,0.8,0.5,1.3C86.4,16.6,86.2,17.1,85.8,17.5z"></path>
+	<path class="st3" d="M117.5,13.3c0.6-0.8,0.9-1.6,0.9-2.6c0-1.1-0.5-2.1-1.3-2.9c-0.9-0.8-2-1.2-3.2-1.2h-5.6v12.4
+		c0,0.7,0.5,1.2,1.2,1.2h1.2v-1c0-0.1,0-0.1,0-0.2V15h2l3.7,5.3h2.9l-3.9-5.5C116.2,14.6,116.9,14.1,117.5,13.3z M113.4,12.7
+		l-2.9,0V8.8h2.9c0.7,0,1.3,0.2,1.8,0.5c0.5,0.3,0.7,0.8,0.7,1.4c0,0.7-0.2,1.2-0.7,1.5C114.7,12.5,114.1,12.7,113.4,12.7z"></path>
+	<path class="st3" d="M130.5,6.7v9.6L125,6.7h-2.8c0,0,0,0,0,0l0,12.4c0,0.6,0.5,1.1,1.1,1.2v0h0.1h0.5h0.8v-9.6l5.4,9.6h2.9V6.7
+		H130.5z"></path>
+	<path class="st3" d="M98.1,5.7c-4.2,0-7.6,3.4-7.6,7.6c0,4.2,3.4,7.6,7.6,7.6c4.2,0,7.6-3.4,7.6-7.6C105.6,9.1,102.2,5.7,98.1,5.7
+		z M98.1,18.3c-2.8,0-5.1-2.3-5.1-5.1c0-2.8,2.3-5.1,5.1-5.1c2.8,0,5.1,2.3,5.1,5.1C103.1,16,100.8,18.3,98.1,18.3z"></path>
+	<path class="st3" d="M67.3,14.7c0-0.1,0-0.2,0-0.3v-0.1h6.8v-2.2h-6.8V8.9h7.1V6.7H65v12.4c0,0.6,0.5,1.2,1.1,1.2v0h0c0,0,0,0,0,0
+		c0,0,0,0,0,0l8.5,0V18l-7.3,0V14.7z"></path>
+</g>
+<g>
+	<g>
+		<path class="st4" d="M42.6,24.8c0.3,0.4,0.5,0.9,0.5,1.6c0,0.6-0.2,1.2-0.5,1.6c-0.3,0.4-0.8,0.6-1.4,0.6c-0.6,0-1-0.2-1.4-0.6
+			c-0.3-0.4-0.5-0.9-0.5-1.6c0-0.6,0.2-1.2,0.5-1.6c0.3-0.4,0.8-0.6,1.4-0.6C41.8,24.2,42.3,24.4,42.6,24.8z M42.3,27.7
+			c0.3-0.3,0.4-0.8,0.4-1.3c0-0.5-0.1-1-0.4-1.3c-0.3-0.3-0.6-0.5-1.1-0.5c-0.4,0-0.8,0.2-1.1,0.5c-0.3,0.3-0.4,0.8-0.4,1.3
+			c0,0.5,0.1,1,0.4,1.3c0.3,0.3,0.6,0.5,1.1,0.5C41.7,28.2,42.1,28,42.3,27.7z"></path>
+		<path class="st4" d="M47.9,28.5l-1.2-1.7h-1.3v1.7H45v-4.1h1.8c0.4,0,0.7,0.1,1,0.3c0.3,0.2,0.4,0.5,0.4,0.9
+			c0,0.3-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.4l1.2,1.8H47.9z M47.4,26.2c0.2-0.1,0.3-0.4,0.3-0.6c0-0.3-0.1-0.5-0.3-0.6
+			c-0.2-0.1-0.4-0.2-0.7-0.2h-1.3v1.7h1.3C47,26.4,47.2,26.3,47.4,26.2z"></path>
+		<path class="st4" d="M50,28.5v-4.1h0.4v4.1H50z"></path>
+		<path class="st4" d="M55.5,28.5v-0.6l0,0c-0.1,0.2-0.3,0.4-0.5,0.5c-0.2,0.1-0.5,0.2-0.8,0.2c-0.6,0-1-0.2-1.4-0.6
+			c-0.3-0.4-0.5-0.9-0.5-1.6c0-0.6,0.2-1.2,0.5-1.6c0.3-0.4,0.8-0.6,1.4-0.6c0.5,0,0.9,0.2,1.2,0.5c0.3,0.3,0.5,0.6,0.5,0.8h-0.4
+			c-0.1-0.2-0.2-0.4-0.4-0.6c-0.2-0.2-0.5-0.3-0.9-0.3c-0.4,0-0.8,0.2-1.1,0.5c-0.3,0.3-0.4,0.8-0.4,1.3c0,0.5,0.1,1,0.4,1.3
+			c0.3,0.3,0.6,0.5,1,0.5c0.4,0,0.8-0.1,1-0.4c0.3-0.3,0.4-0.6,0.4-0.9v-0.2h-1.3v-0.3h1.7v2.1H55.5z"></path>
+		<path class="st4" d="M57.8,28.5v-4.1h0.4v4.1H57.8z"></path>
+		<path class="st4" d="M63,28.5l-2.3-3.6v3.5h-0.4v-4.1h0.5l2.3,3.6v-3.6h0.4v4.1H63z"></path>
+		<path class="st4" d="M68.6,28.5l-0.5-1.1H66l-0.5,1.1h-0.4l1.7-4.1h0.5l1.7,4.1H68.6z M67,24.8L66.1,27H68L67,24.8z"></path>
+		<path class="st4" d="M70.6,28.4v-4.1H71v3.8h2.4v0.3H70.6z"></path>
+		<path class="st4" d="M81.3,28.5l-1.8-2.1c-0.2,0.2-0.3,0.3-0.5,0.4c-0.1,0.1-0.2,0.2-0.3,0.3v1.4h-0.4v-4.1h0.4v2.2
+			c0.3-0.3,0.7-0.7,1.1-1.1c0.4-0.4,0.7-0.8,1.1-1.2h0.5c-0.3,0.3-0.6,0.7-0.8,0.9c-0.3,0.3-0.5,0.6-0.8,0.8l2,2.4H81.3z"></path>
+		<path class="st4" d="M86,24.8c0.3,0.4,0.5,0.9,0.5,1.6c0,0.6-0.2,1.2-0.5,1.6c-0.3,0.4-0.8,0.6-1.4,0.6c-0.6,0-1-0.2-1.4-0.6
+			c-0.3-0.4-0.5-0.9-0.5-1.6c0-0.6,0.2-1.2,0.5-1.6c0.3-0.4,0.8-0.6,1.4-0.6C85.2,24.2,85.7,24.4,86,24.8z M85.7,27.7
+			c0.3-0.3,0.4-0.8,0.4-1.3c0-0.5-0.1-1-0.4-1.3c-0.3-0.3-0.6-0.5-1.1-0.5c-0.4,0-0.8,0.2-1.1,0.5c-0.3,0.3-0.4,0.8-0.4,1.3
+			c0,0.5,0.1,1,0.4,1.3c0.3,0.3,0.6,0.5,1.1,0.5C85.1,28.2,85.5,28,85.7,27.7z"></path>
+		<path class="st4" d="M91.3,28.5l-1.2-1.7h-1.3v1.7h-0.4v-4.1h1.8c0.4,0,0.7,0.1,1,0.3c0.3,0.2,0.4,0.5,0.4,0.9
+			c0,0.3-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.4l1.2,1.8H91.3z M90.8,26.2c0.2-0.1,0.3-0.4,0.3-0.6c0-0.3-0.1-0.5-0.3-0.6
+			c-0.2-0.1-0.4-0.2-0.7-0.2h-1.3v1.7h1.3C90.4,26.4,90.6,26.3,90.8,26.2z"></path>
+		<path class="st4" d="M93.4,28.5v-4.1h2.9v0.3h-2.5v1.5h2.4v0.3h-2.4v1.6h2.5v0.4H93.4z"></path>
+		<path class="st4" d="M101.3,28.5l-0.5-1.1h-2.2l-0.5,1.1h-0.4l1.7-4.1h0.5l1.7,4.1H101.3z M99.7,24.8L98.8,27h1.9L99.7,24.8z"></path>
+		<path class="st4" d="M106,28.5l-2.3-3.6v3.5h-0.4v-4.1h0.5l2.3,3.6v-3.6h0.4v4.1H106z"></path>
+		<path class="st4" d="M113.4,24.7v3.8H113l0-3.8h-1.4v-0.3h3.2v0.3H113.4z"></path>
+		<path class="st4" d="M119,28.5l-0.5-1.1h-2.2l-0.5,1.1h-0.4l1.7-4.1h0.5l1.7,4.1H119z M117.4,24.8l-0.9,2.2h1.9L117.4,24.8z"></path>
+		<path class="st4" d="M123.7,26.8c0.1,0.2,0.2,0.4,0.2,0.6c0,0.3-0.2,0.6-0.5,0.8c-0.3,0.2-0.6,0.3-1.1,0.3c-0.5,0-1-0.2-1.2-0.5
+			c-0.3-0.3-0.4-0.6-0.4-1h0.4c0,0.4,0.1,0.7,0.4,0.8c0.2,0.2,0.5,0.3,0.9,0.3c0.3,0,0.6-0.1,0.8-0.2c0.2-0.1,0.3-0.3,0.4-0.6
+			c0-0.2,0-0.3-0.1-0.5c-0.1-0.1-0.2-0.2-0.4-0.3c-0.2-0.1-0.4-0.1-0.6-0.2c-0.2,0-0.4-0.1-0.6-0.2c-0.3-0.1-0.5-0.2-0.6-0.4
+			c-0.1-0.2-0.2-0.4-0.2-0.7c0-0.3,0.1-0.5,0.4-0.8c0.2-0.2,0.6-0.4,1.1-0.4c0.6,0,1,0.2,1.2,0.5c0.2,0.3,0.3,0.6,0.3,0.8h-0.4
+			c0-0.3-0.1-0.5-0.3-0.7c-0.2-0.2-0.5-0.3-0.8-0.3c-0.3,0-0.6,0.1-0.7,0.2c-0.2,0.2-0.3,0.3-0.3,0.5c0,0.2,0.1,0.4,0.2,0.5
+			c0.1,0.1,0.3,0.2,0.4,0.2c0.1,0,0.3,0.1,0.6,0.1c0.2,0,0.5,0.1,0.7,0.2C123.4,26.5,123.6,26.6,123.7,26.8z"></path>
+		<path class="st4" d="M127,24.7v3.8h-0.4l0-3.8h-1.4v-0.3h3.2v0.3H127z"></path>
+		<path class="st4" d="M130.1,28.5v-4.1h2.9v0.3h-2.5v1.5h2.4v0.3h-2.4v1.6h2.5v0.4H130.1z"></path>
+	</g>
+</g>
+</g>
+</svg>
 					</div>
 				</li>
 			</ul>
@@ -450,18 +546,11 @@
 				<ul class="mySlider4">
 					<li>
 						<h2>
-							<i class="far fa-heart"></i>
-						</h2>
-						<h3>SNS</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nulla, perspiciatis minima obcaecati quo animi ipsam totam. Commodi voluptatem, quos.</p>
-						<div class="date">2019.11.27</div>
-					</li>
-					<li>
-						<h2>
 							<i class="fab fa-facebook-square"></i>
 						</h2>
 						<h3>FACEBOOK</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nulla, perspiciatis minima obcaecati quo animi ipsam totam. Commodi voluptatem, quos.</p>
+						<p>자도 zz 자도 zzz 자몽하다면 상큼보스 티 한 잔으로 극-뽁</p>
+						<p>#과육이톡톡 #향까지달콤한 #자몽티_레몬티_유자티 #합리적인커피문화 #빽다방</p>
 						<div class="date">2019.11.27</div>
 					</li>
 					<li>
@@ -469,7 +558,8 @@
 							<i class="fab fa-instagram"></i>
 						</h2>
 						<h3>INSTARGRAM</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nulla, perspiciatis minima obcaecati quo animi ipsam totam. Commodi voluptatem, quos.</p>
+						<p>자도 zz 자도 zzz 자몽하다면 상큼보스 티 한 잔으로 극-뽁</p>
+						<p>#과육이톡톡 #향까지달콤한 #자몽티_레몬티_유자티 #합리적인커피문화 #빽다방</p>
 						<div class="date">2019.11.27</div>
 					</li>
 				</ul>
@@ -483,107 +573,70 @@
 			<li>
 			</li>
 			<li>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, eum quae. Doloremque, error porro obcaecati. Nostrum in, sunt sequi at ab! Architecto reiciendis eaque quia quae consectetur harum asperiores delectus.</p>
+				<p>인증됨 빽다방 크리스마스 모드 ON_</p>
+				<p>#해피 #빽다방 #크리스마스 #홀더</p>
 				<div class="heart"><i class="fas fa-heart"></i> 101</div>
+				<div class="date">2019.11.27</div>
 			</li>
 			<li>
 			</li>
 			<li>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, eum quae. Doloremque, error porro obcaecati. Nostrum in, sunt sequi at ab! Architecto reiciendis eaque quia quae consectetur harum asperiores delectus.</p>
+				<p>자도 zz 자도 zzz 자몽하다면 상큼보스 티 한 잔으로 극-뽁</p>
+				<p>#과육이톡톡 #향까지달콤한 #자몽티_레몬티_유자티 #합리적인커피문화 #빽다방</p>
+	
 				<div class="heart"><i class="fas fa-heart"></i> 101</div>
+				<div class="date">2019.11.27</div>
 			</li>
 			<li>
 			</li>
 			<li>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, eum quae. Doloremque, error porro obcaecati. Nostrum in, sunt sequi at ab! Architecto reiciendis eaque quia quae consectetur harum asperiores delectus.</p>
+				<p>얼죽아도 인정한 겨울히트메뉴!! 겨울에 호호 불어먹는 초코는 사랑입니다 ❄ + 🍫 = ❤_</p>
+				<p>#빽다방표_꾸덕함이더해진 #완전초코 #목넘김까지_부드러운 #크리미모카라떼 #합리적인커피문화 #빽다방 #초코</p>
 				<div class="heart"><i class="fas fa-heart"></i> 101</div>
+				<div class="date">2019.11.27</div>
 			</li>
 		</ul>
 	</section>
 		<section class="section3">
-		<ul class="clearfix">
-			<li>
-				<div class="sec3Wrap">
-					<h3>지속가능한경영</h3>
-					<p>	
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos similique ipsa laudantium in hic, ut? Debitis quae adipisci itaque iste.
-					</p>
-					<div class="btn">자세히보기</div>
-				</div>
-			</li>
-			<li>
-				<div class="sec3Wrap">
-					<h3>인재채용</h3>
-					<p>	
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos similique ipsa laudantium in hic, ut? Debitis quae adipisci itaque iste.
-					</p>
-					<div class="btn">자세히보기</div>
-				</div>
-			</li>
+			<div class="sec3Wrap clearfix">
+					<div class="contentWrap">
+						<h2>인재채용</h2>
+						<p>	
+							창의력을 발휘하여 발전하는 <br> 인재를 기다립니다.
+						</p>
+						<div class="btn">자세히보기</div>
+					</div>
+					<div class="contentWrap">
+						<h2>지속가능한경영</h2>
+						<p>	
+							사람과 생활에 행복을주는 기업으로 함께 하겠습니다.
+						</p>
+						<div class="btn">자세히보기</div>
+					</div>	
+			</div>
+		
+
 		</ul>
 	</section>
-	<div class="section">
-		<div class="contents">
-			<h4>비젼</h4>
-			<p>VISION 2020</p>
-			<ul class="clearfix">
-				<li>
-					<div class="card">
-						<img src="images/about1.png" alt="cheap">
-						<div class="card-body">
-							<p class="card-title">싸다!</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, a.</p>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="card">
-						<img src="images/about1.png" alt="cheap">
-						<div class="card-body">
-							<p class="card-title">싸다!</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, a.</p>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="card">
-						<img src="images/about1.png" alt="cheap">
-						<div class="card-body">
-							<p class="card-title">싸다!</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, a.</p>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="card">
-						<img src="images/about1.png" alt="cheap">
-						<div class="card-body">
-							<p class="card-title">싸다!</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, a.</p>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
 	<footer class="footer">
 		<div class="footerWrap clearfix">
 			<h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
 			<div class="footTxt">
 				<ul class="clearfix">
-					<li>lorem</li>
-					<li>lorem</li>
-					<li>lorem</li>
-					<li>lorem</li>
-					<li>lorem</li>
-					<li>lorem</li>
+					<li>회사소개</li>
+					<li>개인정보처리방침</li>
+					<li>이용약관</li>
+					<li>고객센터</li>
+					<li>상담문의</li>
+					<li>사이트맵</li>
 				</ul>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur at delectus, sed aliquid ipsam, quod maiores magni ex cum fugit perspiciatis facilis numquam velit explicabo, accusantium voluptates. Dolore, tenetur, quas.</p>
+				<p>(주)더본코리아 사업자등록번호 211-86-00870 대표이사 백종원
+주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 4~6층 팩스: 02-511-3864
+본사 대표전화: 02-549-3864 가맹상담전화: 02-3447-0410 고객센터: 1544-2360</p>
 			</div>
 			<div class="btnWrap">FAIMLY SITE <i class="fas fa-caret-down"></i></div>
 			
 		</div>
 	</footer>
-
 </body>
 </html>
