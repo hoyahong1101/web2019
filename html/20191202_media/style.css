@@ -1,0 +1,36 @@
+@charset "utf-8";
+body{
+	color: #fff
+}
+h1{
+	height: 100px;
+	line-height: 100px;
+	background-color: gold;
+	margin-bottom: 10px;
+
+}
+nav.nav, div.body, ul.explain{
+	float: left;
+	height: 400px;
+}
+nav.nav{
+	
+	width: 20%;
+}
+nav.nav ul li{
+	background-color: skyblue;
+	margin-bottom: 10px;
+	height: 50px;
+}
+ .body{
+	padding-top:50px;
+	width: 60%;
+	background-color: #fff;
+}
+.body h2, .body p{
+	color: #000;
+}
+.explain{
+	background-color: skyblue;
+	width: 20%;
+}

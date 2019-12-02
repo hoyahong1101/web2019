@@ -76,6 +76,9 @@ header.hd div.visualWrap{ position: relative;}
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #ffe600;
 }
+.section2 .bx-viewport{
+	height:  630px !important;
+}
 
 .container1 {
 	    position: relative;
