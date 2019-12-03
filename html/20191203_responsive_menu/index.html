@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Responsive Menu</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="./css/all.css">
+	<style>
+		i{
+			font-size: 25px;
+		
+		}
+		#iconX{
+				display: none;
+			}
+
+		.icons{
+			display: none;
+			}
+		.navWrap{
+			width: 1200px;
+			/*height: 50px;*/
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: gold;
+			position: fixed;
+			top: 20px;
+			max-width: 100%;
+			position: relative;
+
+		}
+		.navWrap ul li{
+			width: 25%;
+			text-align: center;
+			float: left;
+		}
+		.tab{
+				width: 10%;
+				height: 50px;
+				display: none;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+	
+		.navWrap ul li a{
+			display: block;
+			line-height: 50px;
+			color: #000;
+		}
+	
+		
+		@media only screen and (max-width: 599px) {
+		  	.navWrap ul li{
+	
+			float: none;
+			}
+			.navWrap ul li a{
+				text-align: left;
+			}
+			.col-none{
+				float: none;
+				display: none;
+			}
+			.tab{
+				width: 10% !important;
+				height: 50px;
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		
+			
+		}
+		
+		@media only screen and (min-width: 600px) and (max-width: 767px){
+		  /* For tablets: */
+		  .icons{
+				display: inline-block;
+			}
+
+			span{
+				display: none;
+			}
+		 
+		@media only screen and (min-width: 768px) {
+		  /* For desktop: */
+		  .col-1 {width: 8.33%;}
+		  .col-2 {width: 16.66%;}
+		  .col-3 {width: 25%;}
+		  .col-4 {width: 33.33%;}
+		  .col-5 {width: 41.66%;}
+		  .col-6 {width: 50%;}
+		  .col-7 {width: 58.33%;}
+		  .col-8 {width: 66.66%;}
+		  .col-9 {width: 75%;}
+		  .col-10 {width: 83.33%;}
+		  .col-11 {width: 91.66%;}
+		  .col-12 {width: 100%;}
+		   .navWrap ul li{
+		   	display: block;
+			width: 25%;
+			text-align: center;
+			float: left;
+		}
+		
+		}
+	</style>
+	<script>
+		function tabMenu(){
+			var hiddenM = document.getElementsByClassName('classes');
+			var iconO = document.getElementById('iconO');
+			var iconX = document.getElementById('iconX');
+			
+			if(iconO.style.display =="inline-block"){
+				iconO.style.display ="none";
+				iconX.style.display ="inline-block";
+				for (var i =0; i <= hiddenM.length; i++){
+					hiddenM[i].style.display ="block";
+				}
+			}
+			else{
+				iconO.style.display ="inline-block";
+				iconX.style.display ="none";
+				for (var i =0; i <= hiddenM.length; i++){
+					hiddenM[i].style.display ="none";
+				}
+			}
+		}
+	function myFunction(){
+		var w = window.innerWidth;
+		var hiddenM = document.getElementsByClassName('classes');
+		var iconO = document.getElementById('iconO');
+		var iconX = document.getElementById('iconX');
+		if(w>=600){
+			iconO.style.display ="none";
+				iconX.style.display ="inline-block";
+				for (var i =0; i <= hiddenM.length; i++){
+					hiddenM[i].style.display ="block";
+				}
+		}
+		else{
+			iconO.style.display ="inline-block";
+				iconX.style.display ="none";
+				for (var i =0; i <= hiddenM.length; i++){
+					hiddenM[i].style.display ="none";
+				}
+		}
+	}
+
+	</script>
+</head>
+<body onresize="myFunction()">
+	<nav class="navWrap">
+		<ul class="clearfix">
+			<li class="col col-3 co"><a href="#"><i class="fas fa-home icons"></i> <span>HOME</span></a></li>
+			<li class="classes col-none col-3"><a href="#"><i class="far fa-newspaper icons"></i><span> NEWS</span></a></li class=".col-3">
+			<li class="classes col-none col-3"><a href="#"><i class="far fa-address-book icons"></i> <span>CONTACT</span></a></li class=".col-3">
+			<li class="classes col-none col-3"><a href="#"><i class="fas fa-eject icons"></i> <span>ABOUT</span></a></li>
+			<li class="tab" onclick="tabMenu()">
+				<a href="#"><i class="fas fa-bars " id="iconO"></i><i class="far fa-window-close" id="iconX"></i></a>
+			</li>
+		</ul>
+	</nav>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga esse beatae mollitia, praesentium ipsum natus doloremque perspiciatis, delectus eos sunt repellat. Unde tenetur, quae alias accusantium mollitia repellat illum consequatur dolor magni vero dicta error nisi laborum non molestiae, id fugit veniam. Accusamus dolores ratione nihil sit sint, quaerat quia natus rerum quo nisi, incidunt mollitia magnam quis maiores libero facere obcaecati molestias ad quos. Corporis ratione consequatur fugiat odio excepturi ut voluptate iure reprehenderit, dolores, reiciendis nostrum culpa officiis repellendus aliquam velit? Fugiat nobis, a quos, ipsam soluta itaque voluptatum quo, sit ullam dicta non. Itaque eaque, consequuntur corporis dolorum vel rem! Quis id quam ut placeat ipsum a earum obcaecati, sequi esse aliquam consequuntur explicabo provident consequatur omnis voluptatibus debitis inventore non, facilis officia est officiis laudantium quod aliquid iusto. Repellat nulla quisquam eveniet, autem, itaque iure esse quod, repudiandae maxime obcaecati iste facere magni tempore. Assumenda sequi ipsa sit vel tempore eum obcaecati. Dolores aliquid, ab nisi temporibus illo natus ea, saepe sed. Doloremque distinctio illo libero deleniti tenetur. Commodi deserunt optio eveniet cupiditate praesentium suscipit maxime, consectetur repellat fugit provident, ex facilis sequi laudantium dolorem nam nesciunt laborum necessitatibus deleniti nulla nobis aut. Natus, aperiam deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga esse beatae mollitia, praesentium ipsum natus doloremque perspiciatis, delectus eos sunt repellat. Unde tenetur, quae alias accusantium mollitia repellat illum consequatur dolor magni vero dicta error nisi laborum non molestiae, id fugit veniam. Accusamus dolores ratione nihil sit sint, quaerat quia natus rerum quo nisi, incidunt mollitia magnam quis maiores libero facere obcaecati molestias ad quos. Corporis ratione consequatur fugiat odio excepturi ut voluptate iure reprehenderit, dolores, reiciendis nostrum culpa officiis repellendus aliquam velit? Fugiat nobis, a quos, ipsam soluta itaque voluptatum quo, sit ullam dicta non. Itaque eaque, consequuntur corporis dolorum vel rem! Quis id quam ut placeat ipsum a earum obcaecati, sequi esse aliquam consequuntur explicabo provident consequatur omnis voluptatibus debitis inventore non, facilis officia est officiis laudantium quod aliquid iusto. Repellat nulla quisquam eveniet, autem, itaque iure esse quod, repudiandae maxime obcaecati iste facere magni tempore. Assumenda sequi ipsa sit vel tempore eum obcaecati. Dolores aliquid, ab nisi temporibus illo natus ea, saepe sed. Doloremque distinctio illo libero deleniti tenetur. Commodi deserunt optio eveniet cupiditate praesentium suscipit maxime, consectetur repellat fugit provident, ex facilis sequi laudantium dolorem nam nesciunt laborum necessitatibus deleniti nulla nobis aut. Natus, aperiam deleniti!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga esse beatae mollitia, praesentium ipsum natus doloremque perspiciatis, delectus eos sunt repellat. Unde tenetur, quae alias accusantium mollitia repellat illum consequatur dolor magni vero dicta error nisi laborum non molestiae, id fugit veniam. Accusamus dolores ratione nihil sit sint, quaerat quia natus rerum quo nisi, incidunt mollitia magnam quis maiores libero facere obcaecati molestias ad quos. Corporis ratione consequatur fugiat odio excepturi ut voluptate iure reprehenderit, dolores, reiciendis nostrum culpa officiis repellendus aliquam velit? Fugiat nobis, a quos, ipsam soluta itaque voluptatum quo, sit ullam dicta non. Itaque eaque, consequuntur corporis dolorum vel rem! Quis id quam ut placeat ipsum a earum obcaecati, sequi esse aliquam consequuntur explicabo provident consequatur omnis voluptatibus debitis inventore non, facilis officia est officiis laudantium quod aliquid iusto. Repellat nulla quisquam eveniet, autem, itaque iure esse quod, repudiandae maxime obcaecati iste facere magni tempore. Assumenda sequi ipsa sit vel tempore eum obcaecati. Dolores aliquid, ab nisi temporibus illo natus ea, saepe sed. Doloremque distinctio illo libero deleniti tenetur. Commodi deserunt optio eveniet cupiditate praesentium suscipit maxime, consectetur repellat fugit provident, ex facilis sequi laudantium dolorem nam nesciunt laborum necessitatibus deleniti nulla nobis aut. Natus, aperiam deleniti!</p>
+</body>
+</html>
