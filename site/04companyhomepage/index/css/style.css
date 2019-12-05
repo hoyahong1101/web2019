@@ -1,5 +1,6 @@
 @charset "utf-8";
 body{font-family: 'Noto Sans KR', sans-serif;}
+img{display: block;}
 .hdMenu{position: relative; height: 135px;}
 .hdWrap{width: 100%; position: fixed; top: 0; z-index: 999999; background-color: #fff;}
 .hdWrap .menuWrap{width: 1260px; margin: 0 auto; padding: 17.5px 0;  }
@@ -291,7 +292,9 @@ background-size: contain; background-color: #0E347E; }
 background-size: cover; background-position: 0 -10px;}
 .container4>ul>li:nth-child(3) ul li div.noticeImg3{height: 315px; width: 315px; float: left; background: url(../images/수정과.jpg)no-repeat center; -webkit-background-size: cover; background-position: 0 -10px;
 background-size: cover; background-position: 0 -10px;}
-
+.cardImg img{
+	margin: 0 auto;
+}
 .container4>ul>li:nth-child(4){ text-align: center;  padding: 115.5px 0; color: #ffe600; cursor: pointer; position: relative;}
 .container4>ul>li:nth-child(4) .card {background-color: #0e347e; width: 100%; height: 100%;  padding: 115.5px 0; transition: 0.3s; position: absolute; top: 0; z-index: 1; }
 .container4>ul>li:nth-child(4):hover .card{transform: rotate(180deg) scale(0,0);}
@@ -343,7 +346,7 @@ background-size: cover; background-position: 0 -10px;}
 .container4>ul>li:nth-child(11) svg{/*position: absolute; bottom: 0; */width: 150px;}
 .section1{margin-bottom: 60px;background: url(../images/bg-about.jpg) no-repeat center; background-color: rgba(14, 52, 126, 0.3); height: 499px; padding-top: 30px;}
 .section1 .sec1Wrap	h2{text-align: center; margin-bottom: 10px; color: blue;   font-size: 3.125rem; color: #0e347e;}
-.section1 .sec1Wrap h2 img{width: 328px;}
+.section1 .sec1Wrap h2 img{width: 328px; margin: 0 auto;}
 .section1 .sec1Wrap ul{width: 850px; margin: 0 auto;}
 .section1 .sec1Wrap ul li{float: left; margin-right: 102px; transition: 0.3s;}
 
@@ -447,6 +450,32 @@ footer{border-top: 3px solid #FFE600; padding-top: 50px;}
 	background: url(../images/ceo-bg.jpg) no-repeat;
 	position: relative;
 }
+.visualWrap.coffee{
+	height: 500px;
+position: relative;
+	background: url(../images/menu/bg_img.jpg) no-repeat;
+}
+.visualWrap.beverage{
+	height: 500px;
+position: relative;
+	background: url(../images/menu/bg-menu3.jpg) no-repeat;
+}
+.visualWrap.dessert{
+	height: 500px;
+position: relative;
+	background: url(../images/menu/bg-menu4.jpg) no-repeat;
+}
+.visualWrap.packschino{
+	height: 500px;
+	position: relative;
+	background: url(../images/menu/bg-menu5.jpg) no-repeat;
+}
+.visualWrap.notice{
+	height: 500px;
+	position: relative;
+	background: url(../images/notice/bg-img.jpg) no-repeat;
+
+}
 .visualWrap .visual{
 	width: 1260px; margin: 0 auto;
 	text-align: center;
@@ -462,16 +491,18 @@ footer{border-top: 3px solid #FFE600; padding-top: 50px;}
 }
 .visualWrap .visual h2{
 	font-size: 2.75em;
+	font-weight: normal;
 }
 .visualWrap .visual h2:after{
 	content: "";
 	display: block;
 	width: 100px;
-	height: 5px;
+	height: 3px;
 	background-color: #000;
-	margin: 10px auto;
+	margin: 30px auto;
 }
 .visualWrap .visual h3{
+	font-weight: normal;
 
 }
 .visualWrap .visual ul{
@@ -481,6 +512,10 @@ footer{border-top: 3px solid #FFE600; padding-top: 50px;}
 	transform: translateX(-50%);
 
 }
+.visualWrap.notice .visual ul{
+	width: 1000px;
+}
+
 .visualWrap .visual ul li{
 	float: left;
 	width: 200px;
@@ -512,12 +547,16 @@ footer{border-top: 3px solid #FFE600; padding-top: 50px;}
 }
 .sectionWrapper ul li{
 	float: left;
+	margin-right: 15px;
+	color: #0E347E;
+	font-size: 1em;
 }
 .sectionWrapper ul li a{
 	display: block;
 	margin-right: 15px;
 	color: #0E347E;
 	font-size: 1em;
+	
 }
 .sectionWrapper ul li.mMenu a{
 	color: #232323;
@@ -528,7 +567,7 @@ footer{border-top: 3px solid #FFE600; padding-top: 50px;}
 	color: #6B4D30;
 	font-size: 2em;
 	position: relative;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 .sectionWrapper .sectionBody h2:before{
 	content: "";
@@ -846,6 +885,7 @@ footer{border-top: 3px solid #FFE600; padding-top: 50px;}
 .sub_coffee_tasty{
 	width: 1260px;
 	margin: 0 auto;
+	margin-bottom: 100px;
 }
 .sub_coffee_tasty .txt{
 	margin-bottom: 30px;
@@ -862,25 +902,55 @@ footer{border-top: 3px solid #FFE600; padding-top: 50px;}
 .sub_coffee_tasty ul li{
 	float: left;
 	width: 24.25%;
+	height: 350px;
 	margin-right: 12.6px;
 	margin-bottom: 30px;
+	background: #ddd;
 }
 .sub_coffee_tasty ul li:nth-child(4),
 .sub_coffee_tasty ul li:nth-child(8){
 	margin-right: 0;
 }
 .sub_coffee_tasty ul li .RoastingColor{
-	background-color: #CC801E;
+	
 	color: #fff;
 	text-align: center;
+	margin-bottom: 15px;
 }
+.sub_coffee_tasty ul li:nth-child(1) .RoastingColor{
+	background-color: #CC801E;
+}
+.sub_coffee_tasty ul li:nth-child(2) .RoastingColor{
+	background-color: #C27B1F;
+}
+.sub_coffee_tasty ul li:nth-child(3) .RoastingColor{
+	background-color: #B36B1F;
+}
+.sub_coffee_tasty ul li:nth-child(4) .RoastingColor{
+	background-color: #985520;
+}
+.sub_coffee_tasty ul li:nth-child(5) .RoastingColor{
+	background-color: #894C1F;
+}
+.sub_coffee_tasty ul li:nth-child(6) .RoastingColor{
+	background-color: #663F20;
+}
+.sub_coffee_tasty ul li:nth-child(7) .RoastingColor{
+	background-color: #C27B1F;
+}
+.sub_coffee_tasty ul li:nth-child(8) .RoastingColor{
+	background-color: #CC801E;
+}
+
 .sub_coffee_tasty ul li h3{
 	color: #CAA47A;
 	font-size: 1.75em;
+	padding-left: 15px;
 }
 .sub_coffee_tasty ul li h5{
 	color: #7D7D7D;
 	font-size: 1em;
+	padding-left: 15px;
 
 }
 .sub_coffee_tasty ul li h5:after{
@@ -890,6 +960,13 @@ footer{border-top: 3px solid #FFE600; padding-top: 50px;}
 	height: 3px;
 	background-color: #7D7D7D;
 	margin: 30px 0;
+}
+.sub_coffee_tasty .flavor{
+	height: 100px;
+	padding-left: 15px;
+}
+.sub_coffee_tasty ul li .bss{
+	padding-left: 15px;
 }
 .sub_coffee_tasty ul li .bss h4{
 	float: left;
@@ -915,4 +992,131 @@ footer{border-top: 3px solid #FFE600; padding-top: 50px;}
 	right: 0px;
 	top: 0px;
 
+}
+.subStorySlider .storySlider .txtSlider{
+	position: absolute;
+	top: 5%;
+	left: 20%;
+
+}
+.subStorySlider .storySlider  em{
+	font-weight: bold;
+	font-size: 1.2em;
+
+}
+.subStorySlider .storySlider1{
+	color: #003A00;
+}
+.subStorySlider .storySlider2{
+	color: #564E00;
+}
+.subStorySlider .storySlider3{
+	color: #fff;
+}
+.subStorySlider .storySlider .slg,
+.subStorySlider .storySlider .slg_txt,
+.subStorySlider .storySlider .sub_slg{
+	margin-bottom: 15px;
+	
+
+}
+.subStorySlider .storySlider .slg{
+	position: absolute;
+	top: 30%;
+	left: 20%;
+}
+.subStorySlider .storySlider .slg .main_slg{
+	font-size: 2em;
+	margin-bottom: 15px;
+}
+
+.sectionWrapper .recommendMenu li{
+	width: 25%;
+	position: relative;
+	margin: 0;
+}
+.sectionWrapper .recommendMenu li img{width: 100%;}
+.sectionWrapper .recommendMenu li p{width: 100%;}
+.sectionWrapper .recommendMenu li span{
+	background: #0e347e;
+    color: #ffe600;
+    text-align: center;
+    display: inline-block;
+    width: 69px;
+    height: 69px;
+    line-height: 69px;
+    border-radius: 100%;
+    font-size: 1.062rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.menuSection{
+	padding-top: 100px;
+	margin-bottom: 100px;
+}
+.menuSection ul.menu{
+	margin: 0 auto;
+	width: 1260px;
+}
+.menuSection ul.menu li{
+	width: 25%;
+	float: left;
+	border: 1px solid #ddd;
+}
+.menuSection ul.menu li:hover{
+	border: 1px solid #0e347e;
+}
+.menuSection ul.menu li img{
+	width: 245.5px;
+	margin: 0 auto;
+}
+.menuSection ul.menu li .menu_tit{
+	width: 245.5px;
+	margin: 0 auto;
+	text-align: center;
+	color: #202020;
+	padding: 15px 0 ;
+}
+table{
+	border-collapse: collapse;
+	width: 1260px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+ 	/*border: 1px solid black;*/
+}
+th{
+	border-top: 2px  solid #0E347E;
+	border-bottom: 2px solid #ddd;
+	height: 75px;
+}
+
+tbody tr:hover{
+	background-color: #0E347E;
+	color: #fff;
+	cursor: pointer;
+}
+ td{
+  border-bottom: 2px solid #ddd;
+  height: 75px;
+  text-align: center;
+
+}
+td .tit{
+	text-align: left;
+	padding-left: 15px;
+}
+
+table .num{width: 91px;}
+table .subject{width: 117px;}
+table .tit{width: auto;}
+table .date{width: 152px;}
+table .view{width: 152px;}
+.sectionWrapper.notice ul.nav{width: 180px; margin: 0 auto;}
+.sectionWrapper.notice ul.nav li{cursor: pointer; color: #181818; width: 15px; text-align: center;}
+.sectionWrapper.notice ul.nav li:hover{color: #0E347E; font-weight: bold;}
+.sectionWrapper.notice{
+	border: none;
 }
