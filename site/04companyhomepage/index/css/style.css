@@ -5,15 +5,16 @@ img{display: block;}
 .hdWrap{width: 100%; position: fixed; top: 0; z-index: 999999; background-color: #fff;}
 .hdWrap .menuWrap{width: 1260px; margin: 0 auto; padding: 17.5px 0;  }
 
-.hdWrap .menuWrap h1{width: 194px; float: left;}
+.hdWrap .menuWrap h1{width: 194px; float: left; margin: 17.5px 0;}
 .hdWrap .menuWrap h1 a{display: block;}
 .hdWrap .menuWrap h1 a img{display: block; width: 194px; height: 65px;}
 
 .hdWrap .menuWrap div.navWrap{width: 855px; float: right; _position: relative; height: 100px;} 
 .hdWrap .menuWrap nav.tnbWrap{position: relative; margin-bottom: 20px; }
 .hdWrap .menuWrap nav.tnbWrap ul{position: absolute; right: 40px;}
-.hdWrap .menuWrap nav.tnbWrap div.snsWrap{float: right;}
-.hdWrap .menuWrap nav.tnbWrap div.snsWrap a{display: block; float: left;} 
+.hdWrap .menuWrap nav.tnbWrap div.snsWrap{float: right; }
+.hdWrap .menuWrap nav.tnbWrap div.snsWrap a{display: block; float: left; line-height: 1} 
+.hdWrap .menuWrap nav.tnbWrap div.snsWrap a:first-child{margin-right: 3px;}
 .hdWrap .menuWrap nav.tnbWrap div.snsWrap a i{ margin-right: 3px;    }
 .hdWrap .menuWrap nav.tnbWrap ul li{float: left; position: relative;}
 .hdWrap .menuWrap nav.tnbWrap ul li:after{content: ""; display: block; width: 1px; height: 15px; background-color: #ddd; position: absolute; top: 0;}
