@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>How TO - Slide Down a Bar on Scroll</title>
+	<style>
+		#left{position: absolute; left: 0;}
+		#right{position: absolute; right: 0}
+	</style>
+	<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+		  var currentScrollPos = window.pageYOffset;
+		
+		if(currentScrollPos <=900){
+		    document.getElementById("left").style.top = 2*currentScrollPos+"px";
+		    document.getElementById("left").style.left = currentScrollPos+"px";
+
+		    document.getElementById("right").style.top = 2*currentScrollPos+"px";
+		    document.getElementById("right").style.right = currentScrollPos+"px";
+		 }else{
+		 	document.getElementById("left").style.top = 2*900+"px";
+		    document.getElementById("left").style.left = 900+"px";
+		    document.getElementById("right").style.top = 2*900+"px";
+		    document.getElementById("right").style.right = 900+"px";
+		 }
+
+		
+		}
+		
+	</script>
+</head>
+<body>
+	<h1 id="left">HELLO</h1>
+	<h1 id="right">JAVASCRIPT</h1>
+	<div style="height: 500vh;"></div>
+</body>
+</html>
