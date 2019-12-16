@@ -1,0 +1,209 @@
+@charset "utf-8";
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{margin: 0; padding: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+h1, h2, h3, h4, h5, p{margin: 0;}
+a{text-decoration: none;}
+
+
+#flex_direct_01 .flex_container{
+	width: 600px;
+	height: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	background: DodgerBlue;
+	flex-direction: column; /* 자식요소를 가로 정방향(좌측부터)으로 배치하라 */
+	/* flex-direction: row-reverse;자식요소를 가로 역방향으로 배치하겠다는 의미, 만약, 부모의 가로공간에 남을 경우 부모의 우측면으로 밀착 */
+	/* flex-direction: column; 자식 요소를 세로방향으로 정방향 배치를 의미. 만약 부모의 세로영역이 자식의 높이의 총 합보다 작을 경우 자식의 높이 값은 재조명 됩니다. */
+	/* flex-direction: column-reverse; 자식 요소를 세로방향으로 역방향 배치를 의미. 만약 부모의 세로영역이 자식의 높이의 총 합보다 작을 경우 자식의 높이 값은 재조명 됩니다. */
+	/*flex-wrap: nowrap; 부모의 1줄 영역보다 가로폭의 합이 많아지더라도 복수의 라인을 구성하지 않겠다는 의미. 가로 영역이 자식의 가로 총합보다 작을 경우 각 자식의 가로 폭은 자동으로 조정 됨*/
+	flex-wrap: wrap; /*   부모의 영역 내부에서 실제 자식의 가로값이 적용되는 구성. 부모의 가로 영역이 자식의 가로 총합보다 작을 경우 다음 줄로 된다.*/
+	/* flex-wrap: wrap-reverse; 좌측의 하단으로 세로방햐을 기준으로 역으로 자식들이 배치 됨.*/
+	/*justify-content: flex-start;*/ /* 부모의 영역으로부터 내부박스들을 좌측으로 정렬(기본값) */
+	/*justify-content: flex-end; 부모의 영역으로 내부 박스을을 우측으로 정렬*/
+	/*justify-content: center; 중앙정렬*/
+	/*justify-content: space-between; 부모영역의 가로 폭을 기준으로 모든 자식의 가로폭을 활용하여 분배하여 정렬(좌우축을 끝선을 기준으로 배치)*/
+	/*justify-content: space-around; 각 내부 박스를 기준으로 좌우측으로 균등하게 나누어서 정렬*/
+	
+
+}
+
+#flex_direct_01 .flex_item{width: 100px; height: 120px;}
+#flex_direct_01 .flex_item:nth-child(1){background: #ffaaff;}
+#flex_direct_01 .flex_item:nth-child(2){background: #aaaaff;}
+#flex_direct_01 .flex_item:nth-child(3){background: #aaffaa;}
+#flex_direct_01 .flex_item:nth-child(4){background: #affffa;}
+
+
+#align_items .flex_container{
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+	background: #aaa;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	/*align-items: flex-start; 수직 방향으로부터 상단에 자식들이 정렬*/
+	/*align-items: flex-end; 수직 방향으로부터 하단에 자식들이 정렬*/
+	/*align-items: center; 수직 방향으로부터 중앙에 자식들이 정렬*/
+	align-items: stretch;
+}
+
+
+
+#align_items .flex_item{width: 100px;}
+#align_items .flex_item:nth-child(1){background: #ffaaff; font-size:  12px;}
+#align_items .flex_item:nth-child(2){background: #aa1010; font-size:  10px; }
+#align_items .flex_item:nth-child(3){background: #aaffaa; font-size:  50px;}
+#align_items .flex_item:nth-child(4){background: #affffa; font-size:  15px;}
+#align_items .flex_item:nth-child(5){background: #aaafff; font-size:  10px;}
+
+
+#align_content .flex_container{
+	width: 600px;
+	height: 500px;
+	margin: 50px auto;
+	background: #aaa;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	align-content: stretch;
+	
+}
+#align_content .flex_item{width: 180px;}
+#align_content .flex_item:nth-child(1){background: #ffaaff; font-size:  12px;}
+#align_content .flex_item:nth-child(2){background: #aa1010; font-size:  10px; }
+#align_content .flex_item:nth-child(3){background: #aaffaa; font-size:  50px;}
+#align_content .flex_item:nth-child(4){background: #affffa; font-size:  15px;}
+#align_content .flex_item:nth-child(5){background: #aaafff; font-size:  10px;}
+
+
+#flex_item .flex_container{
+	width: 500px;
+	height: 500px;
+/*	margin: 50px auto;*/
+	background: #aaa;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+/*	justify-content: space-around;*/
+	align-content: stretch;
+	
+}
+#flex_item .flex_item{margin: 10px;}
+#flex_item .flex_item:nth-child(1){background: #ffaaff; font-size:  3em; flex-grow: 0; /*default*/}
+#flex_item .flex_item:nth-child(2){background: #aa1010; font-size:  3em; flex-grow: 1;}
+#flex_item .flex_item:nth-child(3){background: #aaffaa; font-size:  3em; flex-grow: 3;}
+#flex_item .flex_item:nth-child(4){background: #affffa; font-size:  3em; flex-grow: 1;}
+#flex_item .flex_item:nth-child(5){background: #aaafff; font-size:  3em; flex-grow: 2;}
+
+#flex_itemS .flex_container{
+
+	height: 500px;
+/*	margin: 50px auto;*/
+	background: #aaa;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+/*	justify-content: space-around;*/
+	 align-items: stretch;
+	
+}
+#flex_itemS .flex_item{margin: 10px;}
+#flex_itemS .flex_item:nth-child(1){background: #ffaaff;  font-size:  3em; flex-shrink: 1; /*default*/}
+#flex_itemS .flex_item:nth-child(2){background: #aa1010; font-size:  3em; flex-shrink: 0;}
+#flex_itemS .flex_item:nth-child(3){background: #aaffaa; font-size:  3em; flex-shrink: 0;}
+#flex_itemS .flex_item:nth-child(4){background: #affffa; font-size:  3em; flex-shrink: 1;}
+#flex_itemS .flex_item:nth-child(5){background: #aaafff; font-size:  3em; flex-shrink: 2;}
+
+
+
+#order .flex_container{
+	width: 80%;
+	height: 300px;
+	margin: 0 auto;
+	background: #aaa;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: stretch;
+}
+#order .flex_item{width: auto; height: auto;}
+#order .flex_item:nth-child(1){background: #ffaaff; flex-grow: 1;  order: 3;}
+#order .flex_item:nth-child(2){background: #aaaaff; flex-grow: 1;  order: 5;}
+#order .flex_item:nth-child(3){background: #ffaaaa; flex-grow: 1;  order: 4;}
+#order .flex_item:nth-child(4){background: #ffffaa; flex-grow: 1;  order: 1;}
+#order .flex_item:nth-child(5){background: #aaffaa; flex-grow: 1;  order: 2;}
+
+#flex .flex_container{
+	width: 80%;
+	height: 300px;
+	margin: 0 auto;
+	background: #aaa;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: stretch;
+}
+#flex .flex_item{width: auto; height: auto;}
+#flex .flex_item:nth-child(1){background: #ffaaff;  flex: 1;}
+#flex .flex_item:nth-child(2){background: #aaaaff;  flex: 1;}
+#flex .flex_item:nth-child(3){background: #ffaaaa;  flex: 1;}
+#flex .flex_item:nth-child(4){background: #ffffaa;  flex: 1;}
+#flex .flex_item:nth-child(5){background: #aaffaa;  flex: 1;}
+
+#flexbox .flex_container{
+	width: 80%;
+	height: 400px;
+	margin: 0 auto;
+	background: #ffffaa;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content:;
+}
+#flexbox .flex_item{width: auto; height: auto;}
+#flexbox .flex_item:nth-child(1){background: #ffaaff; width:auto;  height: auto; flex-grow: 1;}
+#flexbox .flex_item:nth-child(2){background: #aaaaff; width:auto;  height: auto; flex-grow: 3;}
+#flexbox .flex_item:nth-child(3){background: #aaffff; width:auto;  height: auto; flex-grow: 1;}
+#flexbox .flex_item:nth-child(4){background: #aaffaa; width:auto;  height: auto; flex-grow: 1;}
+#flexbox .flex_item:nth-child(5){background: #aaaaaa; width:auto;  height: auto; flex-grow: 1;}

@@ -8,7 +8,7 @@ header, section, article, aside, nav, footer{display: block;}
 header:after, section:after, article:after, aside:after, nav:after, footer:after{content:""; display: block; clear: both;}
 ul, ol{margin: 0; padding: 0; list-style: none;}
 h1, h2, h3, h4, h5, h6, p{margin: 0;}
-a{text-decoration: none;}
+a{text-decoration: none; }
 .clear{clear: both;}
 
 header{width:280px; height:100%; background:#6ab3b2; box-shadow: inset 0 0 15px #000; position:fixed;}
