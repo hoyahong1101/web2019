@@ -1,0 +1,70 @@
+@charset "utf-8";
+@media all and (max-width: 1599px){
+	header{width: 100%; height: 80px;
+		position: relative; box-shadow: none;}
+	.logo{position: absolute; left: 20px; width: auto; padding: 20px 0;}
+	.logo img{width: 40px;}
+	nav{position: absolute; right: 200px;  bottom: 25px;}
+	nav>ul{font-size: 0}
+	nav>ul>li{display: inline-block; margin-right: 40px; width: auto; border: none; }
+	.link{width: auto; right: 20px; bottom: 30px;}
+	.link>ul>li>a>img{height: 24px; padding-top: 4px; }
+	article{width: 100%; margin: 0;}
+	.noti-box.contact{display: none;}
+	.poster-title{display: none;}
+	.cont-box .text-box ul li{font-style: italic;}
+	.text-box p{font-style: italic;}
+	.noti-box .copyright{text-align: center;}
+	.cont-09{background: #e3f1fb; color: #aaa;}
+	.cont-09 .cont-icon{display: none;}
+}
+@media all and (max-width: 1279px){
+	nav{ right: 20px;}
+	nav>ul{font-size: 0;}
+	.link{display: none;}
+
+	.cont-box{width: 25%; height: 260px;}
+	.cont-01{width: 75%; height: 520px;  }
+	.cont-06,
+	.cont-07,
+	.cont-10{width: 50%;}
+	.cont-09 li:before{content: ">"; padding-right: 5px;}
+	
+
+}
+@media all and (max-width: 1023px){
+
+	.cont-box{width: 33.33%;;}
+	.cont-01{width: 100%; height: 400px; background-position-y: 50%;}
+	.cont-02,
+	.cont-06{width: 66.66%;}
+	.cont-04,
+	.cont-07,
+	.cont-10,
+	.cont-12{display: none;}
+}
+@media all and (max-width: 767px){
+
+	.cont-box{width: 50%; height: 250px;}
+	.cont-01{width: 100%; height: 400px;}
+	.cont-02{width: 100%;}
+	.cont-03{display: none;}
+	.cont-12{display: block;}
+}
+
+@media all and (max-width: 639px){
+
+	header{width: 100%; height: 130px;}
+	.logo{position: absolute; left: 50%; transform: translateX(-50%); width: auto;}
+	.logo img{width: 40px;}
+	nav{ width: 100%;  padding: 0 10px; bottom: 10px; right: initial;}
+	nav>ul{text-align: center;}
+	nav>ul>li{display: inline-block; margin: 0 20px; border: none; }
+	.cont-box{width: 50%; height: 150px;}
+	.cont-01{width: 100%; height: 300px;}
+	.cont-02{width: 100%;}
+	.cont-05{background-position-y: -30px;}
+	.cont-box .text-box ul,
+	.cont-box .text-box p{display: none;}
+}
+
