@@ -41,7 +41,7 @@ nav>ul>li>a.active:after{transform: translateX(-50%) scale(1, 1); }
 
 .cont-box{width: 100%; background-size:cover; background-repeat:no-repeat; background-position:50% 50%; position: relative;}
 .cont-01{height: 760px; background-image: url(../img/header-bg.jpg); overflow: hidden;}
-.cont-01:after{content: ""; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0;  /*background-color: rgba(255,255,255,0.01);*/}
+.cont-01.about{height: 250px; background-position: 50% 30%;}
 .cont-01 .text-box{position: absolute; top: 250px; left: 50%; transform: translateX(-50%); z-index: 1; text-align: center; color: #fff;}
 .cont-01 .text-box p{font-size: 18px; margin-bottom: 20px;}
 .cont-01 .text-box h2{font-size: 36px; margin-bottom: 50px;}
@@ -50,6 +50,7 @@ nav>ul>li>a.active:after{transform: translateX(-50%) scale(1, 1); }
 .button input:first-child{background: #5e889e;}
 .button input:last-child{background: #999999;}
 .cloud-img{height: 300px; background: url(../img/cloud.png) repeat center ;  position: absolute; bottom: 0; width: 300%;  animation: mymove 100s infinite linear;}
+.cloud-img.about{height: 250px;}
 @keyframes mymove {
   0% {left: 0;}
   50% {left: -200%;}
@@ -63,6 +64,11 @@ nav>ul>li>a.active:after{transform: translateX(-50%) scale(1, 1); }
 .cont-02 .card-wrapper li img{margin-bottom: 10px;}
 .cont-02 .card-wrapper li h3{margin-bottom: 10px;}
 
+.cont-02.about .card-box{width: 1200px; margin: 0 auto; padding: 110px;}
+.cont-02.about .card-box li{float: left; width: 50%; height: 450px;}
+.cont-02.about .card-box li p{margin-bottom: 20px; font-size: 0.75rem;}
+.cont-02.about .card-box li img{display: block; width: 380px;}
+.cont-02.about .card-box li:nth-child{3} img{width: ;}
 .cont-03{height: 200px; background-image: url(../img/cont03-img.jpg);  /*background-attachment: fixed;*/ background-position-y: bottom;}
 .cont-03 .cont-txt{width: 100%; text-align: center; position: absolute; top: 50%; transform: translateY(-50%);}
 .cont-03 .cont-txt h3{margin-bottom: 30px; font-size: 24px; color: #fff;}
