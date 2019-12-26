@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>jQuery_Effect ::</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<h3>show() / hide()</h3>
+	<div class="ef_01"></div>
+	<button class="showBtn">보여주기</button>
+	<button class="hideBtn">감추기</button>
+	<div class="detail_bx">
+		<h4>[과학을읽다]백두산이 진짜 폭발하면 어떻게 하지?</h4>
+		<p class="cont">[아시아경제 김종화 기자]최근 뉴질랜드 화이트섬 화산폭발로 대형 인명피해가 발생한 가운데 영화 '백두산' 개봉으로 백두산 화산폭발 여부에 대한 국민적 관심이 점점 커지고 있습니다.</p>
+		<p class="detail_cont">과학자들은 백두산 화산폭발 가능성을 아주 높게 보고 있습니다. 2017년 9월 서울에서 열린 '백두산 마그마 활동에 관한 국제 학술회의'에서 한·중 과학자들은 백두산 아래 땅속에 4개의 마그마 방이 있고, 각각 깊이 20㎞, 26㎞, 44㎞, 55㎞라는 연구 결과를 발표했습니다.
+
+땅속에 마그마방이 있다는 것은 분화 가능성이 아주 높다는 뜻입니다. 마그마 방은 뜨거운 마그마가 모여있는 땅속의 공간입니다. 강한 지진으로 땅이 흔들리거나 다른 마그마 방에서 마그마가 밀려 들어오면 마그마 방이 출렁거리게 되고, 마그마 방이 출렁거리면 마그마에 녹아있던 가스와 수증기가 터져 나옵니다.
+
+그렇게 터진 가스와 수증기의 압력이 점점 더 강해지면 쌓인 압력을 해소하기 위해 화산이 폭발(분화)하게 됩니다. 탄산음료의 입구를 손가락으로 막고 세게 흔든 뒤 손가락을 떼면 탄산음료가 쏟아지는 것과 같은 현상이 일어나는 것입니다.
+
+그러나 마그마 방은 암석 사이에 액체가 들어있는 반(半)고체 상태이기 때문에 상당한 에너지가 투입돼야 출렁거립니다. 과학자들은 북한의 핵실험으로 인한 인공지진이나 중국의 지진 등은 백두산 아래 마그마 방에 에너지가 전달이 제대로 안돼 영향을 미치지 못하고 있는 것으로 보고 있습니다.
+
+과학자들은 리히터규모 7 이상의 지진이 발생할 경우 백두산 아래 마그마 방이 영향을 받을 것으로 보고 있습니다. 이는 리히터규모 7이상의 지진이 발생하면 휴화산인 백두산은 언제든지 폭발할 수 있다는 의미입니다.</p>
+	</div>
+	<h3>fadeIn /fadeOut</h3>
+	<div class="ef_02"></div>
+	<button class="fadeInBtn">보여주기</button>
+	<button class="fadeOutBtn">감추기</button>
+	<h3>slideDown / slideUp</h3>
+	<div class="ef_03"></div>
+	<button class="slideDownBtn">보여주기</button>
+	<button class="slideUpBtn">감추기</button>
+	<button class="slideToggleBtn">보여주기/감추기</button>
+
+	<h3>animate</h3>
+	<div class="ef_04"></div>
+	<button class="ani_left">박스를 왼쪽으로 이동하기</button>
+	<button class="ani_right">박스를 오른쪽으로 이동하기</button>
+
+
+	<ul class="menu">
+		<li><a href="">Menu_01</a>
+			<ul class="sub">
+				<li><a href="">sub_01</a></li>
+				<li><a href="">sub_01</a></li>
+				<li><a href="">sub_01</a></li>
+			</ul>
+		</li>
+		<li><a href="">Menu_02</a>
+			<ul class="sub">
+				<li><a href="">sub_02</a></li>
+				<li><a href="">sub_02</a></li>
+				<li><a href="">sub_02</a></li>
+				<li><a href="">sub_02</a></li>
+			</ul>
+		</li>
+		<li><a href="">Menu_03</a>
+			<ul class="sub">
+				<li><a href="">sub_03</a></li>
+				<li><a href="">sub_03</a></li>
+				<li><a href="">sub_03</a></li>
+			</ul>
+		</li>
+		<li><a href="">Menu_04</a>
+			<ul class="sub">
+				<li><a href="">sub_04</a></li>
+				<li><a href="">sub_04</a></li>
+		
+			</ul>
+		</li>
+	</ul>
+
+	<h3>animate를 활용한 이동하는 슬라이드 구성(좌측으로 이동)</h3>
+	<div class="slide_01">
+		<ul>
+			<li class="slide item_01"></li>
+			<li class="slide item_02"></li>
+			<li class="slide item_03"></li>
+			<li class="slide item_04"></li>
+		</ul>
+	</div>
+	<h3>animate를 활용한 이동하는 슬라이드 구성(우측으로 이동)</h3>
+	<div class="slide_02">
+		<ul>
+			<li class="slide item_01"></li>
+			<li class="slide item_02"></li>
+			<li class="slide item_03"></li>
+			<li class="slide item_04"></li>
+		</ul>
+	</div>
+	<h3>animate를 활용한 이동하는 슬라이드 구성(상단으로 이동)</h3>
+	<div class="slide_03">
+		<ul>
+			<li class="slide item_01"></li>
+			<li class="slide item_02"></li>
+			<li class="slide item_03"></li>
+			<li class="slide item_04"></li>
+		</ul>
+	</div>
+	<h3>animate를 활용한 이동하는 슬라이드 구성(하단으로 이동)</h3>
+	<div class="slide_04">
+		<ul>
+			<li class="slide item_01"></li>
+			<li class="slide item_02"></li>
+			<li class="slide item_03"></li>
+			<li class="slide item_04"></li>
+		</ul>
+	</div>		
+	
+	<div class="test_02">
+		<a href="">베스트셀러</a>
+		<a href="" id="select">E-북 베스트</a>
+		<a href="">지식백과</a>
+		<a href="">오디오북</a>
+	</div>
+	<div class="test_03">
+		<h4>사이언스 트렌드</h4>
+		<p class="sience_01">구글의 양자컴퓨터, 슈퍼컴 능가했나</p>
+		<p class="sience_02">실패의 과학적 정의</p>
+		<p class="sience_03">달 지명 속에는 '사람'이 있다.</p>
+	</div>
+	<div class="test_04">
+		<h4>비지니스 트렌드</h4>
+		<p class="trend">당신의 비지니스를 업그레이드하는 가장 손쉬운 방법</p>
+		<p class="trend">당신의 비지니스를 업그레이드하는 가장 손쉬운 방법</p>
+		<p class="trend">당신의 비지니스를 업그레이드하는 가장 손쉬운 방법</p>
+		<p class="trend">당신의 비지니스를 업그레이드하는 가장 손쉬운 방법</p>
+	</div>	
+	<div class="test_05">
+		<h4>내 마음에 쏙 드는 걷기 여행지 7</h4>
+		<p class="walk">양평 두물머리 물래길</p>
+		<p class="walk">전주 한옥마을 길</p>
+		<p class="walk">대전 장태산자연휴양림</p>
+		<p class="walk">천안 독립기념관 단풍나무 숲길</p>
+		<p class="walk">서울 안산자락길</p>
+		<p class="walk">대구 김광석 다시그리기길</p>
+		<p class="walk">영동 금강 둘레길</p>
+	</div>
+	<div class="test_06">
+		<ul class="menu">
+			<li><a href="">회사소개</a></li>
+			<li><a href="">사회공헌</a></li>
+			<li><a href="">미디어센터</a></li>
+			<li><a href="">채용</a></li>
+		</ul>
+	</div>
+	<div class="test_07">
+		<ul class="main_menu">
+			<li><a href="">About Us</a></li>
+			<li><a href="" class="port">Portfolio</a></li>
+			<li><a href="">Project</a></li>
+		</ul>
+		<ul id="side_menu">
+			<li><a href="">로그인</a></li>
+			<li><a href="">회원가입</a></li>
+			<li><a href="">마이페이지 <span>-판매자</span></a></li>
+		</ul>
+	</div>
+
+</body>
+</html>
