@@ -13,11 +13,36 @@ $(document).ready(function(){
     h_slider_wrap.goToNextSlide();
     });
 
-  $(window).scroll(function(){
-    console.log($(window).scrollTop());
-    if($(window).scrollTop() == 2200){
-      $(".h_item_slide").css({"transform": "translateY(550px)"});
+  window.onscroll = function() {stickyFunction()};
+  var navbar = $("#sticky");
+  var sticky = navbar.offset();
+
+function stickyFunction(){
+    if (Number(window.pageYOffset) >= 800 && Number(window.pageYOffset) <= 1200) {
+      $("#sticky").addClass("sticky");
+       $("#sticky").removeClass("sticky2");
+    }else if(Number(window.pageYOffset) >= 1200) {
+      $("#sticky").removeClass("sticky");
+      $("#sticky").addClass("sticky2");
+    }else{
+      $("#sticky").removeClass("sticky");
+        $("#sticky").removeClass("sticky2");
     }
-  });  
+    console.log("sticky", sticky.top);
+    console.log("window", window.pageYOffset);
+  }
+  $('.h-cont-slick-wrap').slick({
+    infinite: false,
+    slidesToShow: 5,
+    slidesToScroll: 1
+
+  });
+
+
+  for(var i = 0; i < 6; i ++){
+      var $randomNumber = Math.floor((Math.random() * 6) + 1);
+      var $item = $(".h-cont-random-wrap .item").eq($randomNumber);
+      $(".h-cont-random-wrap").prepend($item);
+  }
 
 });
