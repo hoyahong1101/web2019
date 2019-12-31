@@ -32,9 +32,10 @@ function stickyFunction(){
     console.log("window", window.pageYOffset);
   }
   $('.h-cont-slick-wrap').slick({
-    infinite: false,
+    infinite: true,
     slidesToShow: 5,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    centerMode: true
 
   });
 

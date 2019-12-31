@@ -79,7 +79,8 @@ header.h_header div.h-header_right{width: 5rem;}
 
 .h-cont-02 .h-cont-box{width: calc(100% - 20px); margin: 0 10px;}
 .h-cont-slick-wrap .item{width: calc(20% - 20px); margin: 0 10px; height: 200px; text-align: center; background-color: #aaaaff; }
-
+.slick-center{transform: scale(1.05); box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);}
+.slick-list{overflow-y:initial;}
 .h-cont-03 .h-cont-random-wrap .item{float: left; height: 200px; text-align: center; margin-bottom: 30px !important;}
 .h-cont-03 .h-cont-random-wrap .item1{width: calc(50% - 20px); margin: 0 10px; background-color: #ffaaaa;}
 .h-cont-03 .h-cont-random-wrap .item2{width: calc(50% - 100px); margin: 0 50px; background-color: #aaffaa;}
