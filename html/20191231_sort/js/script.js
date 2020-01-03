@@ -114,7 +114,7 @@ $(document).ready(function(){
 		console.log("최신순 나열하기 -x" + $pd_arr);
 		$pd_arr.reverse();
 		console.log("최신순 나열하기" + $pd_arr);		
-		pd_sort();
+			();
 		$(".pager li").removeClass("active");
 		$(".pager li").eq(0).addClass("active");
 

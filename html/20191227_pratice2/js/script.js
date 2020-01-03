@@ -54,8 +54,10 @@ $(document).ready(function(){
 	$(".q_box p").hide();
 	$(".q_box h5").click(function(){
 		if($(this).siblings("p").css("display")=="none"){
-		$(".q_box p").slideUp();
-		$(this).siblings("p").slideToggle();
+			$(".q_box p").slideUp();
+			$(this).siblings("p").slideToggle();
+		}else{
+			$(this).siblings("p").slideToggle();
 		}
 	});
 	
@@ -64,17 +66,52 @@ $(document).ready(function(){
 		$(this).find(".cur_per").text($(this).attr("data-percent"));
 	});
 	$(".login-box").css("display","none");
-	$(".op_btn").click(function(){
+	$("#ex_09 .op_btn").click(function(){
 		$(".dark-bg").css("z-index", "1");
 		$(".dark-bg").addClass("active_bg");
-		$(".login-box").css("display","table");
+		$(".login-box.ex_09").css("display","table");
 	});
 	$(".cls_btn, .dark-bg").click(function(){
 		$(".dark-bg").css("z-index", "-2");
 		$(".dark-bg").removeClass("active_bg");
 		$(".login-box").css("display","none");
 	});
+	$(".login-box").css("display","none");
+	$(".register-box").css("display","none");
+	$("#ex_10 .op_btn").click(function(){
+		$(".dark-bg").css("z-index", "1");
+		$(".dark-bg").addClass("active_bg");
+		$(".login-box.ex_10").css("display","table");
+	});
+	$("#ex_10 .rg_btn").click(function(){
+		$(".dark-bg").css("z-index", "1");
+		$(".dark-bg").addClass("active_bg");
+		$(".register-box").css("display","table");
+	});
+	$(".cls_btn, .dark-bg").click(function(){
+		$(".dark-bg").css("z-index", "-2");
+		$(".dark-bg").removeClass("active_bg");
+		$(".login-box").css("display","none");
+		$(".register-box").css("display","none");
+	});
+	$(".login-box h6").click(function(){
+		$(".login-box").css("display","none");
+		$(".register-box").css("display","table");
+	});
+	$(".register-box h6").click(function(){
+		$(".register-box").css("display","none");
+		$(".login-box.ex_10").css("display","table");
+	});
 	
+	$(".cont-box>div").css("display","none");
+	$("#ex_11 .img_op_btn").click(function(){
+		$(".cont-bg").slideDown( 5000, function(){
+			$(".cont-img").slideDown( 5000, function(){
+				$(".cont-text").slideDown( 5000, function(){
+				});
+			});
+		});
+	});
 	// $(".per_bar_frame:eq(0) .per_bar").css("width", $(".per_bar_frame").eq(0).attr("data-percent"));
 	// $(".per_bar_frame:eq(1) .per_bar").css("width", $(".per_bar_frame").eq(1).attr("data-percent"));
 	// $(".per_bar_frame:eq(2) .per_bar").css("width", $(".per_bar_frame").eq(2).attr("data-percent"));
